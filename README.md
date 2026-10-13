@@ -169,7 +169,7 @@ Same key, same inputs, same outputs as MCP. Reference: [docs/rest-api.md](docs/r
 
 **Full catalog with every app, its official API status and its tools: [docs/integrations.md](docs/integrations.md).**
 
-Ready-made Python scripts per app: [Skool API and MCP server](https://github.com/cotletdev/skool-api-mcp-server) (export members, approve membership requests, posts, DMs, stats).
+Ready-made Python scripts per app: [Skool API and MCP server](https://github.com/cotletdev/skool-api-mcp-server) (export members, approve membership requests, posts, DMs, stats), [Substack API and MCP server](https://github.com/cotletdev/substack-api-mcp-server) (schedule posts and Notes from Markdown, export subscribers and posts, comments, stats).
 
 Missing an app? [Request it on cotlet.dev](https://cotlet.dev/integrations#catalog-search), no account needed. If enough people ask, we add it.
 
@@ -243,6 +243,7 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 - GitHub: [github.com/cotletdev](https://github.com/cotletdev)
 - X: [@cotletdev](https://x.com/cotletdev)
 - Skool API and MCP server: [github.com/cotletdev/skool-api-mcp-server](https://github.com/cotletdev/skool-api-mcp-server)
+- Substack API and MCP server: [github.com/cotletdev/substack-api-mcp-server](https://github.com/cotletdev/substack-api-mcp-server)
 
 ## About
 

@@ -18,13 +18,15 @@ One hosted MCP server for all your apps. A REST API too.
 [REST API](https://cotlet.dev/docs/api) ·
 [Pricing](https://cotlet.dev/pricing) ·
 [Security](https://cotlet.dev/security) ·
-[Request access](https://cotlet.dev/signup)
+[Request access](https://cotlet.dev/signup) ·
+[X](https://x.com/cotletdev)
 
 [![Website](https://img.shields.io/badge/website-cotlet.dev-6d4aef)](https://cotlet.dev)
 [![MCP](https://img.shields.io/badge/MCP-Streamable%20HTTP-6d4aef)](https://cotlet.dev/docs/mcp)
 [![REST API](https://img.shields.io/badge/REST-%2Fapi%2Fv1-141318)](https://cotlet.dev/docs/api)
 [![Integrations](https://img.shields.io/badge/integrations-97%20apps-141318)](https://cotlet.dev/integrations)
 [![llms.txt](https://img.shields.io/badge/llms.txt-available-141318)](https://cotlet.dev/llms.txt)
+[![X](https://img.shields.io/badge/X-%40cotletdev-141318)](https://x.com/cotletdev)
 
 <img src="assets/og.png" alt="Cotlet: your AI agent, logged in to apps with no API. An agent chat moves bookings over MCP." width="720">
 
@@ -56,6 +58,7 @@ You sign in to each app **yourself, once**, in your browser. Cotlet keeps only t
 | **Market** | Worldwide, English |
 | **Company** | Take Group sp. z o.o., Katowice, Poland (EU) |
 | **Contact** | [contact@cotlet.dev](mailto:contact@cotlet.dev) |
+| **X** | [@cotletdev](https://x.com/cotletdev) |
 
 ## The problem
 
@@ -238,6 +241,7 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 - About: [cotlet.dev/about](https://cotlet.dev/about)
 - Contact: [cotlet.dev/contact](https://cotlet.dev/contact) · [contact@cotlet.dev](mailto:contact@cotlet.dev)
 - GitHub: [github.com/cotletdev](https://github.com/cotletdev)
+- X: [@cotletdev](https://x.com/cotletdev)
 - Skool API and MCP server: [github.com/cotletdev/skool-api-mcp-server](https://github.com/cotletdev/skool-api-mcp-server)
 
 ## About

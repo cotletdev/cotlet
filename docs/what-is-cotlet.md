@@ -27,6 +27,7 @@
 | Market | Worldwide, English |
 | Operator | Take Group sp. z o.o., Katowice, Poland |
 | Contact | contact@cotlet.dev |
+| X | [@cotletdev](https://x.com/cotletdev) |
 | GitHub | https://github.com/cotletdev |
 
 ## What Cotlet is

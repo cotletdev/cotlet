@@ -51,6 +51,10 @@ Agents can only do what you ticked.
 2. **Paused within 24 hours.** The integration stops for everyone.
 3. **Your credits refunded.** Affected credits come back to you.
 
+## Uptime
+
+An independent monitor, Better Stack, checks the website, console and API every 3 minutes from Europe, North America, Asia and Australia. Live status and every outage are public at [status.cotlet.dev](https://status.cotlet.dev).
+
 ## Where the servers are
 
 In the European Union: the console, API, database and session vault run in a data centre in Finland. A CDN serves the public website worldwide.

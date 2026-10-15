@@ -59,7 +59,6 @@ In the European Union: the console, API, database and session vault run in a dat
 
 Planned, not done yet. Cotlet will say when they ship.
 
-- **SOC 2 Type II**: independent audit of controls.
 - **Service accounts**: add a Cotlet user to your team app instead of your own login.
 
 ## Your responsibility

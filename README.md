@@ -177,13 +177,14 @@ Missing an app? [Request it on cotlet.dev](https://cotlet.dev/integrations#catal
 
 Your login stays yours. The model never sees it.
 
-- **No stored passwords.** You sign in to each app yourself. Cotlet keeps only the session, encrypted with AES-256.
+- **No stored passwords.** You sign in to each app yourself. Cotlet keeps only the session, encrypted with AES-256-GCM, the same cipher 1Password uses for its vaults.
 - **One isolated session per user and app**, never shared between users.
 - **The AI model never sees a login.** Agents call tools, not sessions.
 - **No payload retention.** Data passes through a call to your agent and is not kept.
 - **Scoped consent.** You choose what each app allows: read only, read and edit, or full with your confirmation on every send. Actions that reach other people wait for your OK by default.
 - **Revoke in one click.** Disconnect an app and its session is deleted at once.
 - **What we never do:** break CAPTCHAs, bypass MFA, automate banks without a licence, touch LinkedIn or Instagram, keep going after a cease-and-desist, or store your data longer than the call.
+- **Checked by independent scanners:** A+ on [Qualys SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=cotlet.dev), [securityheaders.com](https://securityheaders.com/?q=cotlet.dev&followRedirects=on) and [Mozilla Observatory](https://developer.mozilla.org/en-US/observatory/analyze?host=cotlet.dev).
 - **Hosted in the EU:** the console, API, database and session vault run in a data centre in Finland.
 
 More: [docs/security.md](docs/security.md) and [cotlet.dev/security](https://cotlet.dev/security).

@@ -9,15 +9,23 @@ Your login stays yours. You sign in yourself; Cotlet keeps only the session, sco
 Your password never reaches Cotlet. Only the session goes into the vault.
 
 ```text
-You (sign in once) ──▶ Encrypted vault (AES-256) ──▶ Isolated session (per user and app) ──▶ The app (human-paced calls)
+You (sign in once) ──▶ Encrypted vault (AES-256-GCM) ──▶ Isolated session (per user and app) ──▶ The app (human-paced calls)
 
 AI model ──tool calls──▶ Cotlet        (the model never sees a login or a password)
 ```
 
-- **No stored passwords.** Only the session, encrypted with AES-256.
+- **No stored passwords.** Only the session, encrypted with AES-256-GCM, the same cipher 1Password uses for its vaults and Apple for iCloud Keychain.
 - **One isolated session per user and app.** Never shared between users.
 - **The model never sees a login.** Agents call tools, not sessions.
 - **No payload retention.** Data passes through. Nothing is kept after the call.
+
+## Checked by independent scanners
+
+Free public tests anyone can rerun on cotlet.dev:
+
+- **A+ on [Qualys SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=cotlet.dev)**: encryption in transit, TLS setup and certificates.
+- **A+ on [securityheaders.com](https://securityheaders.com/?q=cotlet.dev&followRedirects=on)**: browser protections sent with every page.
+- **A+ on [Mozilla Observatory](https://developer.mozilla.org/en-US/observatory/analyze?host=cotlet.dev)**: Mozilla's web security baseline.
 
 ## Scoped consent, action by action
 

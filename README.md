@@ -41,7 +41,7 @@ One hosted MCP server for all your apps. A REST API too.
 - as tools in **one remote MCP server** (`https://cotlet.dev/mcp/v1`) for AI agents such as Claude, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf and n8n;
 - as a **REST API** (`https://cotlet.dev/api/v1`) for your own scripts and cron jobs.
 
-You sign in to each app **yourself, once**, in your browser. Cotlet keeps only the session, never your password. From then on your agent works **in your own account**, as you, and does the clicking for you: it moves bookings, sends invoices, approves members, pulls reports, relists items.
+Every account gets **its own Chrome in the cloud**, the Cloud Browser. Sign in to your apps there **yourself, once**, enable them for your agents, and your agent works **in your own account** 24/7, even when your computer is off: it moves bookings, sends invoices, approves members, pulls reports, relists items. Cotlet never saves your password, and every background request is listed.
 
 > **In one sentence:** Cotlet lets your AI agent sign in to the apps you click through by hand and do the work over MCP, without waiting for the vendor to ship an API.
 
@@ -84,13 +84,13 @@ Of the 97 apps in the Cotlet catalog today, **26 have no official API at all**, 
 Cotlet builds and maintains the missing access, then hands it to your agent as ordinary tools.
 
 ```text
- You          ──sign in once──▶  App (Skool, Booksy, Substack, ...)
+ You ──sign in once──▶ Your Cloud Browser (Chrome in the cloud) ──▶ App (Skool, Booksy, Substack, ...)
                                    ▲
- Your agent ──MCP / REST──▶ Cotlet ┘  works in your account with your saved session
+ Your agent ──MCP / REST──▶ Cotlet ┘  same requests as your browser: its IP, its cookies
 ```
 
 1. **Pick your apps** from the [catalog](https://cotlet.dev/integrations), or request one that is missing.
-2. **Sign in once** to each app yourself, on the Cotlet connect page. Only the session is kept, encrypted.
+2. **Sign in once** to each app yourself, in your Cloud Browser, and press **Enable for agents** (read only or read and write). Password saving is off.
 3. **Add Cotlet to your agent** with one MCP URL. Every app you connect shows up as tools.
 4. **Let the agent do it**, on request or on a schedule. The chore is gone.
 
@@ -177,15 +177,16 @@ Missing an app? [Request it on cotlet.dev](https://cotlet.dev/integrations#catal
 
 Your login stays yours. The model never sees it.
 
-- **No stored passwords.** You sign in to each app yourself. Cotlet keeps only the session, encrypted with AES-256-GCM, the same cipher 1Password uses for its vaults.
-- **One isolated session per user and app**, never shared between users.
-- **The AI model never sees a login.** Agents call tools, not sessions.
+- **You sign in yourself, in your own browser.** One Cloud Browser per workspace, never shared. Password saving is off, so Cotlet never saves your password; the profile is stored encrypted with AES-256-GCM.
+- **Your agents only get the apps you enable.** Signing in alone gives them nothing.
+- **Every background request is listed.** To be fast, Cotlet doesn't click through pages: it sends the same requests your browser would, from its IP with its cookies, and lists each one in your Background activity.
+- **The AI model never sees a login.** Agents call tools, not cookies.
 - **No payload retention.** Data passes through a call to your agent and is not kept.
-- **Scoped consent.** You choose what each app allows: read only, read and edit, or full with your confirmation on every send. Actions that reach other people wait for your OK by default.
-- **Revoke in one click.** Disconnect an app and its session is deleted at once.
+- **Scoped access.** Each app is read only or read and write, each API key can be narrowed further, and actions that reach other people wait for your OK by default.
+- **Cut access in one click.** Disable for agents, sign out of the app in the browser, or Reset browser.
 - **What we never do:** break CAPTCHAs, bypass MFA, automate banks without a licence, touch LinkedIn or Instagram, keep going after a cease-and-desist, or store your data longer than the call.
 - **Checked by independent scanners:** A+ on [Qualys SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=cotlet.dev), [securityheaders.com](https://securityheaders.com/?q=cotlet.dev&followRedirects=on) and [Mozilla Observatory](https://developer.mozilla.org/en-US/observatory/analyze?host=cotlet.dev).
-- **Hosted in the EU:** the console, API, database and session vault run in a data centre in Finland.
+- **Hosted in the EU:** the console, API, database and Cloud Browsers run in a data centre in Finland.
 
 More: [docs/security.md](docs/security.md) and [cotlet.dev/security](https://cotlet.dev/security).
 
@@ -212,16 +213,16 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 |---|---|
 | [docs/what-is-cotlet.md](docs/what-is-cotlet.md) | Definition, positioning, key facts |
 | [docs/problem.md](docs/problem.md) | Why agents stop at the login page and what "no API" really means |
-| [docs/how-it-works.md](docs/how-it-works.md) | The four steps, sessions, confirmations, what happens when a site changes |
+| [docs/how-it-works.md](docs/how-it-works.md) | The four steps, the Cloud Browser, confirmations, what happens when a site changes |
 | [docs/mcp-server.md](docs/mcp-server.md) | MCP server setup for every client, tool naming, errors |
 | [docs/rest-api.md](docs/rest-api.md) | REST API: auth, calls, pagination, confirmation, error codes |
 | [docs/integrations.md](docs/integrations.md) | All 97 apps with official API status and tools |
 | [docs/use-cases.md](docs/use-cases.md) | 526 jobs people hand to their agent, app by app |
-| [docs/security.md](docs/security.md) | How access is held, consent, what we never do |
+| [docs/security.md](docs/security.md) | The Cloud Browser, how access is held, what we never do |
 | [docs/pricing.md](docs/pricing.md) | Trial, plans, credits |
 | [docs/comparison.md](docs/comparison.md) | Cotlet vs DIY scripts, RPA, browser agents and official APIs |
 | [docs/faq.md](docs/faq.md) | Frequently asked questions |
-| [docs/glossary.md](docs/glossary.md) | MCP, credits, session, connect page and other terms |
+| [docs/glossary.md](docs/glossary.md) | MCP, credits, Cloud Browser, Background activity and other terms |
 | [docs/brand.md](docs/brand.md) | Name, logo, colors, how to write about Cotlet |
 | [docs/for-ai-agents.md](docs/for-ai-agents.md) | Facts and endpoints for AI agents and LLM crawlers |
 

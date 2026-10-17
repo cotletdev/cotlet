@@ -12,8 +12,8 @@ When an app has no usable API, there are a few ways to get an AI agent or a scri
 | REST API for scripts | No | Build it yourself | Sometimes | No | Yes | **Yes, same key** |
 | Who fixes it when the site changes | Nobody needs to | You | You | Nobody, it retries | The vendor | **Cotlet, tested daily** |
 | Failed runs cost you | Time | Time | Licence + time | Tokens | Depends | **Nothing, credits refunded** |
-| Where your password lives | In your head | Often in a `.env` file | In the RPA vault | Often in the prompt or browser | OAuth | **Nowhere: only an encrypted session** |
-| Setup | None | Install, configure, host | Build flows | Prompting each time | Apply, get approved, code | **Sign in once, paste one URL** |
+| Where your password lives | In your head | Often in a `.env` file | In the RPA vault | Often in the prompt or browser | OAuth | **Nowhere: you sign in in your own Cloud Browser, password saving off** |
+| Setup | None | Install, configure, host | Build flows | Prompting each time | Apply, get approved, code | **Sign in once in your Cloud Browser, paste one URL** |
 
 ## When to use what
 

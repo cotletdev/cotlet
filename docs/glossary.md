@@ -11,11 +11,17 @@ A documented way for code to talk to an app. Cotlet exists for apps where the of
 **Canary test**
 A test Cotlet runs every day against each integration. If it fails, calls to that integration pause until the fix ships.
 
+**Background activity**
+The list in the Cotlet console of every request Cotlet sends from the user's Cloud Browser, and every visit that keeps the user signed in: time, app, tool, method, address and status, without the content.
+
+**Cloud Browser**
+The user's own Chrome in the cloud, one per workspace, opened from the console at `cotlet.dev/app/browser`. The user signs in to apps there and enables them for agents. It has a fixed IP, sleeps when idle and wakes in seconds; password saving is off.
+
 **Confirmation**
 A step where an action that reaches other people (publish, message, email) waits for the user's OK before it runs. On by default; can be switched off per tool.
 
-**Connect page**
-The page at `cotlet.dev/app/connect/{app}` where the user signs in to an app themselves. Cotlet keeps only the resulting session.
+**Enable for agents**
+The step after signing in to an app in the Cloud Browser: only enabled apps can be used by the user's agents, read only or read and write. "Disable for agents" cuts them off and keeps the user signed in.
 
 **Credits**
 The only billing unit at Cotlet. Each successful call uses credits for the work it takes, at one rate for every app. Each month's credits stay valid for 3 months.
@@ -36,10 +42,10 @@ How an account gets access to Cotlet: the user picks their apps, the request is 
 The same actions as the MCP tools, callable over HTTP at `https://cotlet.dev/api/v1/{app}/{endpoint}` with the same key.
 
 **Scope**
-What the user allowed for an app when connecting it: read only, read and edit, or full with confirmation on every send. A call outside it returns `SCOPE_DENIED`.
+What the user allowed for an app when enabling it for agents: read only or read and write; an API key can be narrowed further to chosen apps and tools. A call outside it returns `SCOPE_DENIED`.
 
 **Session**
-The signed-in state an app gives the user after login. Cotlet stores only this, encrypted with AES-256, one isolated session per user and app. Never the password.
+The signed-in state an app gives the user after login. At Cotlet it lives in the user's Cloud Browser, as cookies in a profile stored encrypted with AES-256-GCM. The password is never saved.
 
 **Tool**
 One action an agent can call, named `{app}_{endpoint}`, such as `skool_list_members`, with a JSON Schema for its inputs and outputs.

@@ -102,7 +102,7 @@ A failed tool call returns a result with `isError: true` and a message your agen
 
 ```json
 {
-  "content": [{ "type": "text", "text": "AUTH_EXPIRED: your Skool session expired. Ask the user to sign in again: https://cotlet.dev/app/connect/skool" }],
+  "content": [{ "type": "text", "text": "AUTH_EXPIRED: Skool signed the user out. Ask the user to sign in to the app again in their Cloud Browser at browser_url, then call again. browser_url: https://cotlet.dev/app/browser" }],
   "isError": true
 }
 ```

@@ -44,7 +44,7 @@ The mark is a white meat mallet cut out of a black rounded tile. The wordmark is
 
 - **Short:** Your AI agent, logged in to the apps that never built an API.
 - **One line:** Hosted MCP servers and REST APIs for apps with no usable API. Your agent signs in as you and does the work.
-- **Paragraph:** Cotlet is a catalog of hosted integrations for web apps that have no official API, or only a narrow one. Each integration is exposed as tools in one remote MCP server and as a REST API. The user signs in to each app once in a browser; Cotlet keeps only the encrypted session, never the password, and the agent then works in the user's own account.
+- **Paragraph:** Cotlet is a catalog of hosted integrations for web apps that have no official API, or only a narrow one. Each integration is exposed as tools in one remote MCP server and as a REST API. Each user gets their own Chrome in the cloud, signs in to each app there once and enables it for agents; Cotlet never saves the password, lists every background request, and the agent then works in the user's own account.
 
 ### Voice
 

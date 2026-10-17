@@ -98,10 +98,11 @@ Errors return JSON with an `error` code, a `message` written for your agent, and
 | 403 | `api_key_required` | No API key on the call. | Send `Authorization: Bearer`. |
 | 403 | `access_not_granted` | The key has no access to this app. | Request access with the link in the error. |
 | 404 | `unknown_app`, `unknown_endpoint` | No such app or endpoint. | The error lists the valid names. |
-| 409 | `AUTH_REQUIRED` | The app is not connected yet. | Open the `connect_url` and sign in. |
-| 409 | `AUTH_EXPIRED` | The app session expired or was revoked. | Open the `connect_url` and sign in again. |
-| 409 | `CAPTCHA_REQUIRED`, `MFA_REQUIRED` | The app asked for a check only you can pass. | Finish it on the connect page. |
-| 403 | `SCOPE_DENIED` | The action is outside what you allowed. | Widen access in the dashboard. |
+| 403 | `AUTH_REQUIRED` | The app is not signed in to in your Cloud Browser, or not enabled for agents. | Open the `browser_url`, sign in and press Enable for agents. |
+| 403 | `AUTH_EXPIRED` | The app signed you out. | Open the `browser_url` and sign in again. |
+| 403 | `CAPTCHA_REQUIRED`, `MFA_REQUIRED` | The app asked for a check only you can pass. | Finish it in your Cloud Browser at the `browser_url`. |
+| 403 | `SCOPE_DENIED` | The action is outside what you allowed. | Switch the app to read and write at the `browser_url`, or widen the key in the dashboard. |
+| 403 | `BROWSER_SUSPENDED` | Cotlet suspended your Cloud Browser. | Contact Cotlet at the `support_url`. |
 | 429 | `rate_limited` | Too many requests. | Wait for `Retry-After` seconds. |
 | 503 | `TARGET_BLOCKED` | The app blocked access; the endpoint is paused. | Try later. Credits are refunded. |
 

@@ -2,7 +2,7 @@
 
 [← Back to README](../README.md) · On the website: [cotlet.dev/how-it-works](https://cotlet.dev/how-it-works)
 
-Sign in once. Your agent does the clicking.
+Your own Chrome in the cloud. Sign in to your apps once, your agent works in them 24/7, even when your computer is off.
 
 ## Four steps from your app to a finished task
 
@@ -10,11 +10,15 @@ Sign in once. Your agent does the clicking.
 
 Pick it from the [catalog](https://cotlet.dev/integrations). Its tools are ready to use. Not there? Request it; if enough people ask, it gets built.
 
-### 2. Sign in with your account
+### 2. Sign in, in your Cloud Browser
 
-[Request access](https://cotlet.dev/signup) and pick your apps. Each request is reviewed and the API key arrives by email. Then you sign in to each app yourself, once, in a browser on the Cotlet connect page. You pass any 2FA or CAPTCHA yourself. Cotlet never sees or stores your password; only the session is kept, encrypted with AES-256.
+[Request access](https://cotlet.dev/signup) and pick your apps. Each request is reviewed and you get an email when your account is ready. Then:
 
-While connecting, you choose what the agent may do in that app: **read only**, **read and edit**, or **full**, with your confirmation on every send.
+1. **Open your Cloud Browser** in the console (`cotlet.dev/app/browser`). It is one Chrome per workspace that runs on Cotlet's servers in the EU, with a fixed IP shown in the console. You use it like a remote desktop: tabs, address bar, copy and paste.
+2. **Sign in to the app yourself**, on the app's own page, also with Google if you like. You pass any 2FA or CAPTCHA yourself. Password saving and autofill are off in this browser, so Cotlet never saves your password.
+3. **Enable it for your agents.** The console shows the apps you are signed in to ("Skool: signed in as Jake"). Signing in alone gives agents nothing; you press **Enable for agents** and pick **read only** or **read and write**.
+
+The browser sleeps when nobody uses it and wakes in seconds; its profile is stored encrypted with AES-256-GCM.
 
 ### 3. Add it to your agent over MCP
 
@@ -33,7 +37,7 @@ Your agent does the work on request or on a schedule:
 
 > *"Move all of Friday's bookings to Monday and let the clients know."*
 >
-> Tool call over MCP → signed in with your session → bookings moved in the app.
+> Tool call over MCP → signed in, in your Cloud Browser → bookings moved in the app.
 >
 > *"Done. 6 bookings moved to Monday, clients notified."*
 
@@ -41,12 +45,12 @@ Your agent does the work on request or on a schedule:
 
 ```text
 Your agent ──tools/call──▶ Cotlet MCP server ──▶ checks key, plan and consent
-                                              ──▶ runs the action in your account with your session
+                                              ──▶ sends the app's own request from your Cloud Browser's IP, with its cookies
                                               ◀── returns structured JSON
 ```
 
 1. Cotlet checks your API key, your access to the app and the scope you allowed.
-2. The action runs in an isolated session for you and that app, at a human pace.
+2. To be fast, Cotlet doesn't click through pages. It sends the same requests your browser would, from your browser's IP with its cookies, at a human pace. Every request is listed in your **Background activity** in the console.
 3. The result comes back as JSON: `structuredContent` for code and text for the model.
 4. Credits are used only if the call succeeds.
 
@@ -54,9 +58,15 @@ Your agent ──tools/call──▶ Cotlet MCP server ──▶ checks key, pla
 
 Actions that reach other people (publish, message, email) wait for your OK by default. The call returns `awaiting_confirmation` with a link; you approve, and the agent reads the result. To run such a job on a schedule, switch confirmation off for that tool in your dashboard.
 
-## When the session expires
+## When an app signs you out
 
-The call returns `AUTH_EXPIRED` with a link. Your agent asks you to sign in again. Cotlet never logs in for you.
+The call returns `AUTH_EXPIRED` with a `browser_url` to your Cloud Browser, and you get an email. Your agent asks you to sign in again there. Cotlet never logs in for you.
+
+## How you cut access
+
+- **Sign out** of the app in your Cloud Browser: calls stop from the next one.
+- **Disable for agents** next to the app: agents lose access at once, you stay signed in.
+- **Reset browser** in Settings: the whole profile is deleted.
 
 ## When a site changes
 
@@ -70,7 +80,7 @@ Every integration has its own status.
 
 ## Your password and data stay yours
 
-- **No password stored.** You sign in yourself; Cotlet keeps only an encrypted session you can revoke.
+- **No password saved.** You sign in yourself, in your own browser, where password saving is off.
 - **Cotlet does not read your data.** It goes from the app straight to your agent.
 - **Nothing saved to disk.** Results live in memory for the call and are gone after it.
 

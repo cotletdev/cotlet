@@ -39,7 +39,7 @@
 
 ## What Cotlet is not
 
-- **Not a password manager.** Cotlet never stores passwords. The user signs in to each app themselves.
+- **Not a password manager.** Cotlet never saves passwords: the user signs in to each app themselves, in their own Cloud Browser, where password saving is off.
 - **Not a CAPTCHA or MFA bypass.** The user passes those checks; Cotlet never solves or skips them.
 - **Not a scraper of other people's data.** The agent works only in the user's own account, with the user's own login.
 - **Not an official API.** Cotlet is unofficial and not affiliated with any app in its catalog.

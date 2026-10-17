@@ -54,7 +54,7 @@ Every account gets **its own Chrome in the cloud**, the Cloud Browser. Sign in t
 | **For** | People and small teams who work with AI agents: creators, community owners, course sellers, agencies, local service businesses, real estate pros, freelancers, developers |
 | **Works with** | Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n and any MCP client |
 | **Catalog** | 97 apps in 6 categories ([full list](docs/integrations.md)), 526 documented use cases ([list](docs/use-cases.md)) |
-| **Pricing** | Free 7-day trial with 5,000 credits, then one plan from $29/month ([details](docs/pricing.md)) |
+| **Pricing** | Free 7-day trial with 2,000 credits, then credit packs from $29, one-time, no subscription ([details](docs/pricing.md)) |
 | **Market** | Worldwide, English |
 | **Company** | Take Group sp. z o.o., Katowice, Poland (EU) |
 | **Contact** | [contact@cotlet.dev](mailto:contact@cotlet.dev) |
@@ -192,16 +192,17 @@ More: [docs/security.md](docs/security.md) and [cotlet.dev/security](https://cot
 
 ## Pricing
 
-Pay like you pay for an API: one plan in three sizes, billed in credits that stay valid for 3 months.
+Pay as you go, no subscription: one-time credit packs, valid 12 months. Every account starts with a free 7-day trial and 2,000 credits, no card needed.
 
-| Plan | Price | Credits per month | Best for |
-|---|---|---|---|
-| **Free trial** | $0 for 7 days | 5,000 | Trying Cotlet, no card needed |
-| **Solo** | $29/month | 3,000 | One agent, a few tasks a day |
-| **Pro** | $99/month | 12,000 | Daily agent work across your tools |
-| **Agency** | $299/month | 40,000 | Agencies and teams with many apps |
+| Pack | Price | Credits |
+|---|---|---|
+| 5,000 credits | $29 | 5,000 |
+| 15,000 credits | $79 | 15,000 |
+| 32,000 credits | $149 | 32,000 |
+| 60,000 credits | $249 | 60,000 |
+| 140,000 credits | $499 | 140,000 |
 
-Every size includes every app, one MCP server and REST API key, credits valid for 3 months and a hard spend cap. Only successful calls use credits. Nothing is charged until your access is active. Details: [docs/pricing.md](docs/pricing.md).
+Two things use credits: a successful call (20 to 30 credits, 25 for most tools) and your Cloud Browser (50 credits a day while it has an app enabled for agents, however many apps that is). Failed calls cost nothing, and nothing is charged without a purchase. Details: [docs/pricing.md](docs/pricing.md).
 
 ## Why not a script from GitHub?
 
@@ -219,7 +220,7 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 | [docs/integrations.md](docs/integrations.md) | All 97 apps with official API status and tools |
 | [docs/use-cases.md](docs/use-cases.md) | 526 jobs people hand to their agent, app by app |
 | [docs/security.md](docs/security.md) | The Cloud Browser, how access is held, what we never do |
-| [docs/pricing.md](docs/pricing.md) | Trial, plans, credits |
+| [docs/pricing.md](docs/pricing.md) | Trial, credit packs, what uses credits |
 | [docs/comparison.md](docs/comparison.md) | Cotlet vs DIY scripts, RPA, browser agents and official APIs |
 | [docs/faq.md](docs/faq.md) | Frequently asked questions |
 | [docs/glossary.md](docs/glossary.md) | MCP, credits, Cloud Browser, Background activity and other terms |

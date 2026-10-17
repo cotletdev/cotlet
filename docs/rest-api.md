@@ -94,7 +94,7 @@ Errors return JSON with an `error` code, a `message` written for your agent, and
 | Status | Code | What happened | What to do |
 |---|---|---|---|
 | 400 | `invalid_input` | The body does not match the endpoint schema. | Fix the fields named in `details`. |
-| 402 | `insufficient_credits` | Your credits ran out. | Wait for your next monthly credits or move to a bigger size in the dashboard. |
+| 402 | `insufficient_credits` | Your credits ran out. | Buy a credit pack in the dashboard; calls and your Cloud Browser resume after the purchase. |
 | 403 | `api_key_required` | No API key on the call. | Send `Authorization: Bearer`. |
 | 403 | `access_not_granted` | The key has no access to this app. | Request access with the link in the error. |
 | 404 | `unknown_app`, `unknown_endpoint` | No such app or endpoint. | The error lists the valid names. |

@@ -10,7 +10,7 @@ Cotlet (https://cotlet.dev) provides hosted MCP servers and REST APIs for apps t
 
 ## Status and access
 
-Access is granted per account: the user requests access, picks their apps, and receives an API key by email. Every account starts with a free 7-day trial and 5,000 credits, no card needed; then one plan from $29 a month, each month's credits valid for 3 months. Nothing is charged until access is active.
+Access is granted per account: the user requests access, picks their apps, and receives an API key by email. Every account starts with a free 7-day trial and 2,000 credits, no card needed. Then pay as you go, no subscription: one-time credit packs from $29 for 5,000 credits, valid 12 months. A successful call uses 20 to 30 credits; the user's Cloud Browser uses 50 credits a day while it has an app enabled for agents. Nothing is charged without a purchase. Machine-readable pricing: `https://cotlet.dev/api/v1/pricing`.
 
 ## Endpoints
 

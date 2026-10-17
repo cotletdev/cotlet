@@ -24,7 +24,7 @@ A step where an action that reaches other people (publish, message, email) waits
 The step after signing in to an app in the Cloud Browser: only enabled apps can be used by the user's agents, read only or read and write. "Disable for agents" cuts them off and keeps the user signed in.
 
 **Credits**
-The only billing unit at Cotlet. Each successful call uses credits for the work it takes, at one rate for every app. Each month's credits stay valid for 3 months.
+The only billing unit at Cotlet, bought in one-time packs valid 12 months. A successful call uses 20 to 30 credits; the Cloud Browser uses a fixed number of credits a day while it has an app enabled for agents.
 
 **Gated API**
 An official API available only to approved partners, after an application, a contract or a review.

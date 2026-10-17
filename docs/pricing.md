@@ -1,56 +1,37 @@
 # Cotlet pricing
 
-[← Back to README](../README.md) · On the website: [cotlet.dev/pricing](https://cotlet.dev/pricing)
+[← Back to README](../README.md) · On the website: [cotlet.dev/pricing](https://cotlet.dev/pricing) · Machine-readable: `https://cotlet.dev/api/v1/pricing`
 
-Pay like you pay for an API. One plan in three sizes. Pay for the credits your agent uses, and keep them for 3 months. Prices in USD as of October 2026.
+Pay as you go, no subscription. You buy a credit pack once, it stays valid for 12 months, and nothing renews. Prices in USD without tax, as of October 2026.
 
 ## Free trial
 
-Every account starts with a **free 7-day trial and 5,000 credits**, no card needed. The trial starts when your access is active.
+Every account starts with a **free 7-day trial and 2,000 credits**, no card needed. You start it in the dashboard once your access is active.
 
-## Plans
+## Credit packs
 
-| Size | Price | Credits each month | Price per credit | Most you can hold | Best for |
-|---|---|---|---|---|---|
-| **Solo** | $29/month | 3,000 | about $0.0097 | 9,000 | One agent, a few tasks a day |
-| **Pro** | $99/month | 12,000 | about $0.0083 | 36,000 | Daily agent work across your tools |
-| **Agency** | $299/month | 40,000 | $0.0075 | 120,000 | Agencies and teams with many apps |
+| Pack | Price | Price per 1,000 credits |
+|---|---|---|
+| 5,000 credits | $29 | $5.80 |
+| 15,000 credits | $79 | $5.27 |
+| 32,000 credits | $149 | $4.66 |
+| 60,000 credits | $249 | $4.15 |
+| 140,000 credits | $499 | $3.56 |
 
-Every size includes:
+Need more, or a DPA? [Talk to us](https://cotlet.dev/contact).
 
-- Every app, no app limit
-- MCP and REST API, one key
-- Credits valid for 3 months
-- Only successful calls use credits
-- Hard spend cap, on by default
-- Email support
+## Two things use credits
 
-Need more credits, a DPA or status webhooks? [Talk to us about Enterprise](https://cotlet.dev/contact).
+- **A successful call:** 20 to 30 credits, 25 for most tools. Each tool shows its rate in the dashboard.
+- **Your Cloud Browser:** 50 credits for every started day it has an app enabled for agents, however many apps that is. It is your own Chrome in the cloud, signed in to your apps 24/7.
+
+Example: one app, 20 calls a day = 20 × 25 + 50 = 550 credits a day, about 3,850 a week.
 
 ## How credits work
 
-- **Pay for what you use.** Each call uses credits for the work it takes.
-- **One rate for every app.** No per-app prices or action tiers.
 - **Only successful calls.** Errors and timeouts cost nothing.
-- **Hard spend cap on by default.** Calls stop before a surprise bill.
+- **Packs stack.** The credits that expire soonest are used first, and you get an email a week before any expire.
+- **At 0, everything pauses.** Calls and your Cloud Browser stop until you buy a pack. Never a surprise charge.
+- **No auto top-up.** Nothing is charged unless you buy a pack yourself.
 
-Credits are the only unit you will see: no tokens, tasks or action tiers.
-
-## Credits don't reset. They stack.
-
-Each month's credits stay valid for 3 months, so a quiet month is never wasted.
-
-| Month | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|
-| Solo, if your agent uses nothing | 3,000 | 6,000 | 9,000 | 9,000 | 9,000 | 9,000 |
-
-- **Oldest first.** Cotlet always spends the credits that expire soonest.
-- **A week's notice.** You get an email before any credits expire.
-- **If you cancel**, you keep your credits until they expire.
-
-## Billing
-
-- Nothing is charged until your access is active.
-- Payments are processed by Stripe. Cotlet never sees your card number, and you add a card only after the trial.
-- Plans are billed monthly, with no long-term contract. Cancel anytime; switch sizes anytime.
-- When credits run out, calls pause until your next monthly payment, or you move to a bigger size.
+Credits are the only unit you will see: no tokens, tasks or action tiers. Payments are processed by Stripe.

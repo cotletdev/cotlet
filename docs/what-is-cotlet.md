@@ -21,7 +21,7 @@
 | Auth | One API key (`Authorization: Bearer`) for MCP and REST; OAuth in MCP clients that support it |
 | Catalog | 97 apps, 526 documented use cases |
 | Clients | Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n, any MCP client |
-| Pricing | Free 7-day trial with 5,000 credits; plans from $29/month |
+| Pricing | Free 7-day trial with 2,000 credits; one-time credit packs from $29, no subscription |
 | Access | Request access; each account is reviewed and gets its API key by email |
 | Hosting | European Union (Finland) |
 | Market | Worldwide, English |

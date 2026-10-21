@@ -13,7 +13,7 @@ Cotlet hosts an MCP server and a REST API for each of the **97 apps** below. Eve
 
 Each app links to its page on cotlet.dev with sources for the official API status, every tool with its parameters and example responses, and use cases. Add `.md` to any integration URL for a Markdown version.
 
-Tool names follow `{app}_{endpoint}`, for example `skool_list_members` over MCP and `POST /api/v1/skool/list_members` over REST.
+Over MCP each app is one tool (`skool`) and its endpoints are operations (`list_members`); over REST the same endpoint is `GET /api/v1/skool/groups/{group}/members`.
 
 ## Creators & communities
 

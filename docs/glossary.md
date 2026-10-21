@@ -48,7 +48,7 @@ What the user allowed for an app when enabling it for agents: read only or read 
 The signed-in state an app gives the user after login. At Cotlet it lives in the user's Cloud Browser, as cookies in a profile stored encrypted with AES-256-GCM. The password is never saved.
 
 **Tool**
-One action an agent can call, named `{app}_{endpoint}`, such as `skool_list_members`, with a JSON Schema for its inputs and outputs.
+One action an agent can call. Over MCP each app is one tool, such as `skool`, and its endpoints are operations such as `list_members`, each with a JSON Schema for its inputs and outputs.
 
 **Unofficial integration**
 An integration built without the app vendor's involvement. Cotlet is unofficial and not affiliated with any app in its catalog.

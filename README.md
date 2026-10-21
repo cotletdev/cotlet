@@ -106,7 +106,7 @@ claude mcp add --transport http cotlet https://cotlet.dev/mcp/v1 \
 ```
 
 <details>
-<summary>Cursor, Codex, Claude Desktop, ChatGPT, n8n</summary>
+<summary>Cursor, Codex, Cline, Claude Desktop, ChatGPT, n8n, Make, Zapier</summary>
 
 **Cursor** (`~/.cursor/mcp.json`)
 
@@ -129,11 +129,31 @@ url = "https://cotlet.dev/mcp/v1"
 bearer_token_env_var = "COTLET_API_KEY"
 ```
 
-**Claude Desktop**: Settings > Connectors > Add custom connector, name `Cotlet`, URL `https://cotlet.dev/mcp/v1`.
+**Cline** (`cline_mcp_settings.json`)
 
-**ChatGPT**: Settings > Apps & Connectors > Create, MCP server URL `https://cotlet.dev/mcp/v1`, authentication OAuth.
+```json
+{
+  "mcpServers": {
+    "cotlet": {
+      "type": "streamableHttp",
+      "url": "https://cotlet.dev/mcp/v1",
+      "headers": { "Authorization": "Bearer <your key>" }
+    }
+  }
+}
+```
 
-**n8n**: node *MCP Client Tool*, endpoint `https://cotlet.dev/mcp/v1`, Header Auth `Authorization: Bearer <your key>`.
+**Claude Desktop**: Settings > Connectors > Add custom connector, name `Cotlet`, URL `https://cotlet.dev/mcp/v1/connect`, then sign in to Cotlet.
+
+**ChatGPT**: Settings > Apps & Connectors > Create, MCP server URL `https://cotlet.dev/mcp/v1/connect`, authentication OAuth.
+
+**n8n**: node *MCP Client* (or *MCP Client Tool* in an AI Agent), Server Transport *HTTP Streamable*, endpoint `https://cotlet.dev/mcp/v1`, Authentication *Bearer Auth* with your key.
+
+**Make**: app *MCP Client* > *Call a tool*, new MCP server with URL `https://cotlet.dev/mcp/v1` and your key in *API Key / Access token*.
+
+**Zapier**: action *MCP Client by Zapier* > *Run Tool*, server URL `https://cotlet.dev/mcp/v1`, transport *Streamable HTTP*, OAuth *No*, your key as *Bearer Token*.
+
+In every client each app is one tool, such as `skool`: put the operation in `tool` and its inputs in `arguments`, for example `{"tool": "list_groups", "arguments": {}}`. Full setup: [cotlet.dev/docs/mcp](https://cotlet.dev/docs/mcp).
 
 </details>
 
@@ -141,7 +161,7 @@ Then just ask:
 
 > *"Approve all pending membership requests in my Skool community and welcome them in a post."*
 
-Your agent calls `skool_list_members`, `skool_approve_membership_request` and `skool_create_post`, signed in as you. Setup details: [docs/mcp-server.md](docs/mcp-server.md).
+Your agent calls the `skool` tool with `list_members`, `approve_membership_request` and `create_post`, signed in as you. Setup details: [docs/mcp-server.md](docs/mcp-server.md).
 
 ### Or call it from a script
 

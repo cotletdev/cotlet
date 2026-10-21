@@ -10,7 +10,8 @@ One remote MCP server gives your agent every app on your account as tools. Add i
 |---|---|
 | URL | `https://cotlet.dev/mcp/v1` |
 | Transport | Streamable HTTP |
-| Auth | `Authorization: Bearer COTLET_API_KEY`, or OAuth sign-in in clients that support it |
+| Auth | `Authorization: Bearer COTLET_API_KEY` |
+| URL for OAuth sign-in | `https://cotlet.dev/mcp/v1/connect` (Claude.ai, Claude Desktop, ChatGPT, Claude Code without a key) |
 | Protocol versions | `2025-11-25`, `2025-06-18`, `2025-03-26`, `2024-11-05` |
 
 ## Connect a client
@@ -45,41 +46,88 @@ url = "https://cotlet.dev/mcp/v1"
 bearer_token_env_var = "COTLET_API_KEY"
 ```
 
+### Cline
+
+```json
+// cline_mcp_settings.json
+{
+  "mcpServers": {
+    "cotlet": {
+      "type": "streamableHttp",
+      "url": "https://cotlet.dev/mcp/v1",
+      "headers": { "Authorization": "Bearer <your key>" }
+    }
+  }
+}
+```
+
 ### Claude Desktop
 
 ```text
 Settings > Connectors > Add custom connector
 Name: Cotlet
-URL:  https://cotlet.dev/mcp/v1
+URL:  https://cotlet.dev/mcp/v1/connect
+
+Then Connect and sign in to Cotlet.
 ```
 
 ### ChatGPT
 
 ```text
 Settings > Apps & Connectors > Create
-MCP server URL: https://cotlet.dev/mcp/v1
+MCP server URL: https://cotlet.dev/mcp/v1/connect
 Authentication: OAuth
 ```
 
 ### n8n
 
 ```text
-Node: MCP Client Tool
-Endpoint: https://cotlet.dev/mcp/v1
-Authentication: Header Auth
-  Name:  Authorization
-  Value: Bearer <your key>
+Node: MCP Client (MCP Client Tool inside an AI Agent)
+Server Transport: HTTP Streamable
+MCP Endpoint URL: https://cotlet.dev/mcp/v1
+Authentication: Bearer Auth
+  Token: <your key>
+Tool: skool
+Input (JSON): {"tool": "list_groups", "arguments": {}}
 ```
+
+### Make
+
+```text
+App: MCP Client > Call a tool
+MCP Server: + New MCP Server
+  URL: https://cotlet.dev/mcp/v1
+  API Key / Access token: <your key>
+Tool Name: skool
+Arguments: {"tool": "list_groups", "arguments": {}}
+```
+
+### Zapier
+
+```text
+Action: MCP Client by Zapier > Run Tool
+Server URL: https://cotlet.dev/mcp/v1
+Transport: Streamable HTTP
+OAuth: No
+Bearer Token: <your key>
+Tool: skool
+  tool: list_groups
+  arguments: {}
+```
+
+n8n, Make, Zapier and Cline were tested on 21.10.2026 with an API key.
 
 Product names are trademarks of their owners. Cotlet is not affiliated with them.
 
 ## Tools
 
-- Each endpoint is one tool named `{app}_{endpoint}`, such as `skool_list_members`. Its input schema is the same JSON Schema as the REST endpoint.
-- `tools/list` returns the tools of every app; it needs no key.
-- Read endpoints carry `readOnlyHint: true`, so clients can run them without asking.
+- Each app is one tool named like the app, with dashes as underscores: `skool`, `pirate_ship`. Its endpoints are the operations of that tool.
+- `{"tool": "list_members", "arguments": {...}}` runs an operation. Its arguments are the same JSON Schema as the REST endpoint.
+- `{"tool": "list_members"}` alone returns that operation's description and input schema; `{}` lists every operation. Both are free.
+- `tools/list` needs no key: without one it returns a tool for every app; with a key or sign-in, only the apps and operations that credential may call.
+- An app whose operations all read carries `readOnlyHint: true`, so clients can run it without asking.
 - Each app is also a resource, `cotlet://apps/{app}`, with its description and endpoints.
-- Too many tools for your agent? Keep only the apps you use: add `?apps=skool,booksy` to the server URL.
+- Want fewer operations in front of your agent? Create a key for only the apps (or operations) you use.
 
 ## Calling a tool
 
@@ -91,7 +139,7 @@ curl -X POST https://cotlet.dev/mcp/v1 \
   -H "Content-Type: application/json" \
   -H "Accept: application/json, text/event-stream" \
   -d '{"jsonrpc": "2.0", "id": 1, "method": "tools/call",
-       "params": {"name": "skool_list_members", "arguments": {"group": "yourgroup"}}}'
+       "params": {"name": "skool", "arguments": {"tool": "list_members", "arguments": {"group": "yourgroup"}}}}'
 ```
 
 The result carries the output twice: as `structuredContent` for code and as JSON text for the model.

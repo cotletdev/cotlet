@@ -2,7 +2,7 @@
 
 [← Back to README](../README.md) · Live list: [cotlet.dev/use-cases](https://cotlet.dev/use-cases)
 
-A use case is one job you hand to your AI agent in an app that has no usable API: approve members, schedule a post, reply to reviews, export a report, move bookings. Cotlet documents **526 jobs across 97 apps**. Each page explains what the app offers by itself, the steps, the tools your agent calls and how to run the job on a schedule.
+A use case is one job you hand to your AI agent in an app that has no usable API: approve members, schedule a post, reply to reviews, export a report, move bookings. Cotlet documents **591 jobs across 192 apps**. Each page explains what the app offers by itself, the steps, the tools your agent calls and how to run the job on a schedule.
 
 ## Jobs people hand to their agent, by audience
 
@@ -19,820 +19,1169 @@ A use case is one job you hand to your AI agent in an app that has no usable API
 
 ## Every documented use case
 
+### Absorb LMS
+
+- [Approve Absorb LMS course enrollment requests](https://cotlet.dev/integrations/absorb-lms-api-mcp-server/approve-course-enrollment-requests)
+- [Chase overdue Absorb LMS training](https://cotlet.dev/integrations/absorb-lms-api-mcp-server/chase-overdue-training)
+- [Enroll new hires in Absorb LMS onboarding courses](https://cotlet.dev/integrations/absorb-lms-api-mcp-server/enroll-new-hires-in-onboarding)
+
+### Accelo
+
+- [Triage new Accelo tickets with AI](https://cotlet.dev/integrations/accelo-api-mcp-server/triage-new-tickets)
+- [Log time in Accelo with AI](https://cotlet.dev/integrations/accelo-api-mcp-server/log-time-on-tickets-and-projects)
+- [Reply to Accelo client tickets with AI](https://cotlet.dev/integrations/accelo-api-mcp-server/reply-to-client-tickets)
+
 ### AccuLynx
 
 - [Create AccuLynx jobs from new leads with AI](https://cotlet.dev/integrations/acculynx-api-mcp-server/create-jobs-from-new-leads)
-- [Upload inspection photos to an AccuLynx job](https://cotlet.dev/integrations/acculynx-api-mcp-server/upload-inspection-photos)
-- [Find stalled AccuLynx jobs and their estimates](https://cotlet.dev/integrations/acculynx-api-mcp-server/find-stalled-jobs)
+- [Find stalled AccuLynx jobs in Prospect or Completed](https://cotlet.dev/integrations/acculynx-api-mcp-server/find-stalled-jobs)
 - [Move an AccuLynx job to the next milestone](https://cotlet.dev/integrations/acculynx-api-mcp-server/move-job-to-next-milestone)
-- [List completed AccuLynx jobs that are not invoiced](https://cotlet.dev/integrations/acculynx-api-mcp-server/completed-jobs-not-invoiced)
+
+### Acuity Scheduling
+
+- [Reschedule Acuity appointments when you are out](https://cotlet.dev/integrations/acuity-scheduling-api-mcp-server/reschedule-appointments-when-you-are-out)
+- [Book an Acuity appointment for a client at the next open slot](https://cotlet.dev/integrations/acuity-scheduling-api-mcp-server/book-client-into-next-open-slot)
+
+### Acumatica
+
+- [Enter vendor bills in Acumatica automatically](https://cotlet.dev/integrations/acumatica-api-mcp-server/enter-vendor-bills)
+- [Create and release Acumatica customer invoices from a billing sheet](https://cotlet.dev/integrations/acumatica-api-mcp-server/create-and-release-customer-invoices)
 
 ### Airalo
 
-- [Check Airalo eSIM data usage with an AI agent](https://cotlet.dev/integrations/airalo-api-mcp-server/check-esim-data-usage)
-- [Top up an Airalo eSIM with an AI agent](https://cotlet.dev/integrations/airalo-api-mcp-server/top-up-esim-automatically)
-- [Turn Airalo eSIM renewals on or off with AI](https://cotlet.dev/integrations/airalo-api-mcp-server/manage-esim-renewals)
-- [Get Airalo eSIM install details with an AI agent](https://cotlet.dev/integrations/airalo-api-mcp-server/get-esim-install-details)
-- [Request an Airalo eSIM refund with an AI agent](https://cotlet.dev/integrations/airalo-api-mcp-server/request-esim-refund)
+- [Top up an Airalo eSIM automatically when data runs low](https://cotlet.dev/integrations/airalo-api-mcp-server/top-up-esim-automatically)
+- [Turn off Airalo eSIM renewals after a trip](https://cotlet.dev/integrations/airalo-api-mcp-server/manage-esim-renewals)
+- [Request an Airalo eSIM refund for a wrong purchase](https://cotlet.dev/integrations/airalo-api-mcp-server/request-esim-refund)
+
+### Alegra
+
+- [Create and email Alegra invoices from a job list](https://cotlet.dev/integrations/alegra-api-mcp-server/create-and-email-invoices)
+- [Chase unpaid Alegra invoices by email](https://cotlet.dev/integrations/alegra-api-mcp-server/chase-unpaid-invoices)
+- [Record bank payments on Alegra invoices](https://cotlet.dev/integrations/alegra-api-mcp-server/record-invoice-payments)
+
+### AniList
+
+- [Update AniList anime list progress and scores](https://cotlet.dev/integrations/anilist-api-mcp-server/update-anime-list-progress)
+- [Triage AniList notifications and reply to activity](https://cotlet.dev/integrations/anilist-api-mcp-server/triage-anilist-notifications)
+
+### Ashby
+
+- [Reject Ashby candidates and send the rejection email](https://cotlet.dev/integrations/ashby-api-mcp-server/reject-candidates-and-send-rejection-emails)
+- [Schedule Ashby interviews for candidates in a stage](https://cotlet.dev/integrations/ashby-api-mcp-server/schedule-interviews-for-candidates)
+- [Create an Ashby offer and send the offer letter](https://cotlet.dev/integrations/ashby-api-mcp-server/create-and-send-offers)
+
+### BambooHR
+
+- [Start BambooHR onboarding tasks for a new hire](https://cotlet.dev/integrations/bamboohr-api-mcp-server/start-onboarding-tasks)
+- [Request BambooHR e-signatures and chase pending ones](https://cotlet.dev/integrations/bamboohr-api-mcp-server/request-employee-signatures)
 
 ### Bandcamp
 
-- [Mark Bandcamp merch orders as shipped](https://cotlet.dev/integrations/bandcamp-api-mcp-server/mark-merch-orders-shipped)
-- [Get a Bandcamp net sales report per release](https://cotlet.dev/integrations/bandcamp-api-mcp-server/net-sales-report)
-- [Check Bandcamp merch stock and update quantities](https://cotlet.dev/integrations/bandcamp-api-mcp-server/update-merch-stock)
-- [Create a Bandcamp discount code and tell your followers](https://cotlet.dev/integrations/bandcamp-api-mcp-server/create-discount-code-and-announce)
-- [Generate Bandcamp track/album codes in bulk](https://cotlet.dev/integrations/bandcamp-api-mcp-server/generate-track-album-codes)
+- [Mark Bandcamp merch orders as shipped with tracking](https://cotlet.dev/integrations/bandcamp-api-mcp-server/mark-merch-orders-shipped)
+- [Get a monthly Bandcamp sales report per release](https://cotlet.dev/integrations/bandcamp-api-mcp-server/sales-report-per-release)
+- [Update Bandcamp merch stock after a show](https://cotlet.dev/integrations/bandcamp-api-mcp-server/update-merch-stock)
+- [Run a Bandcamp sale with a discount code and tell your followers](https://cotlet.dev/integrations/bandcamp-api-mcp-server/create-discount-code-and-announce)
 
 ### Bandsintown
 
 - [Add Bandsintown tour dates from a spreadsheet](https://cotlet.dev/integrations/bandsintown-api-mcp-server/add-tour-dates-from-spreadsheet)
-- [Reschedule a Bandsintown show with an AI agent](https://cotlet.dev/integrations/bandsintown-api-mcp-server/reschedule-show)
-- [Mark a Bandsintown show as sold out](https://cotlet.dev/integrations/bandsintown-api-mcp-server/mark-show-sold-out)
-- [Post to Bandsintown followers when tickets go on sale](https://cotlet.dev/integrations/bandsintown-api-mcp-server/announce-ticket-on-sale)
-- [Get a weekly Bandsintown followers and top markets report](https://cotlet.dev/integrations/bandsintown-api-mcp-server/weekly-follower-report)
+- [Reschedule a Bandsintown show or mark it sold out](https://cotlet.dev/integrations/bandsintown-api-mcp-server/reschedule-show)
+- [Find cities to tour from Bandsintown fan requests](https://cotlet.dev/integrations/bandsintown-api-mcp-server/find-cities-to-tour-from-fan-requests)
 
 ### Bark
 
-- [Find Bark leads worth buying with an AI agent](https://cotlet.dev/integrations/bark-api-mcp-server/find-leads-worth-buying)
-- [Contact Bark leads and send quotes automatically](https://cotlet.dev/integrations/bark-api-mcp-server/contact-leads-and-send-quotes)
-- [Follow up pending Bark responses by email or SMS](https://cotlet.dev/integrations/bark-api-mcp-server/follow-up-pending-responses)
-- [Mark Bark jobs hired and request reviews](https://cotlet.dev/integrations/bark-api-mcp-server/request-reviews-after-hire)
-- [Track your Bark credit balance and invoices](https://cotlet.dev/integrations/bark-api-mcp-server/credit-balance-and-invoices)
+- [Find Bark leads worth buying before you spend credits](https://cotlet.dev/integrations/bark-api-mcp-server/find-leads-worth-buying)
+- [Contact Bark leads fast and send your estimate](https://cotlet.dev/integrations/bark-api-mcp-server/contact-leads-and-send-quotes)
+- [Follow up pending Bark responses and ask hired customers for reviews](https://cotlet.dev/integrations/bark-api-mcp-server/follow-up-pending-responses)
 
 ### Bayut
 
-- [Get a daily Bayut lead digest with an AI agent](https://cotlet.dev/integrations/bayut-api-mcp-server/daily-lead-digest)
-- [Find low performing Bayut listings automatically](https://cotlet.dev/integrations/bayut-api-mcp-server/find-low-performing-listings)
-- [Assign floor plans to Bayut listings with an AI agent](https://cotlet.dev/integrations/bayut-api-mcp-server/assign-floor-plans)
-- [Request Bayut TruCheck for a listing with an AI agent](https://cotlet.dev/integrations/bayut-api-mcp-server/request-trucheck)
-- [Export Bayut leads to Excel automatically](https://cotlet.dev/integrations/bayut-api-mcp-server/export-leads-to-excel)
-- [Get a weekly Dubai market report from Bayut](https://cotlet.dev/integrations/bayut-api-mcp-server/weekly-market-report)
+- [Get a daily Bayut lead digest by channel](https://cotlet.dev/integrations/bayut-api-mcp-server/daily-lead-digest)
+- [Find low performing Bayut listings and choose what to boost](https://cotlet.dev/integrations/bayut-api-mcp-server/find-low-performing-listings)
+- [Assign floor plans to Bayut listings in bulk](https://cotlet.dev/integrations/bayut-api-mcp-server/assign-floor-plans)
+- [Track expired Bayut TruCheck badges and plan re-visits](https://cotlet.dev/integrations/bayut-api-mcp-server/renew-expired-trucheck)
 
 ### Beautiful.ai
 
-- [Find and replace text across a Beautiful.ai deck](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server/replace-text-across-deck)
+- [Replace text across all your Beautiful.ai decks](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server/replace-text-across-decks)
 - [Write speaker notes for a Beautiful.ai deck with AI](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server/write-speaker-notes)
-- [Duplicate a Beautiful.ai deck for the next month](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server/duplicate-deck-monthly)
-- [Get Beautiful.ai viewer analytics for a deck](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server/deck-viewer-analytics)
-- [Export Beautiful.ai decks to PDF or PowerPoint](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server/export-decks-pdf-pptx)
+- [See who viewed your Beautiful.ai deck each week](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server/deck-viewer-analytics)
+
+### Bluedot
+
+- [Sort Bluedot meetings into collections](https://cotlet.dev/integrations/bluedot-api-mcp-server/sort-meetings-into-collections)
+- [Apply a Bluedot notes template to past meetings](https://cotlet.dev/integrations/bluedot-api-mcp-server/apply-notes-template-to-past-meetings)
+- [Comment on action items in Bluedot transcripts](https://cotlet.dev/integrations/bluedot-api-mcp-server/comment-on-meeting-action-items)
+
+### Bokio
+
+- [Create and send Bokio invoices from a list of jobs](https://cotlet.dev/integrations/bokio-api-mcp-server/create-and-send-invoices)
+- [Upload receipts to Bokio automatically](https://cotlet.dev/integrations/bokio-api-mcp-server/upload-receipts)
+- [Record customer payments on Bokio invoices](https://cotlet.dev/integrations/bokio-api-mcp-server/record-invoice-payments)
 
 ### BookingKoala
 
-- [Assign unassigned BookingKoala bookings with AI](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/assign-unassigned-bookings)
-- [Reschedule BookingKoala bookings with an AI agent](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/reschedule-bookings)
-- [Create BookingKoala bookings with an AI agent](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/create-bookings)
-- [Refund BookingKoala charges with an AI agent](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/refund-booking-charges)
-- [Get a BookingKoala provider pay report with AI](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/provider-pay-report)
-- [Resend overdue BookingKoala invoices with AI](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/resend-overdue-invoices)
+- [Assign unassigned BookingKoala bookings to providers](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/assign-unassigned-bookings)
+- [Reschedule BookingKoala bookings, one job or a whole day](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/reschedule-bookings)
+- [Rebook BookingKoala customers from their last visit](https://cotlet.dev/integrations/bookingkoala-api-mcp-server/create-bookings)
 
 ### Booksy
 
-- [Review tomorrow's Booksy appointments with AI](https://cotlet.dev/integrations/booksy-api-mcp-server/review-tomorrows-appointments)
-- [Reschedule Booksy appointments with an AI agent](https://cotlet.dev/integrations/booksy-api-mcp-server/reschedule-appointments)
-- [Block time off in Booksy with an AI agent](https://cotlet.dev/integrations/booksy-api-mcp-server/block-time-off)
-- [Get a weekly Booksy revenue and staff report](https://cotlet.dev/integrations/booksy-api-mcp-server/weekly-revenue-report)
+- [Bulk reschedule Booksy appointments when a staff member is out](https://cotlet.dev/integrations/booksy-api-mcp-server/bulk-reschedule-appointments)
+- [Weekly Booksy staff revenue report, delivered on Monday](https://cotlet.dev/integrations/booksy-api-mcp-server/weekly-staff-revenue-report)
 - [Win back lapsed Booksy clients with a Message Blast](https://cotlet.dev/integrations/booksy-api-mcp-server/win-back-lapsed-clients)
+
+### Breezeway
+
+- [Assign unassigned Breezeway tasks to available staff](https://cotlet.dev/integrations/breezeway-api-mcp-server/assign-unassigned-tasks)
+- [Create Breezeway maintenance tasks from guest issues](https://cotlet.dev/integrations/breezeway-api-mcp-server/create-maintenance-tasks-from-guest-issues)
+- [Approve finished Breezeway tasks after review](https://cotlet.dev/integrations/breezeway-api-mcp-server/approve-finished-tasks)
 
 ### Buildertrend
 
 - [Write Buildertrend daily logs from site notes with AI](https://cotlet.dev/integrations/buildertrend-api-mcp-server/write-daily-logs-from-site-notes)
-- [Get a weekly Buildertrend schedule across all jobs](https://cotlet.dev/integrations/buildertrend-api-mcp-server/weekly-schedule-across-jobs)
 - [Reschedule a Buildertrend schedule item and notify the sub](https://cotlet.dev/integrations/buildertrend-api-mcp-server/reschedule-and-notify-subs)
 - [Draft and send Buildertrend change orders with an AI agent](https://cotlet.dev/integrations/buildertrend-api-mcp-server/draft-and-send-change-orders)
-- [Find pending Buildertrend selections waiting on clients](https://cotlet.dev/integrations/buildertrend-api-mcp-server/chase-pending-selections)
+- [Chase pending Buildertrend selections across all jobs](https://cotlet.dev/integrations/buildertrend-api-mcp-server/chase-pending-selections)
+
+### Chargebee
+
+- [Cancel Chargebee subscriptions and credit the unused time](https://cotlet.dev/integrations/chargebee-api-mcp-server/cancel-subscriptions-and-credit-unused-time)
+- [Issue Chargebee credit notes for refunds and billing mistakes](https://cotlet.dev/integrations/chargebee-api-mcp-server/issue-credit-notes)
+- [Change a Chargebee subscription plan for customers who ask](https://cotlet.dev/integrations/chargebee-api-mcp-server/change-subscription-plan)
+
+### CharlieHR
+
+- [Approve CharlieHR time off requests by your own rules](https://cotlet.dev/integrations/charliehr-api-mcp-server/approve-time-off-requests)
+- [Offboard a leaver in CharlieHR](https://cotlet.dev/integrations/charliehr-api-mcp-server/offboard-a-leaver)
+- [Adjust CharlieHR leave allowances for a team](https://cotlet.dev/integrations/charliehr-api-mcp-server/adjust-leave-allowances)
 
 ### Civitatis
 
-- [Close Civitatis tour dates with an AI agent](https://cotlet.dev/integrations/civitatis-api-mcp-server/close-tour-dates)
-- [Set Civitatis activity quotas with an AI agent](https://cotlet.dev/integrations/civitatis-api-mcp-server/limit-places-per-slot)
-- [Get a daily Civitatis booking list for your guides](https://cotlet.dev/integrations/civitatis-api-mcp-server/daily-booking-list)
-- [Reply to Civitatis customer messages with AI](https://cotlet.dev/integrations/civitatis-api-mcp-server/reply-to-customer-messages)
-- [Request your Civitatis monthly payment with an AI agent](https://cotlet.dev/integrations/civitatis-api-mcp-server/request-monthly-payment)
-- [Summarize Civitatis customer reviews with AI](https://cotlet.dev/integrations/civitatis-api-mcp-server/summarize-customer-reviews)
+- [Close Civitatis tour dates or cut places when a guide is off](https://cotlet.dev/integrations/civitatis-api-mcp-server/close-tour-dates)
+- [Send guides a daily Civitatis booking list for tomorrow](https://cotlet.dev/integrations/civitatis-api-mcp-server/daily-booking-list)
+- [Answer Civitatis customer messages with AI drafts](https://cotlet.dev/integrations/civitatis-api-mcp-server/reply-to-customer-messages)
+- [Request and reconcile your monthly Civitatis payment](https://cotlet.dev/integrations/civitatis-api-mcp-server/request-monthly-payment)
 
 ### ClockShark
 
-- [Approve ClockShark timesheets automatically](https://cotlet.dev/integrations/clockshark-api-mcp-server/approve-weekly-timesheets)
-- [Fix missed ClockShark clock outs with AI](https://cotlet.dev/integrations/clockshark-api-mcp-server/fix-missed-clock-outs)
-- [Export ClockShark payroll hours to CSV](https://cotlet.dev/integrations/clockshark-api-mcp-server/export-payroll-hours)
-- [Schedule crew shifts in ClockShark with AI](https://cotlet.dev/integrations/clockshark-api-mcp-server/schedule-crew-shifts)
-- [Approve ClockShark time off requests with AI](https://cotlet.dev/integrations/clockshark-api-mcp-server/respond-to-time-off-requests)
+- [Approve ClockShark timesheets before payroll](https://cotlet.dev/integrations/clockshark-api-mcp-server/approve-weekly-timesheets)
+- [Fix missed clock outs in ClockShark every morning](https://cotlet.dev/integrations/clockshark-api-mcp-server/fix-missed-clock-outs)
+- [Schedule a crew on a new job in ClockShark](https://cotlet.dev/integrations/clockshark-api-mcp-server/schedule-crew-shifts)
+- [Approve ClockShark time off requests against the schedule](https://cotlet.dev/integrations/clockshark-api-mcp-server/approve-time-off-requests)
+
+### Connecteam
+
+- [Approve Connecteam timesheets with AI](https://cotlet.dev/integrations/connecteam-api-mcp-server/approve-submitted-timesheets)
+- [Copy last week's Connecteam schedule and publish it](https://cotlet.dev/integrations/connecteam-api-mcp-server/copy-last-weeks-schedule)
+- [Approve or decline Connecteam time off requests with AI](https://cotlet.dev/integrations/connecteam-api-mcp-server/approve-time-off-requests)
 
 ### Contractor Foreman
 
-- [Add Contractor Foreman daily logs with an AI agent](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/add-daily-logs)
-- [Create and send Contractor Foreman estimates with AI](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/create-and-send-estimates)
-- [Create Contractor Foreman change orders with an AI agent](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/create-change-orders)
-- [Update a Contractor Foreman schedule with an AI agent](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/update-project-schedule)
-- [Get a Contractor Foreman job costing report with AI](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/job-costing-report)
-- [Get a weekly Contractor Foreman unpaid invoices report](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/overdue-invoices-report)
+- [Turn site notes into Contractor Foreman daily logs](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/add-daily-logs)
+- [Build a Contractor Foreman estimate from a scope list and send it](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/create-and-send-estimates)
+- [Write and send Contractor Foreman change orders from a client request](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/create-change-orders)
+- [Find Contractor Foreman projects going over budget](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server/job-costing-report)
+
+### Copper CRM
+
+- [Find stale Copper deals and create follow-up tasks](https://cotlet.dev/integrations/copper-crm-api-mcp-server/follow-up-on-stale-deals)
+- [Convert qualified Copper leads to people and deals](https://cotlet.dev/integrations/copper-crm-api-mcp-server/convert-qualified-leads)
+- [Close lost Copper deals with a loss reason](https://cotlet.dev/integrations/copper-crm-api-mcp-server/close-lost-deals-with-a-reason)
 
 ### Crexi
 
-- [Export Crexi leads to your CRM automatically](https://cotlet.dev/integrations/crexi-api-mcp-server/export-leads-to-crm)
-- [Report Crexi listing views and OM opens](https://cotlet.dev/integrations/crexi-api-mcp-server/listing-performance-report)
+- [Export Crexi leads to your CRM or a spreadsheet](https://cotlet.dev/integrations/crexi-api-mcp-server/export-leads-to-crm)
+- [Send a weekly Crexi listing activity report to your seller](https://cotlet.dev/integrations/crexi-api-mcp-server/listing-performance-report)
 - [Email Crexi leads who opened your OM](https://cotlet.dev/integrations/crexi-api-mcp-server/email-leads-who-opened-om)
-- [Get new Crexi listings from a saved search](https://cotlet.dev/integrations/crexi-api-mcp-server/new-listings-from-saved-search)
-- [Pull Crexi sales comps with an AI agent](https://cotlet.dev/integrations/crexi-api-mcp-server/pull-sales-comps)
-
-### DICE
-
-- [Get a weekly DICE ticket sales report](https://cotlet.dev/integrations/dice-api-mcp-server/weekly-ticket-sales-report)
-- [Create a DICE event draft with ticket types](https://cotlet.dev/integrations/dice-api-mcp-server/create-event-draft)
-- [Add a new DICE ticket release when early bird sells out](https://cotlet.dev/integrations/dice-api-mcp-server/add-ticket-release)
-- [Export a DICE ticket holder list for the door](https://cotlet.dev/integrations/dice-api-mcp-server/export-guest-list)
-- [Track DICE ticket returns and transfers weekly](https://cotlet.dev/integrations/dice-api-mcp-server/track-returns-and-transfers)
-- [Update a DICE event and message ticket holders](https://cotlet.dev/integrations/dice-api-mcp-server/announce-event-change)
+- [Pull Crexi sales comps for a valuation or BOV](https://cotlet.dev/integrations/crexi-api-mcp-server/pull-sales-comps)
 
 ### DaySmart
 
-- [Get a daily DaySmart schedule for each groomer](https://cotlet.dev/integrations/daysmart-api-mcp-server/daily-groomer-schedule)
-- [Fill open DaySmart slots from the waitlist](https://cotlet.dev/integrations/daysmart-api-mcp-server/fill-open-slots-from-waitlist)
-- [Check expiring pet vaccinations in DaySmart](https://cotlet.dev/integrations/daysmart-api-mcp-server/check-expiring-vaccinations)
-- [Get a weekly DaySmart sales report](https://cotlet.dev/integrations/daysmart-api-mcp-server/weekly-sales-report)
-- [Send DaySmart Ready For Pickup texts with an AI agent](https://cotlet.dev/integrations/daysmart-api-mcp-server/send-ready-for-pickup-texts)
-- [Update DaySmart pet grooming notes with an AI agent](https://cotlet.dev/integrations/daysmart-api-mcp-server/update-pet-grooming-notes)
+- [Fill DaySmart cancellations from the waitlist](https://cotlet.dev/integrations/daysmart-api-mcp-server/fill-open-slots-from-waitlist)
+- [Check expiring pet vaccinations before DaySmart appointments](https://cotlet.dev/integrations/daysmart-api-mcp-server/check-expiring-vaccinations)
+- [Get a weekly DaySmart sales report by employee](https://cotlet.dev/integrations/daysmart-api-mcp-server/weekly-sales-report)
+
+### Deputy
+
+- [Approve Deputy timesheets in bulk by your own rule](https://cotlet.dev/integrations/deputy-api-mcp-server/approve-timesheets-in-bulk)
+- [Approve or decline Deputy leave requests by your own rule](https://cotlet.dev/integrations/deputy-api-mcp-server/approve-leave-requests)
+
+### Dext
+
+- [Upload receipts and bills to Dext in bulk](https://cotlet.dev/integrations/dext-api-mcp-server/upload-receipts-and-bills)
+- [Fix Dext items stuck in To review](https://cotlet.dev/integrations/dext-api-mcp-server/fix-items-in-to-review)
+- [Publish ready Dext items to your accounting software](https://cotlet.dev/integrations/dext-api-mcp-server/publish-ready-items)
+
+### DICE
+
+- [Get a weekly DICE ticket sales report with returns and transfers](https://cotlet.dev/integrations/dice-api-mcp-server/weekly-ticket-sales-report)
+- [Create a DICE event draft with ticket types](https://cotlet.dev/integrations/dice-api-mcp-server/create-event-draft)
+- [Add a new DICE ticket release when early bird sells out](https://cotlet.dev/integrations/dice-api-mcp-server/add-ticket-release)
+- [Update a DICE event and message ticket holders](https://cotlet.dev/integrations/dice-api-mcp-server/announce-event-change)
+
+### Discogs
+
+- [Reprice Discogs listings from the live marketplace](https://cotlet.dev/integrations/discogs-api-mcp-server/reprice-listings)
+- [Update Discogs orders and message buyers](https://cotlet.dev/integrations/discogs-api-mcp-server/update-orders-and-message-buyers)
+- [Find Discogs wantlist records for sale](https://cotlet.dev/integrations/discogs-api-mcp-server/find-wantlist-records-for-sale)
 
 ### DoorLoop
 
-- [Charge late fees in DoorLoop with an AI agent](https://cotlet.dev/integrations/doorloop-api-mcp-server/charge-late-fees)
-- [Record DoorLoop rent payments with an AI agent](https://cotlet.dev/integrations/doorloop-api-mcp-server/record-rent-payments)
-- [Send DoorLoop announcements to tenants with an AI agent](https://cotlet.dev/integrations/doorloop-api-mcp-server/send-tenant-announcements)
-- [Create a DoorLoop lease with an AI agent](https://cotlet.dev/integrations/doorloop-api-mcp-server/create-lease)
-- [List expiring DoorLoop leases and vacant units with AI](https://cotlet.dev/integrations/doorloop-api-mcp-server/expiring-leases-and-vacancies)
+- [Record check and cash rent payments in DoorLoop](https://cotlet.dev/integrations/doorloop-api-mcp-server/record-rent-payments)
+- [Send DoorLoop announcements to tenants and check who got them](https://cotlet.dev/integrations/doorloop-api-mcp-server/send-tenant-announcements)
+- [Create a new DoorLoop lease with tenant, rent and deposit](https://cotlet.dev/integrations/doorloop-api-mcp-server/create-lease)
 
 ### Dribbble
 
-- [Answer Dribbble client messages with an AI agent](https://cotlet.dev/integrations/dribbble-api-mcp-server/answer-client-requests)
-- [Get a weekly Dribbble Pro Analytics report](https://cotlet.dev/integrations/dribbble-api-mcp-server/weekly-pro-analytics-report)
-- [Find unanswered Dribbble leads](https://cotlet.dev/integrations/dribbble-api-mcp-server/find-unanswered-leads)
-- [Find your best performing Dribbble shots](https://cotlet.dev/integrations/dribbble-api-mcp-server/best-performing-shots)
-- [Reply to Dribbble shot comments with AI](https://cotlet.dev/integrations/dribbble-api-mcp-server/reply-to-shot-comments)
+- [Answer Dribbble Project Requests and client messages](https://cotlet.dev/integrations/dribbble-api-mcp-server/answer-project-requests)
+- [Get a weekly Dribbble Pro Analytics report with your top shots](https://cotlet.dev/integrations/dribbble-api-mcp-server/weekly-pro-analytics-report)
 
 ### Dubsado
 
 - [Send a Dubsado proposal to a new lead with AI](https://cotlet.dev/integrations/dubsado-api-mcp-server/send-proposal-to-new-lead)
 - [Summarize Dubsado questionnaire answers with AI](https://cotlet.dev/integrations/dubsado-api-mcp-server/summarize-questionnaire-answers)
 - [Find unsigned Dubsado contracts and draft reminders](https://cotlet.dev/integrations/dubsado-api-mcp-server/chase-unsigned-contracts)
-- [Create and send a Dubsado invoice with AI](https://cotlet.dev/integrations/dubsado-api-mcp-server/create-and-send-invoice)
-- [Get a weekly Dubsado unpaid invoices report](https://cotlet.dev/integrations/dubsado-api-mcp-server/weekly-unpaid-invoices-report)
-- [Move signed Dubsado projects to a job status](https://cotlet.dev/integrations/dubsado-api-mcp-server/move-signed-projects-to-job)
+- [Log check and cash payments on Dubsado invoices](https://cotlet.dev/integrations/dubsado-api-mcp-server/log-offline-payments)
+
+### e-Boekhouden
+
+- [Create e-Boekhouden invoices from a list](https://cotlet.dev/integrations/e-boekhouden-api-mcp-server/create-invoices-from-a-list)
+- [Record e-Boekhouden invoice payments from a list](https://cotlet.dev/integrations/e-boekhouden-api-mcp-server/record-invoice-payments)
+
+### e-conomic
+
+- [Create e-conomic draft invoices from a billing list](https://cotlet.dev/integrations/e-conomic-api-mcp-server/create-draft-invoices-from-a-list)
+- [Book and send e-conomic draft invoices](https://cotlet.dev/integrations/e-conomic-api-mcp-server/book-and-send-draft-invoices)
+- [Post recurring e-conomic bookkeeping vouchers](https://cotlet.dev/integrations/e-conomic-api-mcp-server/post-recurring-vouchers)
+
+### eDesk
+
+- [Triage new eDesk tickets with AI](https://cotlet.dev/integrations/edesk-api-mcp-server/triage-new-tickets)
+- [Answer eDesk where-is-my-order tickets with AI](https://cotlet.dev/integrations/edesk-api-mcp-server/answer-where-is-my-order)
+- [Follow up on waiting eDesk tickets with AI](https://cotlet.dev/integrations/edesk-api-mcp-server/follow-up-waiting-tickets)
+
+### EmailOctopus
+
+- [Resend an EmailOctopus campaign to non-openers](https://cotlet.dev/integrations/emailoctopus-api-mcp-server/resend-campaign-to-non-openers)
+- [Unsubscribe inactive EmailOctopus contacts](https://cotlet.dev/integrations/emailoctopus-api-mcp-server/unsubscribe-inactive-contacts)
+
+### ERPNext
+
+- [Create and submit ERPNext sales invoices from a billing list](https://cotlet.dev/integrations/erpnext-api-mcp-server/create-invoices-from-a-billing-list)
+- [Record customer payments against ERPNext invoices](https://cotlet.dev/integrations/erpnext-api-mcp-server/record-customer-payments)
+- [Report overdue ERPNext invoices every week](https://cotlet.dev/integrations/erpnext-api-mcp-server/weekly-overdue-invoices-report)
 
 ### Everfit
 
-- [Check in on inactive Everfit clients with AI](https://cotlet.dev/integrations/everfit-api-mcp-server/check-in-on-inactive-clients)
-- [Add new Everfit clients to an Autoflow automatically](https://cotlet.dev/integrations/everfit-api-mcp-server/add-new-clients-to-autoflow)
-- [Get an Everfit client weight trend report with AI](https://cotlet.dev/integrations/everfit-api-mcp-server/client-weight-trend-report)
+- [Check in on inactive Everfit clients who stopped logging workouts](https://cotlet.dev/integrations/everfit-api-mcp-server/check-in-on-inactive-clients)
+- [Weekly Everfit client progress report from body metrics](https://cotlet.dev/integrations/everfit-api-mcp-server/weekly-client-progress-report)
 - [Answer Everfit Inbox messages with an AI agent](https://cotlet.dev/integrations/everfit-api-mcp-server/answer-client-inbox-messages)
-- [Send an Everfit broadcast to all clients from AI](https://cotlet.dev/integrations/everfit-api-mcp-server/broadcast-to-all-clients)
-- [Assign Everfit client tasks every week with AI](https://cotlet.dev/integrations/everfit-api-mcp-server/assign-weekly-measurement-task)
 
 ### Evite
 
 - [Chase Evite guests who have not RSVPed](https://cotlet.dev/integrations/evite-api-mcp-server/chase-rsvps)
-- [Add guests to an Evite event from a list](https://cotlet.dev/integrations/evite-api-mcp-server/add-guests-to-event)
-- [Export an Evite guest list with RSVPs](https://cotlet.dev/integrations/evite-api-mcp-server/export-guest-list)
-- [Schedule Evite reminders for guests](https://cotlet.dev/integrations/evite-api-mcp-server/schedule-reminders)
-- [Copy an Evite event and change the date](https://cotlet.dev/integrations/evite-api-mcp-server/copy-event)
-- [Record Evite RSVPs on behalf of guests](https://cotlet.dev/integrations/evite-api-mcp-server/record-rsvps-for-guests)
+- [Add guests to an Evite invitation from a spreadsheet](https://cotlet.dev/integrations/evite-api-mcp-server/add-guests-to-event)
+- [Record Evite RSVPs for guests and get a final head count](https://cotlet.dev/integrations/evite-api-mcp-server/record-rsvps-for-guests)
+
+### Exact Online
+
+- [Create and send Exact Online sales invoices with AI](https://cotlet.dev/integrations/exact-online-api-mcp-server/create-and-send-sales-invoices)
+- [Book Exact Online journal entries with AI](https://cotlet.dev/integrations/exact-online-api-mcp-server/book-journal-entries)
+
+### Expensify
+
+- [Create Expensify expenses from receipts](https://cotlet.dev/integrations/expensify-api-mcp-server/create-expenses-from-receipts)
+- [Create and submit a weekly Expensify expense report](https://cotlet.dev/integrations/expensify-api-mcp-server/submit-weekly-expense-report)
+- [Approve Expensify expense reports by your own rule](https://cotlet.dev/integrations/expensify-api-mcp-server/approve-expense-reports-by-rule)
+
+### Facturama
+
+- [Issue Facturama CFDI invoices from a list of jobs](https://cotlet.dev/integrations/facturama-api-mcp-server/issue-cfdi-invoices-from-jobs)
+- [Issue Facturama credit notes for returns and discounts](https://cotlet.dev/integrations/facturama-api-mcp-server/issue-credit-notes)
+- [Collect your monthly Facturama CFDI XML and PDF files](https://cotlet.dev/integrations/facturama-api-mcp-server/monthly-cfdi-xml-pdf-for-accountant)
 
 ### Faire
 
 - [Reply to Faire retailer messages with an AI agent](https://cotlet.dev/integrations/faire-api-mcp-server/reply-to-retailer-messages)
-- [Accept new Faire orders automatically](https://cotlet.dev/integrations/faire-api-mcp-server/accept-new-orders)
-- [Add tracking numbers to Faire orders from a CSV](https://cotlet.dev/integrations/faire-api-mcp-server/add-tracking-numbers)
-- [Email Faire retailers who have not reordered](https://cotlet.dev/integrations/faire-api-mcp-server/email-lapsed-retailers)
+- [Email Faire retailers who are late to reorder](https://cotlet.dev/integrations/faire-api-mcp-server/email-lapsed-retailers)
+
+### Fakturownia (InvoiceOcean)
+
+- [Issue a Fakturownia invoice from a deal or message](https://cotlet.dev/integrations/fakturownia-api-mcp-server/issue-invoice-from-deal)
+- [Record Fakturownia payments and mark invoices paid](https://cotlet.dev/integrations/fakturownia-api-mcp-server/record-invoice-payments)
+- [Send Fakturownia invoices to KSeF](https://cotlet.dev/integrations/fakturownia-api-mcp-server/send-invoices-to-ksef)
+
+### Fatture in Cloud
+
+- [Create and send Fatture in Cloud invoices from a list](https://cotlet.dev/integrations/fatture-in-cloud-api-mcp-server/create-and-send-invoices)
+- [Find and explain rejected Fatture in Cloud e-invoices](https://cotlet.dev/integrations/fatture-in-cloud-api-mcp-server/fix-rejected-e-invoices)
+- [List unpaid Fatture in Cloud invoices and draft reminders](https://cotlet.dev/integrations/fatture-in-cloud-api-mcp-server/list-unpaid-invoices)
+
+### Feedly
+
+- [Summarize unread Feedly articles with AI](https://cotlet.dev/integrations/feedly-api-mcp-server/daily-unread-digest)
+- [Save relevant Feedly articles to a Board with AI](https://cotlet.dev/integrations/feedly-api-mcp-server/save-articles-to-board)
+- [Find and follow new Feedly sources with AI](https://cotlet.dev/integrations/feedly-api-mcp-server/find-and-follow-sources)
+
+### Fiken
+
+- [Create and send Fiken invoices from a list](https://cotlet.dev/integrations/fiken-api-mcp-server/create-and-send-invoices)
+- [Chase overdue Fiken invoices with payment reminders](https://cotlet.dev/integrations/fiken-api-mcp-server/chase-overdue-invoices)
+- [Book Fiken receipts and supplier invoices as purchases](https://cotlet.dev/integrations/fiken-api-mcp-server/book-receipts-as-purchases)
+
+### Fillout
+
+- [Build a Fillout form from a brief](https://cotlet.dev/integrations/fillout-api-mcp-server/build-form-from-brief)
+- [Add conditional logic and page branching to a Fillout form](https://cotlet.dev/integrations/fillout-api-mcp-server/add-form-logic)
+- [Close a Fillout form on a date or after a response limit](https://cotlet.dev/integrations/fillout-api-mcp-server/close-form-after-deadline)
+
+### Fitatu
+
+- [Log your weight automatically in Fitatu](https://cotlet.dev/integrations/fitatu-api-mcp-server/log-weight-automatically)
+- [Log diet catering meals in Fitatu in bulk](https://cotlet.dev/integrations/fitatu-api-mcp-server/log-diet-catering-meals)
+- [Export your Fitatu food diary to a spreadsheet](https://cotlet.dev/integrations/fitatu-api-mcp-server/export-food-diary-to-spreadsheet)
+
+### Flickr
+
+- [Tag and title new Flickr photos](https://cotlet.dev/integrations/flickr-api-mcp-server/tag-and-title-photos)
+- [Sort Flickr photos into albums](https://cotlet.dev/integrations/flickr-api-mcp-server/sort-photos-into-albums)
+- [Check and change Flickr photo privacy in bulk](https://cotlet.dev/integrations/flickr-api-mcp-server/change-photo-privacy)
+
+### Fortnox
+
+- [Create and send Fortnox invoices from a list](https://cotlet.dev/integrations/fortnox-api-mcp-server/create-and-send-invoices)
+- [Register Fortnox customer payments automatically](https://cotlet.dev/integrations/fortnox-api-mcp-server/register-invoice-payments)
+- [Book recurring Fortnox journal entries as vouchers](https://cotlet.dev/integrations/fortnox-api-mcp-server/book-journal-entries)
 
 ### Fresha
 
-- [Book Fresha appointments with an AI agent](https://cotlet.dev/integrations/fresha-api-mcp-server/book-appointments-with-ai)
-- [Reschedule a team member's Fresha appointments with AI](https://cotlet.dev/integrations/fresha-api-mcp-server/reschedule-appointments-in-bulk)
-- [Cancel Fresha appointments with an AI agent](https://cotlet.dev/integrations/fresha-api-mcp-server/cancel-appointments)
-- [Get a daily Fresha sales summary](https://cotlet.dev/integrations/fresha-api-mcp-server/daily-sales-summary)
-- [Find Fresha clients who have not rebooked](https://cotlet.dev/integrations/fresha-api-mcp-server/find-lapsed-clients)
-- [Reconcile Fresha payouts with AI](https://cotlet.dev/integrations/fresha-api-mcp-server/reconcile-payouts)
+- [Book Fresha appointments from client messages with an AI agent](https://cotlet.dev/integrations/fresha-api-mcp-server/book-appointments-with-ai)
+- [Reschedule or cancel a Fresha team member's appointments when they are out](https://cotlet.dev/integrations/fresha-api-mcp-server/reschedule-appointments-in-bulk)
+- [Get a daily Fresha sales summary every morning](https://cotlet.dev/integrations/fresha-api-mcp-server/daily-sales-summary)
 
 ### GetYourGuide
 
-- [Get tomorrow's GetYourGuide bookings every morning](https://cotlet.dev/integrations/getyourguide-api-mcp-server/daily-bookings-for-tomorrow)
-- [Close GetYourGuide tour slots for a date with AI](https://cotlet.dev/integrations/getyourguide-api-mcp-server/close-slots-on-a-date)
-- [Update GetYourGuide tour prices in bulk with AI](https://cotlet.dev/integrations/getyourguide-api-mcp-server/update-tour-prices-in-bulk)
+- [Block GetYourGuide tour slots for a date when a guide is out](https://cotlet.dev/integrations/getyourguide-api-mcp-server/block-slots-on-a-date)
+- [Update GetYourGuide tour prices in bulk for a new season](https://cotlet.dev/integrations/getyourguide-api-mcp-server/update-tour-prices-in-bulk)
 - [Reply to GetYourGuide traveler messages with AI](https://cotlet.dev/integrations/getyourguide-api-mcp-server/reply-to-traveler-messages)
-- [Reply to GetYourGuide reviews with AI](https://cotlet.dev/integrations/getyourguide-api-mcp-server/reply-to-reviews)
-- [Get a weekly GetYourGuide performance report](https://cotlet.dev/integrations/getyourguide-api-mcp-server/weekly-performance-report)
+- [Reply to GetYourGuide reviews before the 30-day window closes](https://cotlet.dev/integrations/getyourguide-api-mcp-server/reply-to-reviews)
+
+### Ghost
+
+- [Schedule Ghost posts and send them as a newsletter](https://cotlet.dev/integrations/ghost-api-mcp-server/schedule-newsletter-posts)
+- [Label Ghost members by where they signed up](https://cotlet.dev/integrations/ghost-api-mcp-server/label-members-by-signup-source)
+- [Unsubscribe unengaged Ghost members from email](https://cotlet.dev/integrations/ghost-api-mcp-server/unsubscribe-unengaged-members)
+
+### Gladly
+
+- [Triage new Gladly conversations](https://cotlet.dev/integrations/gladly-api-mcp-server/triage-new-conversations)
+- [Close resolved Gladly conversations](https://cotlet.dev/integrations/gladly-api-mcp-server/close-resolved-conversations)
+- [Create follow-up tasks in Gladly](https://cotlet.dev/integrations/gladly-api-mcp-server/create-follow-up-tasks)
 
 ### GlossGenius
 
-- [Book GlossGenius appointments with an AI agent](https://cotlet.dev/integrations/glossgenius-api-mcp-server/book-client-appointments)
-- [Reschedule GlossGenius appointments in bulk with AI](https://cotlet.dev/integrations/glossgenius-api-mcp-server/reschedule-appointments)
+- [Bulk reschedule GlossGenius appointments on a sick day](https://cotlet.dev/integrations/glossgenius-api-mcp-server/bulk-reschedule-appointments)
 - [Fill cancelled GlossGenius slots from the waitlist](https://cotlet.dev/integrations/glossgenius-api-mcp-server/fill-cancelled-slots-from-waitlist)
-- [Save GlossGenius client notes and formulas with AI](https://cotlet.dev/integrations/glossgenius-api-mcp-server/save-client-notes-and-formulas)
-- [Send GlossGenius sales totals to a spreadsheet](https://cotlet.dev/integrations/glossgenius-api-mcp-server/weekly-sales-report-to-spreadsheet)
-- [Sync upcoming GlossGenius appointments to a spreadsheet](https://cotlet.dev/integrations/glossgenius-api-mcp-server/sync-appointments-to-spreadsheet)
+- [Send GlossGenius weekly sales totals to a spreadsheet](https://cotlet.dev/integrations/glossgenius-api-mcp-server/weekly-sales-report-to-spreadsheet)
+
+### Google Discover
+
+- [Check if your site appears in Google Discover](https://cotlet.dev/integrations/google-discover-api-mcp-server/check-if-your-site-appears-in-google-discover)
+- [Weekly Google Discover performance report](https://cotlet.dev/integrations/google-discover-api-mcp-server/weekly-google-discover-performance-report)
+- [Hide publishers and topics from your Google Discover feed](https://cotlet.dev/integrations/google-discover-api-mcp-server/hide-publishers-from-your-discover-feed)
+
+### Google Search Console
+
+- [Request indexing in Google Search Console in bulk](https://cotlet.dev/integrations/google-search-console-api-mcp-server/request-indexing-in-bulk)
+- [Remove many URLs from Google Search in bulk](https://cotlet.dev/integrations/google-search-console-api-mcp-server/remove-urls-from-google-in-bulk)
+- [Export all not-indexed URLs from Google Search Console](https://cotlet.dev/integrations/google-search-console-api-mcp-server/export-not-indexed-urls)
+- [Add a user to many Search Console properties](https://cotlet.dev/integrations/google-search-console-api-mcp-server/add-user-to-many-properties)
+
+### Gorgias
+
+- [Triage new Gorgias tickets with AI](https://cotlet.dev/integrations/gorgias-api-mcp-server/triage-new-support-tickets)
+- [Answer common Gorgias tickets with macros](https://cotlet.dev/integrations/gorgias-api-mcp-server/answer-tickets-with-macros)
+- [Clean up stale Gorgias macros and rules](https://cotlet.dev/integrations/gorgias-api-mcp-server/clean-up-macros-and-rules)
+
+### Habitica
+
+- [Create Habitica dailies from a list](https://cotlet.dev/integrations/habitica-api-mcp-server/create-recurring-tasks-from-a-list)
+- [Check off done Habitica dailies from your notes](https://cotlet.dev/integrations/habitica-api-mcp-server/check-off-done-dailies)
+- [Start a Habitica party quest on a schedule](https://cotlet.dev/integrations/habitica-api-mcp-server/start-party-quest-on-schedule)
+
+### HappyFox
+
+- [Triage new HappyFox tickets with AI](https://cotlet.dev/integrations/happyfox-api-mcp-server/triage-new-support-tickets)
+- [Reply to HappyFox tickets with canned actions](https://cotlet.dev/integrations/happyfox-api-mcp-server/reply-with-canned-actions)
+- [Follow up on pending HappyFox tickets](https://cotlet.dev/integrations/happyfox-api-mcp-server/follow-up-on-pending-tickets)
+
+### Help Scout
+
+- [Reply to Help Scout conversations from your Docs articles](https://cotlet.dev/integrations/help-scout-api-mcp-server/reply-from-help-docs)
+- [Tag and assign new Help Scout conversations with AI](https://cotlet.dev/integrations/help-scout-api-mcp-server/tag-and-assign-conversations)
+- [Update Help Scout Docs articles after a product change](https://cotlet.dev/integrations/help-scout-api-mcp-server/update-docs-articles)
 
 ### Hemnet
 
-- [Check Hemnet viewings of your saved homes](https://cotlet.dev/integrations/hemnet-api-mcp-server/saved-homes-viewings-this-weekend)
-- [Compare Hemnet listings with sold prices](https://cotlet.dev/integrations/hemnet-api-mcp-server/compare-listings-with-sold-prices)
-- [Create Hemnet saved searches from your AI agent](https://cotlet.dev/integrations/hemnet-api-mcp-server/create-saved-search-alerts)
-- [Add Hemnet homes to a collection with AI](https://cotlet.dev/integrations/hemnet-api-mcp-server/add-homes-to-a-collection)
-- [Track your Hemnet home value with an AI agent](https://cotlet.dev/integrations/hemnet-api-mcp-server/track-home-value)
+- [Plan weekend viewings of your saved Hemnet homes](https://cotlet.dev/integrations/hemnet-api-mcp-server/plan-weekend-viewings)
+- [Compare Hemnet asking prices with sold prices nearby](https://cotlet.dev/integrations/hemnet-api-mcp-server/compare-listings-with-sold-prices)
 
 ### Hipcamp
 
-- [Respond to Hipcamp booking requests with AI](https://cotlet.dev/integrations/hipcamp-api-mcp-server/respond-to-booking-requests)
-- [Update Hipcamp nightly prices with an AI agent](https://cotlet.dev/integrations/hipcamp-api-mcp-server/update-nightly-prices)
-- [Block Hipcamp dates for maintenance or the season](https://cotlet.dev/integrations/hipcamp-api-mcp-server/block-dates-for-maintenance)
-- [Reply to Hipcamp guest messages with AI](https://cotlet.dev/integrations/hipcamp-api-mcp-server/reply-to-guest-messages)
-- [Respond to Hipcamp reviews with an AI agent](https://cotlet.dev/integrations/hipcamp-api-mcp-server/respond-to-reviews)
-- [Get a weekly Hipcamp bookings and payouts report](https://cotlet.dev/integrations/hipcamp-api-mcp-server/weekly-bookings-payouts-report)
+- [Respond to Hipcamp booking requests before they expire](https://cotlet.dev/integrations/hipcamp-api-mcp-server/respond-to-booking-requests)
+- [Set Hipcamp weekend and event prices for every site](https://cotlet.dev/integrations/hipcamp-api-mcp-server/update-nightly-prices)
+- [Answer Hipcamp camper questions from your Inbox](https://cotlet.dev/integrations/hipcamp-api-mcp-server/reply-to-guest-messages)
+- [Respond to Hipcamp reviews, publicly or in private](https://cotlet.dev/integrations/hipcamp-api-mcp-server/respond-to-reviews)
+
+### Holded
+
+- [Draft and send Holded invoices from a job list](https://cotlet.dev/integrations/holded-api-mcp-server/draft-and-send-invoices)
+- [Record supplier bills in Holded as purchases](https://cotlet.dev/integrations/holded-api-mcp-server/record-supplier-bills)
+- [Chase unpaid Holded invoices with a reminder](https://cotlet.dev/integrations/holded-api-mcp-server/chase-unpaid-invoices)
 
 ### Hostelworld
 
-- [Log new Hostelworld bookings to a spreadsheet](https://cotlet.dev/integrations/hostelworld-api-mcp-server/log-new-bookings-to-spreadsheet)
 - [Reply to Hostelworld reviews with an AI agent](https://cotlet.dev/integrations/hostelworld-api-mcp-server/reply-to-guest-reviews)
 - [Answer Hostelworld guest chats with an AI agent](https://cotlet.dev/integrations/hostelworld-api-mcp-server/answer-guest-chats)
 - [Mark Hostelworld no-shows automatically](https://cotlet.dev/integrations/hostelworld-api-mcp-server/mark-no-shows)
 - [Reconcile Hostelworld PayNow payouts](https://cotlet.dev/integrations/hostelworld-api-mcp-server/reconcile-paynow-payouts)
 
+### Housecall Pro
+
+- [Send Housecall Pro estimates with good, better, best options](https://cotlet.dev/integrations/housecall-pro-api-mcp-server/send-multi-option-estimates)
+- [Chase past-due Housecall Pro invoices](https://cotlet.dev/integrations/housecall-pro-api-mcp-server/chase-past-due-invoices)
+- [Bill a Housecall Pro job in stages with progress invoices](https://cotlet.dev/integrations/housecall-pro-api-mcp-server/bill-jobs-in-stages)
+
 ### Houzz Pro
 
-- [Import leads into Houzz Pro from a CSV](https://cotlet.dev/integrations/houzz-pro-api-mcp-server/import-leads-from-csv)
 - [Follow up on stale Houzz Pro leads](https://cotlet.dev/integrations/houzz-pro-api-mcp-server/follow-up-on-stale-leads)
-- [Convert a Houzz Pro lead to a project with AI](https://cotlet.dev/integrations/houzz-pro-api-mcp-server/convert-lead-to-project)
-- [Create and send Houzz Pro estimates with AI](https://cotlet.dev/integrations/houzz-pro-api-mcp-server/create-and-send-estimates)
-- [Create progressive invoices in Houzz Pro with AI](https://cotlet.dev/integrations/houzz-pro-api-mcp-server/progressive-invoicing)
-- [Log time in Houzz Pro with an AI agent](https://cotlet.dev/integrations/houzz-pro-api-mcp-server/log-time-on-projects)
+- [Create progressive invoices in Houzz Pro from an estimate](https://cotlet.dev/integrations/houzz-pro-api-mcp-server/progressive-invoicing)
+
+### Hubstaff
+
+- [Approve Hubstaff timesheets with AI](https://cotlet.dev/integrations/hubstaff-api-mcp-server/approve-timesheets)
+- [Approve Hubstaff manual time requests](https://cotlet.dev/integrations/hubstaff-api-mcp-server/approve-manual-time-requests)
+- [Set up a Hubstaff project with tasks and a team](https://cotlet.dev/integrations/hubstaff-api-mcp-server/set-up-a-project)
 
 ### Idealista
 
-- [Reply to Idealista contacts with an AI agent](https://cotlet.dev/integrations/idealista-api-mcp-server/reply-to-contacts)
+- [Answer new Idealista Inbox contacts with an AI agent](https://cotlet.dev/integrations/idealista-api-mcp-server/reply-to-contacts)
 - [Find Idealista listings with visits but no contacts](https://cotlet.dev/integrations/idealista-api-mcp-server/listings-with-visits-but-no-contacts)
-- [Change an Idealista listing price with an AI agent](https://cotlet.dev/integrations/idealista-api-mcp-server/change-listing-price)
+- [Lower an Idealista listing price with an AI agent](https://cotlet.dev/integrations/idealista-api-mcp-server/lower-listing-price)
 - [Deactivate a rented Idealista listing and archive its contacts](https://cotlet.dev/integrations/idealista-api-mcp-server/deactivate-rented-listing)
-- [Send similar Idealista properties to a contact](https://cotlet.dev/integrations/idealista-api-mcp-server/send-similar-properties)
-- [Get a weekly report of unanswered Idealista contacts](https://cotlet.dev/integrations/idealista-api-mcp-server/unanswered-contacts-report)
+
+### iFirma
+
+- [Issue an iFirma invoice and send it to KSeF](https://cotlet.dev/integrations/ifirma-api-mcp-server/issue-invoice-and-send-to-ksef)
+- [Book iFirma purchase invoices from KSeF as costs](https://cotlet.dev/integrations/ifirma-api-mcp-server/book-ksef-purchase-invoices)
+- [Chase unpaid iFirma invoices with payment reminders](https://cotlet.dev/integrations/ifirma-api-mcp-server/chase-unpaid-invoices)
 
 ### Immobiliare.it
 
-- [Answer Immobiliare.it messages with an AI agent](https://cotlet.dev/integrations/immobiliare-api-mcp-server/answer-listing-messages)
+- [Answer Immobiliare.it messages and visit requests about your listing](https://cotlet.dev/integrations/immobiliare-api-mcp-server/answer-listing-messages)
 - [Find Immobiliare.it listings with views but no enquiries](https://cotlet.dev/integrations/immobiliare-api-mcp-server/listings-without-enquiries)
-- [Update an Immobiliare.it listing price and description](https://cotlet.dev/integrations/immobiliare-api-mcp-server/update-listing-price)
-- [Request Immobiliare.it visits for saved listings](https://cotlet.dev/integrations/immobiliare-api-mcp-server/request-visits-saved-listings)
-- [Publish an Immobiliare.it listing with an AI agent](https://cotlet.dev/integrations/immobiliare-api-mcp-server/publish-listing)
+- [Request Immobiliare.it visits for your saved listings](https://cotlet.dev/integrations/immobiliare-api-mcp-server/request-visits-saved-listings)
+
+### Inoreader
+
+- [Triage unread Inoreader articles with an AI agent](https://cotlet.dev/integrations/inoreader-api-mcp-server/triage-unread-articles)
+- [Create Inoreader rules from a plain-language brief](https://cotlet.dev/integrations/inoreader-api-mcp-server/create-rules-from-a-brief)
+
+### Instapaper
+
+- [Archive old and finished Instapaper articles](https://cotlet.dev/integrations/instapaper-api-mcp-server/archive-old-instapaper-articles)
+- [Sort saved Instapaper articles into folders and tags](https://cotlet.dev/integrations/instapaper-api-mcp-server/sort-instapaper-articles-into-folders)
+- [Export your Instapaper highlights each week](https://cotlet.dev/integrations/instapaper-api-mcp-server/export-instapaper-highlights)
+
+### Invoice Ninja
+
+- [Chase overdue Invoice Ninja invoices](https://cotlet.dev/integrations/invoice-ninja-api-mcp-server/chase-overdue-invoices)
+- [Record bank transfers as Invoice Ninja payments](https://cotlet.dev/integrations/invoice-ninja-api-mcp-server/record-bank-transfers-as-payments)
+- [Create Invoice Ninja invoices from a billing list](https://cotlet.dev/integrations/invoice-ninja-api-mcp-server/create-invoices-from-billing-list)
+
+### iSpring Learn (iSpring LMS)
+
+- [Enroll an iSpring Learn department in a course](https://cotlet.dev/integrations/ispring-api-mcp-server/enroll-department-in-course)
+- [Deactivate iSpring Learn accounts of leavers](https://cotlet.dev/integrations/ispring-api-mcp-server/deactivate-leavers)
+
+### JazzHR
+
+- [Reject remaining JazzHR candidates when a job is filled](https://cotlet.dev/integrations/jazzhr-api-mcp-server/reject-candidates-when-job-filled)
+- [Advance JazzHR applicants by your screening rules](https://cotlet.dev/integrations/jazzhr-api-mcp-server/advance-applicants-by-screening-rules)
+- [Create JazzHR follow-up tasks for candidates](https://cotlet.dev/integrations/jazzhr-api-mcp-server/create-follow-up-tasks-for-candidates)
+
+### JivoChat
+
+- [Answer new JivoChat chats from the Inbox with AI](https://cotlet.dev/integrations/jivochat-api-mcp-server/answer-new-chats-from-inbox)
+- [Merge duplicate JivoChat clients](https://cotlet.dev/integrations/jivochat-api-mcp-server/merge-duplicate-clients)
+- [Weekly JivoChat missed chats and agent report](https://cotlet.dev/integrations/jivochat-api-mcp-server/weekly-missed-chats-report)
+
+### Jobber
+
+- [Chase unpaid Jobber invoices automatically](https://cotlet.dev/integrations/jobber-api-mcp-server/chase-unpaid-invoices)
+- [Convert approved Jobber quotes to jobs automatically](https://cotlet.dev/integrations/jobber-api-mcp-server/convert-approved-quotes-to-jobs)
+- [Follow up on unanswered Jobber quotes with AI](https://cotlet.dev/integrations/jobber-api-mcp-server/follow-up-on-unanswered-quotes)
 
 ### Joist
 
 - [Create Joist estimates from a job description](https://cotlet.dev/integrations/joist-api-mcp-server/create-estimates-from-job-description)
-- [Convert Joist estimates to invoices with an AI agent](https://cotlet.dev/integrations/joist-api-mcp-server/convert-estimates-to-invoices)
-- [Record Joist payments from checks and cash with AI](https://cotlet.dev/integrations/joist-api-mcp-server/record-payments-on-invoices)
-- [List unpaid Joist invoices and the total owed](https://cotlet.dev/integrations/joist-api-mcp-server/list-unpaid-invoices)
-- [Export Joist invoices for your accountant on a schedule](https://cotlet.dev/integrations/joist-api-mcp-server/monthly-invoice-export-for-accounting)
+- [Turn signed Joist estimates into invoices](https://cotlet.dev/integrations/joist-api-mcp-server/convert-estimates-to-invoices)
+- [Record check and cash payments on Joist invoices](https://cotlet.dev/integrations/joist-api-mcp-server/record-payments-on-invoices)
+- [Follow up on unpaid and overdue Joist invoices](https://cotlet.dev/integrations/joist-api-mcp-server/follow-up-unpaid-invoices)
+
+### Jotform
+
+- [Build Jotform response reports with AI](https://cotlet.dev/integrations/jotform-api-mcp-server/build-form-response-reports)
+- [Correct Jotform submissions in bulk](https://cotlet.dev/integrations/jotform-api-mcp-server/correct-submission-data)
+- [Change Jotform notification recipients on many forms](https://cotlet.dev/integrations/jotform-api-mcp-server/change-form-notification-recipients)
 
 ### Joy
 
-- [Check who has not RSVPed on Joy](https://cotlet.dev/integrations/joy-api-mcp-server/check-rsvp-status)
-- [Add guests to your Joy guest list from a spreadsheet](https://cotlet.dev/integrations/joy-api-mcp-server/add-guests-from-spreadsheet)
-- [Send Joy RSVP reminders with an AI agent](https://cotlet.dev/integrations/joy-api-mcp-server/send-rsvp-reminders)
-- [Get Joy meal choices for the caterer](https://cotlet.dev/integrations/joy-api-mcp-server/export-meal-choices)
-- [Change your Joy schedule and tell the guests](https://cotlet.dev/integrations/joy-api-mcp-server/announce-schedule-change)
+- [Sync your Joy guest list from a spreadsheet](https://cotlet.dev/integrations/joy-api-mcp-server/add-guests-from-spreadsheet)
+- [Send Joy RSVP reminders to guests who have not replied](https://cotlet.dev/integrations/joy-api-mcp-server/send-rsvp-reminders)
+- [Get final Joy meal counts and dietary notes for the caterer](https://cotlet.dev/integrations/joy-api-mcp-server/export-meal-choices)
 - [Send Joy thank-you notes for registry gifts](https://cotlet.dev/integrations/joy-api-mcp-server/send-thank-you-notes)
 
 ### Kickserv
 
-- [Add website leads to Kickserv as opportunities](https://cotlet.dev/integrations/kickserv-api-mcp-server/add-leads-as-opportunities)
-- [Build and send Kickserv estimates with AI](https://cotlet.dev/integrations/kickserv-api-mcp-server/build-and-send-estimates)
-- [Invoice completed Kickserv jobs automatically](https://cotlet.dev/integrations/kickserv-api-mcp-server/invoice-completed-jobs)
-- [Log manual payments in Kickserv with AI](https://cotlet.dev/integrations/kickserv-api-mcp-server/log-manual-payments)
-- [Schedule Kickserv jobs with an AI agent](https://cotlet.dev/integrations/kickserv-api-mcp-server/schedule-unscheduled-jobs)
-- [Log technician hours in Kickserv with AI](https://cotlet.dev/integrations/kickserv-api-mcp-server/log-time-entries)
+- [Add leads to Kickserv as opportunities](https://cotlet.dev/integrations/kickserv-api-mcp-server/add-leads-as-opportunities)
+- [Build and send Kickserv estimates from your notes](https://cotlet.dev/integrations/kickserv-api-mcp-server/build-and-send-estimates)
+- [Invoice completed Kickserv jobs and email the invoices](https://cotlet.dev/integrations/kickserv-api-mcp-server/invoice-completed-jobs)
+- [Log check and cash payments on Kickserv invoices](https://cotlet.dev/integrations/kickserv-api-mcp-server/log-manual-payments)
 
 ### Kiwi.com
 
-- [Add travel documents on Kiwi.com before check-in](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/add-travel-documents-for-check-in)
-- [Get Kiwi.com boarding passes with an AI agent](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/get-boarding-passes)
-- [Add baggage to a Kiwi.com booking with an AI agent](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/add-baggage-to-a-booking)
-- [Download Kiwi.com invoices for expense reports](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/download-invoices-for-expenses)
-- [Cancel a Kiwi.com trip and request a refund](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/cancel-a-trip-for-a-refund)
+- [Kiwi.com online check-in: add travel documents and get boarding passes](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/online-check-in-and-boarding-passes)
+- [Add a checked bag to a Kiwi.com booking](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/add-baggage-to-a-booking)
+- [Cancel a Kiwi.com trip and check the refund first](https://cotlet.dev/integrations/kiwi-com-api-mcp-server/cancel-a-trip-for-a-refund)
 
 ### Klook
 
-- [Compare Klook tours and tickets by price and rating](https://cotlet.dev/integrations/klook-api-mcp-server/compare-activity-prices)
-- [Book a Klook activity and use KlookCash with AI](https://cotlet.dev/integrations/klook-api-mcp-server/book-activity-with-klookcash)
-- [List your upcoming Klook bookings and vouchers](https://cotlet.dev/integrations/klook-api-mcp-server/list-upcoming-bookings)
-- [Reschedule a Klook booking with an AI agent](https://cotlet.dev/integrations/klook-api-mcp-server/reschedule-a-booking)
+- [Find and book a Klook activity with KlookCash](https://cotlet.dev/integrations/klook-api-mcp-server/book-activity-with-klookcash)
+- [Reschedule Klook bookings after a flight change](https://cotlet.dev/integrations/klook-api-mcp-server/reschedule-a-booking)
 - [Cancel a Klook booking and apply for a refund](https://cotlet.dev/integrations/klook-api-mcp-server/cancel-booking-refund)
-- [Check your Klook KlookCash balance and expiry](https://cotlet.dev/integrations/klook-api-mcp-server/check-klookcash-expiry)
 
 ### Knowify
 
-- [Get a weekly Knowify job cost report](https://cotlet.dev/integrations/knowify-api-mcp-server/weekly-job-cost-report)
-- [Create a Knowify job and send the proposal for signature](https://cotlet.dev/integrations/knowify-api-mcp-server/create-job-and-send-proposal)
-- [Add a Knowify change order and invoice it](https://cotlet.dev/integrations/knowify-api-mcp-server/add-change-order-and-invoice)
+- [Weekly Knowify report of jobs and phases over budget](https://cotlet.dev/integrations/knowify-api-mcp-server/weekly-job-cost-report)
+- [Create a Knowify job and send the proposal for e-signature](https://cotlet.dev/integrations/knowify-api-mcp-server/create-job-and-send-proposal)
 - [Create Knowify progress invoices by percent complete](https://cotlet.dev/integrations/knowify-api-mcp-server/bill-percent-complete-invoice)
-- [Log time on a Knowify job phase with an AI agent](https://cotlet.dev/integrations/knowify-api-mcp-server/log-time-on-job-phase)
-- [Record a Knowify client payment against an invoice](https://cotlet.dev/integrations/knowify-api-mcp-server/record-client-payment)
+
+### Kommo
+
+- [Triage incoming Kommo leads with AI](https://cotlet.dev/integrations/kommo-api-mcp-server/triage-incoming-leads)
+- [Create follow-up tasks for stale Kommo leads](https://cotlet.dev/integrations/kommo-api-mcp-server/chase-stale-leads-with-follow-up-tasks)
+- [Reply to unanswered Kommo chats with AI](https://cotlet.dev/integrations/kommo-api-mcp-server/reply-to-unanswered-chats)
+
+### Kustomer
+
+- [Merge duplicate Kustomer conversations with AI](https://cotlet.dev/integrations/kustomer-api-mcp-server/merge-duplicate-conversations)
+- [Follow up on snoozed Kustomer conversations](https://cotlet.dev/integrations/kustomer-api-mcp-server/follow-up-on-snoozed-conversations)
+- [Add handoff notes to Kustomer conversations](https://cotlet.dev/integrations/kustomer-api-mcp-server/add-handoff-notes-to-conversations)
+
+### LearnUpon
+
+- [Invite and enroll new LearnUpon learners](https://cotlet.dev/integrations/learnupon-api-mcp-server/invite-and-enroll-new-learners)
+- [Re-enroll a LearnUpon group for recertification](https://cotlet.dev/integrations/learnupon-api-mcp-server/reenroll-group-for-recertification)
+- [Offboard leavers from LearnUpon training](https://cotlet.dev/integrations/learnupon-api-mcp-server/offboard-leavers-from-training)
+
+### Lexware Office (lexoffice)
+
+- [Create and send Lexware Office invoices from a list](https://cotlet.dev/integrations/lexware-office-api-mcp-server/create-and-send-invoices)
+- [Send Lexware Office payment reminders for overdue invoices](https://cotlet.dev/integrations/lexware-office-api-mcp-server/send-payment-reminders)
+- [Upload receipts to Lexware Office automatically](https://cotlet.dev/integrations/lexware-office-api-mcp-server/upload-receipts-for-bookkeeping)
 
 ### Libsyn
 
 - [Schedule Libsyn podcast episodes with an AI agent](https://cotlet.dev/integrations/libsyn-api-mcp-server/schedule-podcast-episodes)
-- [Find your best-performing Libsyn episodes](https://cotlet.dev/integrations/libsyn-api-mcp-server/best-performing-episodes)
 - [Update Libsyn show notes across many episodes](https://cotlet.dev/integrations/libsyn-api-mcp-server/bulk-update-show-notes)
-- [Renumber Libsyn seasons and episodes in bulk](https://cotlet.dev/integrations/libsyn-api-mcp-server/renumber-podcast-episodes)
-- [Add transcripts to Libsyn episodes with AI](https://cotlet.dev/integrations/libsyn-api-mcp-server/add-episode-transcripts)
-- [Get a monthly Libsyn downloads report](https://cotlet.dev/integrations/libsyn-api-mcp-server/monthly-podcast-stats-report)
+- [Add transcripts to Libsyn episodes in bulk](https://cotlet.dev/integrations/libsyn-api-mcp-server/add-episode-transcripts)
+- [Get a monthly Libsyn downloads report for sponsors](https://cotlet.dev/integrations/libsyn-api-mcp-server/monthly-podcast-stats-report)
+
+### Lichess
+
+- [Schedule a weekly Lichess Arena tournament](https://cotlet.dev/integrations/lichess-api-mcp-server/schedule-weekly-arena-tournament)
+- [Set up a Lichess broadcast for a live chess event](https://cotlet.dev/integrations/lichess-api-mcp-server/run-a-chess-broadcast)
 
 ### Little Hotelier
 
 - [Check Little Hotelier arrivals and unpaid balances daily](https://cotlet.dev/integrations/little-hotelier-api-mcp-server/daily-arrivals-and-balances)
 - [Bulk update Little Hotelier rates with an AI agent](https://cotlet.dev/integrations/little-hotelier-api-mcp-server/bulk-update-hotel-rates)
 - [Set Little Hotelier minimum stay and CTA with an AI agent](https://cotlet.dev/integrations/little-hotelier-api-mcp-server/set-minimum-stay-and-restrictions)
-- [Close a Little Hotelier room for maintenance with an AI agent](https://cotlet.dev/integrations/little-hotelier-api-mcp-server/close-room-for-maintenance)
-- [Get a Little Hotelier occupancy, ADR and RevPAR report](https://cotlet.dev/integrations/little-hotelier-api-mcp-server/occupancy-adr-revpar-report)
 - [Reply to Little Hotelier guest messages with an AI agent](https://cotlet.dev/integrations/little-hotelier-api-mcp-server/reply-to-guest-messages)
+
+### LiveChat (Text)
+
+- [Tag and archive finished LiveChat chats](https://cotlet.dev/integrations/livechat-api-mcp-server/tag-and-archive-chats)
+- [Answer unassigned LiveChat chats from the offline hours](https://cotlet.dev/integrations/livechat-api-mcp-server/answer-unassigned-chats)
+- [Build LiveChat canned responses from past chats](https://cotlet.dev/integrations/livechat-api-mcp-server/build-canned-responses)
+
+### Manatal
+
+- [Log interview feedback as Manatal candidate notes](https://cotlet.dev/integrations/manatal-api-mcp-server/log-interview-feedback-notes)
+- [Drop stale Manatal candidates with a drop reason](https://cotlet.dev/integrations/manatal-api-mcp-server/drop-candidates-with-reason)
+- [Add a shortlist of candidates to a Manatal job](https://cotlet.dev/integrations/manatal-api-mcp-server/shortlist-candidates-for-a-job)
 
 ### Mangomint
 
 - [Reschedule Mangomint appointments when staff is out](https://cotlet.dev/integrations/mangomint-api-mcp-server/reschedule-appointments-when-staff-is-out)
 - [Book clients from the Mangomint Intelligent Waitlist](https://cotlet.dev/integrations/mangomint-api-mcp-server/book-clients-from-the-waitlist)
-- [Get a weekly Mangomint sales report](https://cotlet.dev/integrations/mangomint-api-mcp-server/weekly-sales-report)
-- [Book Mangomint appointments with an AI agent](https://cotlet.dev/integrations/mangomint-api-mcp-server/book-appointments-with-ai)
-- [Find lapsed Mangomint clients with an AI agent](https://cotlet.dev/integrations/mangomint-api-mcp-server/find-lapsed-clients)
+- [Get a weekly Mangomint sales and cancellations report](https://cotlet.dev/integrations/mangomint-api-mcp-server/weekly-sales-report)
+- [Book Mangomint appointments from client texts with an AI agent](https://cotlet.dev/integrations/mangomint-api-mcp-server/book-appointments-with-ai)
 
 ### Mariana Tek
 
-- [Check in a Mariana Tek class roster with AI](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/check-in-class-roster)
-- [Book a customer into a Mariana Tek class with AI](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/book-customer-into-class)
-- [Cancel Mariana Tek reservations without a late fee](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/cancel-reservations-without-fee)
-- [Give Mariana Tek complimentary credits to a whole class](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/give-complimentary-credits)
-- [Assign a Mariana Tek substitute and email the class](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/substitute-instructor-notify-class)
-- [Check tomorrow's Mariana Tek roster and credits every day](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/daily-roster-and-credit-check)
+- [Book a customer into a Mariana Tek class from an email or text](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/book-customer-into-class)
+- [Cancel Mariana Tek reservations without a late cancel fee](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/cancel-reservations-without-fee)
+- [Give Mariana Tek complimentary credits to everyone in a class](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/give-complimentary-credits)
+- [Assign a Mariana Tek substitute instructor and email the class](https://cotlet.dev/integrations/mariana-tek-api-mcp-server/substitute-instructor-notify-class)
 
 ### MarketSharp
 
-- [Add MarketSharp leads and book appointments with AI](https://cotlet.dev/integrations/marketsharp-api-mcp-server/add-leads-and-book-appointments)
-- [Result MarketSharp appointments and add notes with AI](https://cotlet.dev/integrations/marketsharp-api-mcp-server/result-appointments-and-add-notes)
-- [Find MarketSharp appointments with no result](https://cotlet.dev/integrations/marketsharp-api-mcp-server/find-unresulted-appointments)
-- [Report MarketSharp sold jobs and contract status](https://cotlet.dev/integrations/marketsharp-api-mcp-server/sold-jobs-and-contract-status-report)
-- [Create MarketSharp follow-up activities with AI](https://cotlet.dev/integrations/marketsharp-api-mcp-server/follow-up-after-appointments)
-- [Issue MarketSharp appointments to salespeople](https://cotlet.dev/integrations/marketsharp-api-mcp-server/issue-appointments-to-salespeople)
+- [Add MarketSharp leads from email and book the sales appointment](https://cotlet.dev/integrations/marketsharp-api-mcp-server/add-leads-and-book-appointments)
+- [Result MarketSharp sales appointments and log what happened](https://cotlet.dev/integrations/marketsharp-api-mcp-server/result-sales-appointments)
 
 ### Mashvisor
 
-- [Run your saved Mashvisor filter presets with an AI agent](https://cotlet.dev/integrations/mashvisor-api-mcp-server/run-saved-filter-preset)
-- [Compare your Mashvisor Saved Homes side by side](https://cotlet.dev/integrations/mashvisor-api-mcp-server/compare-saved-homes)
-- [Analyze an off-market property in Mashvisor with AI](https://cotlet.dev/integrations/mashvisor-api-mcp-server/analyze-off-market-property)
-- [Create Mashvisor Property Alerts with an AI agent](https://cotlet.dev/integrations/mashvisor-api-mcp-server/create-property-alerts)
-- [Export Mashvisor neighborhood data to Excel with AI](https://cotlet.dev/integrations/mashvisor-api-mcp-server/export-neighborhood-data-to-excel)
-- [Find the best Airbnb markets in Mashvisor with AI](https://cotlet.dev/integrations/mashvisor-api-mcp-server/find-best-rental-markets)
+- [Run a weekly Mashvisor deal scan with your saved filter presets](https://cotlet.dev/integrations/mashvisor-api-mcp-server/run-saved-filter-preset)
+- [Compare all your Mashvisor Saved Homes side by side](https://cotlet.dev/integrations/mashvisor-api-mcp-server/compare-saved-homes)
+- [Analyze an off-market property in Mashvisor from a wholesaler email](https://cotlet.dev/integrations/mashvisor-api-mcp-server/analyze-off-market-property)
 
 ### Medium
 
-- [Cross-post articles to Medium with a canonical link](https://cotlet.dev/integrations/medium-api-mcp-server/cross-post-articles-with-canonical-link)
-- [Schedule Medium stories from Markdown](https://cotlet.dev/integrations/medium-api-mcp-server/schedule-stories-from-markdown)
-- [Get a weekly Medium stats report](https://cotlet.dev/integrations/medium-api-mcp-server/weekly-stats-report)
-- [Edit published Medium stories with AI](https://cotlet.dev/integrations/medium-api-mcp-server/edit-published-stories)
-- [Submit drafts to a Medium publication](https://cotlet.dev/integrations/medium-api-mcp-server/submit-drafts-to-publication)
-- [Reply to Medium responses with an AI agent](https://cotlet.dev/integrations/medium-api-mcp-server/reply-to-responses)
+- [Cross-post blog articles to Medium with a canonical link](https://cotlet.dev/integrations/medium-api-mcp-server/cross-post-articles-with-canonical-link)
+- [Publish Markdown to Medium on a schedule](https://cotlet.dev/integrations/medium-api-mcp-server/publish-markdown-to-medium)
+- [Get a weekly Medium stats and earnings report](https://cotlet.dev/integrations/medium-api-mcp-server/weekly-stats-report)
+- [Update old Medium stories in bulk](https://cotlet.dev/integrations/medium-api-mcp-server/edit-published-stories)
 
 ### Meetup
 
-- [Copy recurring Meetup events with AI](https://cotlet.dev/integrations/meetup-api-mcp-server/copy-recurring-events)
-- [Manage a Meetup waitlist with an AI agent](https://cotlet.dev/integrations/meetup-api-mcp-server/manage-event-waitlist)
-- [Message Meetup event attendees with AI](https://cotlet.dev/integrations/meetup-api-mcp-server/message-event-attendees)
-- [Mark Meetup no-shows and check-ins with AI](https://cotlet.dev/integrations/meetup-api-mcp-server/mark-no-shows)
-- [Create Meetup events from an agenda with AI](https://cotlet.dev/integrations/meetup-api-mcp-server/create-events-from-agenda)
+- [Create a series of Meetup events from an agenda](https://cotlet.dev/integrations/meetup-api-mcp-server/create-events-from-agenda)
+- [Message Meetup event attendees about a last-minute change](https://cotlet.dev/integrations/meetup-api-mcp-server/message-event-attendees)
+- [Mark Meetup no-shows after an event](https://cotlet.dev/integrations/meetup-api-mcp-server/mark-no-shows)
 
 ### Meevo
 
-- [Get a daily Meevo appointment schedule per stylist](https://cotlet.dev/integrations/meevo-api-mcp-server/daily-appointment-schedule)
-- [Book Meevo appointments with an AI agent](https://cotlet.dev/integrations/meevo-api-mcp-server/book-appointments-with-ai)
+- [Book Meevo appointments from client texts and emails with an AI agent](https://cotlet.dev/integrations/meevo-api-mcp-server/book-appointments-with-ai)
 - [Reschedule Meevo appointments when a stylist is out](https://cotlet.dev/integrations/meevo-api-mcp-server/reschedule-appointments-when-staff-is-out)
-- [Sell Meevo packages with an AI agent](https://cotlet.dev/integrations/meevo-api-mcp-server/sell-packages-from-chat)
-- [Get the Meevo Register Summary every evening](https://cotlet.dev/integrations/meevo-api-mcp-server/daily-register-summary)
+- [Get the Meevo Register Summary for every location each night](https://cotlet.dev/integrations/meevo-api-mcp-server/daily-register-summary)
 
 ### Milanote
 
-- [Save links to a Milanote moodboard with AI](https://cotlet.dev/integrations/milanote-api-mcp-server/save-links-to-moodboard)
+- [Save links and images to a Milanote moodboard with AI](https://cotlet.dev/integrations/milanote-api-mcp-server/save-links-to-moodboard)
 - [Export a Milanote board to Markdown with AI](https://cotlet.dev/integrations/milanote-api-mcp-server/export-board-to-markdown)
-- [Upload images to a Milanote board with AI](https://cotlet.dev/integrations/milanote-api-mcp-server/upload-images-to-board)
-- [Add a Milanote to-do list with due dates using AI](https://cotlet.dev/integrations/milanote-api-mcp-server/add-todo-list-with-due-dates)
-- [Search all your Milanote boards with AI](https://cotlet.dev/integrations/milanote-api-mcp-server/search-boards)
+- [Turn call notes into a Milanote to-do list with due dates](https://cotlet.dev/integrations/milanote-api-mcp-server/add-todo-list-with-due-dates)
 
 ### Momence
 
-- [Check in Momence class attendees with an AI agent](https://cotlet.dev/integrations/momence-api-mcp-server/check-in-class-attendees)
 - [Cancel a Momence class and notify students](https://cotlet.dev/integrations/momence-api-mcp-server/cancel-class-notify-students)
-- [Create recurring Momence classes with AI](https://cotlet.dev/integrations/momence-api-mcp-server/create-recurring-classes)
-- [Freeze a Momence membership with an AI agent](https://cotlet.dev/integrations/momence-api-mcp-server/freeze-membership)
-- [Refund a Momence payment with an AI agent](https://cotlet.dev/integrations/momence-api-mcp-server/refund-payment-as-credits)
+- [Create recurring Momence classes for a new term](https://cotlet.dev/integrations/momence-api-mcp-server/create-recurring-classes)
+- [Freeze a Momence membership for travel or injury](https://cotlet.dev/integrations/momence-api-mcp-server/freeze-membership)
+
+### MYOB
+
+- [Create and email MYOB invoices from a list](https://cotlet.dev/integrations/myob-api-mcp-server/create-and-email-invoices)
+- [Record MYOB customer payments automatically](https://cotlet.dev/integrations/myob-api-mcp-server/record-invoice-payments)
+- [Enter and pay MYOB supplier bills from a list](https://cotlet.dev/integrations/myob-api-mcp-server/enter-and-pay-supplier-bills)
+
+### Nextcloud
+
+- [Share a Nextcloud file with an expiring, password-protected link](https://cotlet.dev/integrations/nextcloud-api-mcp-server/share-file-with-expiring-link)
+- [Create Nextcloud Deck cards from meeting notes](https://cotlet.dev/integrations/nextcloud-api-mcp-server/create-deck-cards-from-notes)
+- [Audit and remove old public share links in Nextcloud](https://cotlet.dev/integrations/nextcloud-api-mcp-server/audit-public-share-links)
 
 ### Nextdoor
 
-- [Reply to Nextdoor recommendations with AI](https://cotlet.dev/integrations/nextdoor-api-mcp-server/reply-to-recommendations)
-- [Post to Nextdoor neighborhoods with an AI agent](https://cotlet.dev/integrations/nextdoor-api-mcp-server/post-to-nearby-neighborhoods)
-- [Reply to Nextdoor comments on your business posts](https://cotlet.dev/integrations/nextdoor-api-mcp-server/reply-to-comments)
-- [Answer Nextdoor Business Page messages with AI](https://cotlet.dev/integrations/nextdoor-api-mcp-server/answer-business-page-messages)
+- [Reply to Nextdoor recommendations from your Business Page](https://cotlet.dev/integrations/nextdoor-api-mcp-server/reply-to-recommendations)
+- [Write and publish Nextdoor business posts with an AI agent](https://cotlet.dev/integrations/nextdoor-api-mcp-server/publish-business-posts)
+- [Answer neighbor comments and messages on your Nextdoor Business Page](https://cotlet.dev/integrations/nextdoor-api-mcp-server/answer-comments-and-messages)
+
+### Odoo
+
+- [Chase overdue Odoo customer invoices](https://cotlet.dev/integrations/odoo-api-mcp-server/chase-overdue-invoices)
+- [Register payments on Odoo invoices](https://cotlet.dev/integrations/odoo-api-mcp-server/register-invoice-payments)
+- [Create Odoo invoices from a client list](https://cotlet.dev/integrations/odoo-api-mcp-server/create-invoices-from-a-list)
 
 ### Omio
 
-- [Compare train, bus and flight options on Omio with AI](https://cotlet.dev/integrations/omio-api-mcp-server/compare-train-bus-flight-options)
 - [Book the cheapest Omio train or bus ticket with AI](https://cotlet.dev/integrations/omio-api-mcp-server/book-cheapest-train-or-bus-ticket)
-- [List your upcoming Omio trips and tickets with AI](https://cotlet.dev/integrations/omio-api-mcp-server/list-upcoming-trips-and-tickets)
 - [Change the date of an Omio train ticket with AI](https://cotlet.dev/integrations/omio-api-mcp-server/change-train-ticket-date)
 - [Cancel an Omio trip and see the refund with AI](https://cotlet.dev/integrations/omio-api-mcp-server/cancel-trip-and-see-refund)
 
+### Otter.ai
+
+- [Share Otter.ai meeting notes with attendees after a call](https://cotlet.dev/integrations/otter-api-mcp-server/share-meeting-notes-with-attendees)
+- [Collect Otter.ai action items from all your meetings](https://cotlet.dev/integrations/otter-api-mcp-server/weekly-action-items-roundup)
+- [Import recordings into Otter.ai for transcription](https://cotlet.dev/integrations/otter-api-mcp-server/import-recordings-for-transcription)
+
 ### Paperless Post
 
-- [Chase Paperless Post RSVPs with an AI agent](https://cotlet.dev/integrations/paperless-post-api-mcp-server/chase-rsvps)
+- [Send Paperless Post RSVP reminders to guests who have not replied](https://cotlet.dev/integrations/paperless-post-api-mcp-server/send-rsvp-reminders)
 - [Send Paperless Post invitations from a spreadsheet](https://cotlet.dev/integrations/paperless-post-api-mcp-server/send-invitations-from-spreadsheet)
-- [Export Paperless Post RSVPs to a spreadsheet](https://cotlet.dev/integrations/paperless-post-api-mcp-server/export-rsvps)
-- [Announce a Paperless Post time or location change](https://cotlet.dev/integrations/paperless-post-api-mcp-server/announce-time-location-change)
 - [Tag Paperless Post guests and message each group](https://cotlet.dev/integrations/paperless-post-api-mcp-server/tag-guests-and-message-groups)
 
 ### Partiful
 
-- [Send Partiful Text Blasts to your guests with AI](https://cotlet.dev/integrations/partiful-api-mcp-server/text-guests-before-event)
-- [Export Partiful RSVPs to Google Sheets automatically](https://cotlet.dev/integrations/partiful-api-mcp-server/export-rsvps-to-google-sheets)
-- [Approve pending Partiful guests with an AI agent](https://cotlet.dev/integrations/partiful-api-mcp-server/approve-pending-guests)
-- [Re-invite past guests to a new Partiful event](https://cotlet.dev/integrations/partiful-api-mcp-server/reinvite-past-guests)
-- [Summarize Partiful Guest Questionnaire answers](https://cotlet.dev/integrations/partiful-api-mcp-server/summarize-guest-questionnaire)
+- [Send a Partiful Text Blast to guests by RSVP status](https://cotlet.dev/integrations/partiful-api-mcp-server/text-guests-before-event)
+- [Export Partiful RSVPs and questionnaire answers to Google Sheets](https://cotlet.dev/integrations/partiful-api-mcp-server/export-rsvps-to-google-sheets)
+- [Approve pending Partiful guests by their questionnaire answers](https://cotlet.dev/integrations/partiful-api-mcp-server/approve-pending-guests)
+- [Re-invite past guests to a recurring Partiful event](https://cotlet.dev/integrations/partiful-api-mcp-server/reinvite-past-guests)
 
 ### Patreon
 
-- [Schedule Patreon posts with an AI agent](https://cotlet.dev/integrations/patreon-api-mcp-server/schedule-posts)
-- [Send new Patreon members a thank-you message](https://cotlet.dev/integrations/patreon-api-mcp-server/welcome-new-patrons)
-- [Message every member of a Patreon tier](https://cotlet.dev/integrations/patreon-api-mcp-server/message-a-tier)
-- [Answer Patreon Chats with an AI agent](https://cotlet.dev/integrations/patreon-api-mcp-server/answer-patreon-chats)
-- [Export Patreon members to CSV automatically](https://cotlet.dev/integrations/patreon-api-mcp-server/export-members-csv)
+- [Schedule Patreon posts for the right tiers with an AI agent](https://cotlet.dev/integrations/patreon-api-mcp-server/schedule-posts)
+- [Mass message Patreon members of a tier](https://cotlet.dev/integrations/patreon-api-mcp-server/mass-message-patrons)
+- [Answer Patreon direct messages from members](https://cotlet.dev/integrations/patreon-api-mcp-server/answer-patreon-chats)
+- [Export Patreon members to CSV on a schedule](https://cotlet.dev/integrations/patreon-api-mcp-server/export-members-csv)
 
 ### Payhip
 
-- [Fix Payhip download limit errors with an AI agent](https://cotlet.dev/integrations/payhip-api-mcp-server/fix-download-limit-errors)
-- [Get a weekly Payhip sales summary from your AI agent](https://cotlet.dev/integrations/payhip-api-mcp-server/weekly-sales-summary)
-- [Cancel a Payhip subscription with an AI agent](https://cotlet.dev/integrations/payhip-api-mcp-server/cancel-membership-subscription)
-- [Create Payhip coupons with an AI agent](https://cotlet.dev/integrations/payhip-api-mcp-server/create-coupons)
-- [Block a Payhip buyer after a dispute with an AI agent](https://cotlet.dev/integrations/payhip-api-mcp-server/block-buyers-after-dispute)
+- [Fix Payhip download limit errors and resend download links](https://cotlet.dev/integrations/payhip-api-mcp-server/fix-download-limit-errors)
+- [Get a weekly Payhip sales summary with refunds and coupons](https://cotlet.dev/integrations/payhip-api-mcp-server/weekly-sales-summary)
 
 ### Peerspace
 
 - [Respond to Peerspace booking requests before they expire](https://cotlet.dev/integrations/peerspace-api-mcp-server/respond-to-booking-requests)
-- [Reply to Peerspace inquiries with an AI agent](https://cotlet.dev/integrations/peerspace-api-mcp-server/reply-to-inquiries)
-- [Send a Peerspace custom offer (invite to book) with AI](https://cotlet.dev/integrations/peerspace-api-mcp-server/send-custom-offer)
-- [Add weekend and evening rates to a Peerspace listing](https://cotlet.dev/integrations/peerspace-api-mcp-server/add-weekend-rates)
-- [Get a weekly Peerspace payout report](https://cotlet.dev/integrations/peerspace-api-mcp-server/weekly-payout-report)
+- [Answer Peerspace inquiries with your real availability and rules](https://cotlet.dev/integrations/peerspace-api-mcp-server/reply-to-inquiries)
+- [Send a Peerspace custom offer (invite to book) from an inquiry](https://cotlet.dev/integrations/peerspace-api-mcp-server/send-custom-offer)
+
+### Pennylane
+
+- [Create and send Pennylane invoices from a list](https://cotlet.dev/integrations/pennylane-api-mcp-server/create-and-send-invoices)
+- [Follow up on unpaid Pennylane invoices](https://cotlet.dev/integrations/pennylane-api-mcp-server/follow-up-on-unpaid-invoices)
+- [Categorise Pennylane bank transactions](https://cotlet.dev/integrations/pennylane-api-mcp-server/categorise-bank-transactions)
 
 ### PeoplePerHour
 
-- [Find new PeoplePerHour projects with an AI agent](https://cotlet.dev/integrations/peopleperhour-api-mcp-server/find-new-projects)
-- [Send PeoplePerHour proposals with an AI agent](https://cotlet.dev/integrations/peopleperhour-api-mcp-server/send-proposals)
-- [Reply to PeoplePerHour buyers with an AI agent](https://cotlet.dev/integrations/peopleperhour-api-mcp-server/reply-to-buyer-messages)
-- [Cancel and re-send a PeoplePerHour proposal](https://cotlet.dev/integrations/peopleperhour-api-mcp-server/resend-proposal)
-- [Raise PeoplePerHour invoices with an AI agent](https://cotlet.dev/integrations/peopleperhour-api-mcp-server/raise-weekly-invoices)
+- [Find new PeoplePerHour projects that fit your skills](https://cotlet.dev/integrations/peopleperhour-api-mcp-server/find-new-projects)
+- [Read PeoplePerHour project briefs before you write a proposal](https://cotlet.dev/integrations/peopleperhour-api-mcp-server/read-project-briefs)
 
 ### Perfect Venue
 
 - [Follow up on unanswered Perfect Venue leads](https://cotlet.dev/integrations/perfect-venue-api-mcp-server/follow-up-on-unanswered-leads)
-- [Add Perfect Venue leads from emails and calls with AI](https://cotlet.dev/integrations/perfect-venue-api-mcp-server/add-inquiries-as-leads)
-- [Find Perfect Venue events with a balance due](https://cotlet.dev/integrations/perfect-venue-api-mcp-server/chase-balance-due-events)
-- [Update a Perfect Venue event and resend the proposal](https://cotlet.dev/integrations/perfect-venue-api-mcp-server/update-event-and-resend-proposal)
-- [Get a weekly Perfect Venue bookings report](https://cotlet.dev/integrations/perfect-venue-api-mcp-server/weekly-bookings-report)
+- [Create Perfect Venue leads from emails and phone calls](https://cotlet.dev/integrations/perfect-venue-api-mcp-server/create-leads-from-emails)
+- [Send Perfect Venue balance due reminders](https://cotlet.dev/integrations/perfect-venue-api-mcp-server/send-balance-due-reminders)
+
+### Personio
+
+- [Auto-approve Personio time off requests by your rule](https://cotlet.dev/integrations/personio-api-mcp-server/auto-approve-time-off-requests)
+- [Book Personio time off for a whole team](https://cotlet.dev/integrations/personio-api-mcp-server/book-time-off-for-a-team)
 
 ### Pirate Ship
 
 - [Buy Pirate Ship shipping labels in bulk](https://cotlet.dev/integrations/pirate-ship-api-mcp-server/buy-shipping-labels-in-bulk)
-- [Ship Pirate Ship store orders at the cheapest rate](https://cotlet.dev/integrations/pirate-ship-api-mcp-server/ship-store-orders-cheapest-rate)
 - [Refund unused Pirate Ship labels](https://cotlet.dev/integrations/pirate-ship-api-mcp-server/refund-unused-labels)
 - [Create a Pirate Ship SCAN Form and book a pickup](https://cotlet.dev/integrations/pirate-ship-api-mcp-server/scan-form-and-pickup)
-- [Check Pirate Ship shipment tracking with an AI agent](https://cotlet.dev/integrations/pirate-ship-api-mcp-server/check-shipment-tracking)
 
 ### Pixieset
 
-- [Create and share a Pixieset client gallery with AI](https://cotlet.dev/integrations/pixieset-api-mcp-server/create-and-share-client-gallery)
-- [Export Pixieset client favorites and comments](https://cotlet.dev/integrations/pixieset-api-mcp-server/export-client-favorites)
-- [Check Pixieset gallery downloads and resend invites](https://cotlet.dev/integrations/pixieset-api-mcp-server/check-gallery-downloads)
-- [List unpaid Pixieset invoices every week](https://cotlet.dev/integrations/pixieset-api-mcp-server/list-unpaid-invoices)
-- [Add Pixieset leads and draft invoices from a list](https://cotlet.dev/integrations/pixieset-api-mcp-server/add-leads-and-draft-invoices)
-- [List upcoming Pixieset booked sessions](https://cotlet.dev/integrations/pixieset-api-mcp-server/upcoming-booked-sessions)
+- [Create and share a Pixieset client gallery](https://cotlet.dev/integrations/pixieset-api-mcp-server/create-and-share-client-gallery)
+- [Export Pixieset client favorites and notes for editing](https://cotlet.dev/integrations/pixieset-api-mcp-server/export-client-favorites)
+- [Check Pixieset gallery downloads and resend invites before expiry](https://cotlet.dev/integrations/pixieset-api-mcp-server/check-gallery-downloads)
 
 ### Polarsteps
 
-- [Export one Polarsteps trip as GPX or Markdown](https://cotlet.dev/integrations/polarsteps-api-mcp-server/export-trip)
+- [Export a single Polarsteps trip as GPX or Markdown](https://cotlet.dev/integrations/polarsteps-api-mcp-server/export-trip-gpx)
 - [Turn a Polarsteps trip into a blog post](https://cotlet.dev/integrations/polarsteps-api-mcp-server/trip-to-blog-post)
-- [Add a Polarsteps step with photos from your notes](https://cotlet.dev/integrations/polarsteps-api-mcp-server/add-step-with-photos)
 - [Import a past trip into Polarsteps from a spreadsheet](https://cotlet.dev/integrations/polarsteps-api-mcp-server/import-past-trip)
-- [Fix typos in Polarsteps steps with AI](https://cotlet.dev/integrations/polarsteps-api-mcp-server/fix-step-typos)
-- [Reply to Polarsteps comments with an AI agent](https://cotlet.dev/integrations/polarsteps-api-mcp-server/reply-to-step-comments)
+- [Proofread a Polarsteps trip before printing a Travel Book](https://cotlet.dev/integrations/polarsteps-api-mcp-server/proofread-trip-for-travel-book)
+
+### Printful
+
+- [Find failed and stuck Printful orders](https://cotlet.dev/integrations/printful-api-mcp-server/find-failed-and-stuck-orders)
+- [Confirm Printful draft orders after a shipping check](https://cotlet.dev/integrations/printful-api-mcp-server/confirm-draft-orders-after-shipping-check)
+- [Generate Printful mockups for new designs](https://cotlet.dev/integrations/printful-api-mcp-server/generate-mockups-for-new-designs)
+
+### Printify
+
+- [Create Printify products from designs with AI](https://cotlet.dev/integrations/printify-api-mcp-server/create-products-from-designs)
+- [Publish Printify products to your shop with AI](https://cotlet.dev/integrations/printify-api-mcp-server/publish-products-to-shop)
+- [Check stuck Printify orders every morning](https://cotlet.dev/integrations/printify-api-mcp-server/check-stuck-orders)
+
+### Procountor
+
+- [Create and send Procountor sales invoices](https://cotlet.dev/integrations/procountor-api-mcp-server/create-and-send-sales-invoices)
+- [Verify and approve Procountor purchase invoices](https://cotlet.dev/integrations/procountor-api-mcp-server/approve-purchase-invoices)
+- [List unpaid Procountor sales invoices every week](https://cotlet.dev/integrations/procountor-api-mcp-server/list-unpaid-invoices)
 
 ### Property Finder
 
 - [Weekly Property Finder listing performance report](https://cotlet.dev/integrations/property-finder-api-mcp-server/weekly-listing-performance-report)
-- [Create and publish Property Finder listings from a spreadsheet](https://cotlet.dev/integrations/property-finder-api-mcp-server/bulk-publish-listings)
+- [Bulk upload Property Finder listings from a spreadsheet](https://cotlet.dev/integrations/property-finder-api-mcp-server/bulk-upload-listings-from-spreadsheet)
 - [Daily Property Finder new leads digest](https://cotlet.dev/integrations/property-finder-api-mcp-server/daily-new-leads-digest)
-- [Unpublish low quality score listings on Property Finder](https://cotlet.dev/integrations/property-finder-api-mcp-server/unpublish-low-quality-listings)
-- [Upgrade your best Property Finder listings to Featured](https://cotlet.dev/integrations/property-finder-api-mcp-server/upgrade-best-listings-to-featured)
+- [Fix low quality score listings on Property Finder](https://cotlet.dev/integrations/property-finder-api-mcp-server/fix-low-quality-score-listings)
 
 ### PushPress
 
 - [Cancel a PushPress class and notify booked members](https://cotlet.dev/integrations/pushpress-api-mcp-server/cancel-class-and-notify-members)
-- [Switch a PushPress member to another plan](https://cotlet.dev/integrations/pushpress-api-mcp-server/switch-member-plan)
-- [Review PushPress no-shows and late cancels weekly](https://cotlet.dev/integrations/pushpress-api-mcp-server/review-no-shows-and-late-cancels)
-- [Pause a PushPress membership](https://cotlet.dev/integrations/pushpress-api-mcp-server/pause-membership)
-- [Check in PushPress members to a class](https://cotlet.dev/integrations/pushpress-api-mcp-server/check-in-members)
+- [Upgrade or downgrade a PushPress member plan](https://cotlet.dev/integrations/pushpress-api-mcp-server/upgrade-or-downgrade-member-plan)
+- [Review PushPress no-shows and late cancels every week](https://cotlet.dev/integrations/pushpress-api-mcp-server/review-no-shows-and-late-cancels)
+- [Pause a PushPress membership for injury or travel](https://cotlet.dev/integrations/pushpress-api-mcp-server/pause-membership)
 
 ### Quora
 
-- [Find Quora questions to answer with an AI agent](https://cotlet.dev/integrations/quora-api-mcp-server/find-questions-to-answer)
-- [Post Quora answers from your own content](https://cotlet.dev/integrations/quora-api-mcp-server/post-answers-from-your-content)
-- [Triage your Quora answer requests with AI](https://cotlet.dev/integrations/quora-api-mcp-server/triage-answer-requests)
-- [Queue Quora Space posts with an AI agent](https://cotlet.dev/integrations/quora-api-mcp-server/queue-space-posts)
-- [Review Quora Space submissions with AI](https://cotlet.dev/integrations/quora-api-mcp-server/review-space-submissions)
-- [Get a weekly Quora Space stats report](https://cotlet.dev/integrations/quora-api-mcp-server/weekly-space-stats-report)
+- [Find Quora questions worth answering in your niche](https://cotlet.dev/integrations/quora-api-mcp-server/find-questions-to-answer)
+- [Answer Quora questions from your own blog posts](https://cotlet.dev/integrations/quora-api-mcp-server/post-answers-from-your-content)
+- [Queue posts in your Quora Space with an AI agent](https://cotlet.dev/integrations/quora-api-mcp-server/queue-space-posts)
+- [Review Quora Space submissions against your Space rules](https://cotlet.dev/integrations/quora-api-mcp-server/review-space-submissions)
 
-### REsimpli
+### Recurly
 
-- [Update REsimpli lead status and notes with AI](https://cotlet.dev/integrations/resimpli-api-mcp-server/update-lead-status)
-- [Enroll REsimpli leads in a drip automation](https://cotlet.dev/integrations/resimpli-api-mcp-server/enroll-leads-in-automation)
-- [Skip trace REsimpli leads with an AI agent](https://cotlet.dev/integrations/resimpli-api-mcp-server/skip-trace-leads)
-- [Assign REsimpli leads and create follow-up tasks](https://cotlet.dev/integrations/resimpli-api-mcp-server/assign-leads-and-create-tasks)
-- [Import leads into REsimpli and tag them](https://cotlet.dev/integrations/resimpli-api-mcp-server/import-leads-and-tag)
+- [List past-due Recurly accounts](https://cotlet.dev/integrations/recurly-api-mcp-server/list-past-due-accounts)
+- [Refund a Recurly invoice line item](https://cotlet.dev/integrations/recurly-api-mcp-server/refund-invoice-line-item)
+- [Cancel Recurly subscriptions at the end of the term](https://cotlet.dev/integrations/recurly-api-mcp-server/cancel-subscription-at-term-end)
+
+### Redmine
+
+- [Log time on Redmine issues from your agent](https://cotlet.dev/integrations/redmine-api-mcp-server/log-time-on-issues)
+- [Create Redmine issues from meeting notes](https://cotlet.dev/integrations/redmine-api-mcp-server/create-issues-from-meeting-notes)
+- [Triage unassigned Redmine issues with an agent](https://cotlet.dev/integrations/redmine-api-mcp-server/triage-unassigned-issues)
+
+### RemNote
+
+- [Add notes to your RemNote daily document with AI](https://cotlet.dev/integrations/remnote-api-mcp-server/add-notes-to-daily-document)
+- [Turn RemNote notes into flashcards with AI](https://cotlet.dev/integrations/remnote-api-mcp-server/turn-notes-into-flashcards)
+- [Check due RemNote flashcards every morning](https://cotlet.dev/integrations/remnote-api-mcp-server/check-due-flashcards)
 
 ### Rent Manager
 
-- [Text Rent Manager tenants a rent reminder with AI](https://cotlet.dev/integrations/rent-manager-api-mcp-server/text-tenants-rent-reminder)
-- [Post late fees to Rent Manager tenant ledgers with AI](https://cotlet.dev/integrations/rent-manager-api-mcp-server/post-late-fees-to-tenants)
-- [Create Rent Manager service issues from tenant requests](https://cotlet.dev/integrations/rent-manager-api-mcp-server/create-service-issues-from-requests)
-- [Get a weekly Rent Manager overdue service issue report](https://cotlet.dev/integrations/rent-manager-api-mcp-server/overdue-maintenance-report)
-- [Review a Rent Manager tenant ledger and log a note with AI](https://cotlet.dev/integrations/rent-manager-api-mcp-server/review-tenant-ledger)
+- [Text past-due Rent Manager tenants a personal rent reminder](https://cotlet.dev/integrations/rent-manager-api-mcp-server/text-tenants-rent-reminder)
+- [Create Rent Manager service issues from tenant texts and emails](https://cotlet.dev/integrations/rent-manager-api-mcp-server/create-service-issues-from-requests)
+- [Follow up on overdue Rent Manager service issues every week](https://cotlet.dev/integrations/rent-manager-api-mcp-server/follow-up-overdue-service-issues)
 
 ### Rently
 
-- [Assign Rently leads to agents automatically](https://cotlet.dev/integrations/rently-api-mcp-server/assign-leads-to-agents)
 - [Approve Rently Safe Mode viewing requests](https://cotlet.dev/integrations/rently-api-mcp-server/approve-safe-mode-requests)
+- [Assign Rently leads to agents automatically](https://cotlet.dev/integrations/rently-api-mcp-server/assign-leads-to-agents)
 - [Turn off Rently self-touring when a home is leased](https://cotlet.dev/integrations/rently-api-mcp-server/turn-off-self-touring-when-leased)
 - [Find Rently properties with no showings](https://cotlet.dev/integrations/rently-api-mcp-server/find-properties-with-no-showings)
-- [Get a weekly Rently leads and showings report](https://cotlet.dev/integrations/rently-api-mcp-server/weekly-leads-and-showings-report)
+
+### REsimpli
+
+- [Update REsimpli lead statuses and notes after a calling session](https://cotlet.dev/integrations/resimpli-api-mcp-server/update-lead-status)
+- [Reactivate REsimpli dead leads with a drip campaign](https://cotlet.dev/integrations/resimpli-api-mcp-server/reactivate-dead-leads-with-a-drip)
 
 ### Riverside
 
-- [Schedule Riverside recording sessions and invite guests](https://cotlet.dev/integrations/riverside-api-mcp-server/schedule-recording-session)
-- [Reschedule or cancel a Riverside session with AI](https://cotlet.dev/integrations/riverside-api-mcp-server/reschedule-recording-session)
-- [Download Riverside separate tracks automatically](https://cotlet.dev/integrations/riverside-api-mcp-server/download-separate-tracks)
-- [Turn a Riverside transcript into show notes](https://cotlet.dev/integrations/riverside-api-mcp-server/transcript-to-show-notes)
-- [Get a weekly list of Riverside sessions](https://cotlet.dev/integrations/riverside-api-mcp-server/weekly-session-agenda)
+- [Schedule a Riverside recording session and invite the guest](https://cotlet.dev/integrations/riverside-api-mcp-server/schedule-recording-session)
+- [Reschedule or cancel a Riverside recording session](https://cotlet.dev/integrations/riverside-api-mcp-server/reschedule-recording-session)
+- [Download Riverside separate tracks for your editor](https://cotlet.dev/integrations/riverside-api-mcp-server/download-separate-tracks)
+
+### Sendible
+
+- [Triage the Sendible Priority Inbox with AI](https://cotlet.dev/integrations/sendible-api-mcp-server/triage-priority-inbox)
+- [Weekly Sendible client report for every workspace](https://cotlet.dev/integrations/sendible-api-mcp-server/weekly-client-report)
+- [Chase Sendible posts waiting for client approval](https://cotlet.dev/integrations/sendible-api-mcp-server/chase-client-approvals)
 
 ### Service Autopilot
 
-- [Add a Service Autopilot client and recurring job with AI](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/add-client-and-recurring-job)
-- [Reschedule Service Autopilot jobs after rain with AI](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/reschedule-jobs-after-rain)
-- [Create and send Service Autopilot estimates with AI](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/create-and-send-estimates)
-- [Find unpaid Service Autopilot invoices with AI](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/find-unpaid-invoices)
-- [Text Service Autopilot clients about tomorrow's visits](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/text-clients-about-tomorrows-visits)
+- [Add a Service Autopilot client and set up recurring mowing](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/add-client-and-recurring-job)
+- [Reschedule Service Autopilot jobs after rain](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/reschedule-jobs-after-rain)
+- [Create and send Service Autopilot estimates from site visit notes](https://cotlet.dev/integrations/service-autopilot-api-mcp-server/create-and-send-estimates)
 
 ### Service Fusion
 
 - [Create Service Fusion customers and jobs from new leads](https://cotlet.dev/integrations/service-fusion-api-mcp-server/create-customers-and-jobs-from-leads)
-- [List unscheduled Service Fusion jobs every morning](https://cotlet.dev/integrations/service-fusion-api-mcp-server/list-unscheduled-jobs)
-- [Invoice completed Service Fusion jobs and text the invoice](https://cotlet.dev/integrations/service-fusion-api-mcp-server/invoice-completed-jobs)
-- [Convert a Service Fusion estimate option to a job](https://cotlet.dev/integrations/service-fusion-api-mcp-server/convert-estimate-to-job)
+- [Invoice completed Service Fusion jobs and send the invoices](https://cotlet.dev/integrations/service-fusion-api-mcp-server/invoice-completed-jobs)
+- [Convert accepted Service Fusion estimates to jobs](https://cotlet.dev/integrations/service-fusion-api-mcp-server/convert-estimate-to-job)
 - [Draft a Service Fusion estimate and text it to the customer](https://cotlet.dev/integrations/service-fusion-api-mcp-server/send-estimates-by-text)
-- [Get a weekly Service Fusion unpaid invoices report](https://cotlet.dev/integrations/service-fusion-api-mcp-server/unpaid-invoices-report)
 
 ### Setmore
 
-- [Get a daily Setmore schedule summary with AI](https://cotlet.dev/integrations/setmore-api-mcp-server/daily-schedule-summary)
-- [Mark Setmore no-shows and add customer notes](https://cotlet.dev/integrations/setmore-api-mcp-server/mark-no-shows)
-- [Reschedule Setmore appointments in bulk with AI](https://cotlet.dev/integrations/setmore-api-mcp-server/reschedule-appointments)
-- [Block time on your Setmore calendar with AI](https://cotlet.dev/integrations/setmore-api-mcp-server/block-calendar-time)
-- [Get a Setmore bookings report by service or team member](https://cotlet.dev/integrations/setmore-api-mcp-server/bookings-report)
+- [Mark Setmore no-shows and track repeat offenders](https://cotlet.dev/integrations/setmore-api-mcp-server/mark-no-shows)
+- [Bulk reschedule Setmore appointments when a team member is out](https://cotlet.dev/integrations/setmore-api-mcp-server/bulk-reschedule-appointments)
+- [Monthly Setmore bookings report by service and team member](https://cotlet.dev/integrations/setmore-api-mcp-server/bookings-report)
+
+### sevdesk
+
+- [Chase overdue sevdesk invoices with payment reminders](https://cotlet.dev/integrations/sevdesk-api-mcp-server/chase-overdue-invoices)
+- [Create and send sevdesk invoices from a short brief](https://cotlet.dev/integrations/sevdesk-api-mcp-server/create-and-send-invoices)
+- [Digitize receipts in sevdesk and mark them paid](https://cotlet.dev/integrations/sevdesk-api-mcp-server/digitize-receipts)
 
 ### SignUpGenius
 
 - [Create SignUpGenius sign-ups with an AI agent](https://cotlet.dev/integrations/signupgenius-api-mcp-server/create-signups-from-a-prompt)
-- [Get a weekly SignUpGenius open slots report](https://cotlet.dev/integrations/signupgenius-api-mcp-server/weekly-open-slots-report)
-- [Email SignUpGenius members who have not signed up](https://cotlet.dev/integrations/signupgenius-api-mcp-server/remind-people-to-sign-up)
-- [Move SignUpGenius participants between slots](https://cotlet.dev/integrations/signupgenius-api-mcp-server/move-participants-between-slots)
-- [Copy and publish a SignUpGenius sign-up with AI](https://cotlet.dev/integrations/signupgenius-api-mcp-server/copy-and-publish-signups)
+- [Remind SignUpGenius group members to fill open slots](https://cotlet.dev/integrations/signupgenius-api-mcp-server/remind-people-to-sign-up)
+
+### Simpro
+
+- [Convert accepted Simpro quotes to jobs](https://cotlet.dev/integrations/simpro-api-mcp-server/convert-accepted-quotes-to-jobs)
+- [Draft Simpro quotes from customer requests](https://cotlet.dev/integrations/simpro-api-mcp-server/draft-quotes-from-customer-requests)
+- [Log technician time on Simpro jobs](https://cotlet.dev/integrations/simpro-api-mcp-server/log-technician-time-on-jobs)
 
 ### SiteMinder
 
-- [Update SiteMinder rates for busy dates with AI](https://cotlet.dev/integrations/siteminder-api-mcp-server/update-rates-for-busy-dates)
-- [Set SiteMinder minimum stay and closed to arrival with AI](https://cotlet.dev/integrations/siteminder-api-mcp-server/set-minimum-stay-and-closed-to-arrival)
-- [Close SiteMinder rooms and dates when rooms go out of order](https://cotlet.dev/integrations/siteminder-api-mcp-server/close-rooms-and-dates-when-rooms-go-out-of-order)
-- [Get a daily SiteMinder arrivals list with AI](https://cotlet.dev/integrations/siteminder-api-mcp-server/daily-arrivals-list)
-- [Get a weekly SiteMinder channel performance report](https://cotlet.dev/integrations/siteminder-api-mcp-server/weekly-channel-performance-report)
-- [Check SiteMinder rate parity across OTAs with AI](https://cotlet.dev/integrations/siteminder-api-mcp-server/check-rate-parity-across-otas)
+- [Update SiteMinder rates for busy dates and events](https://cotlet.dev/integrations/siteminder-api-mcp-server/update-rates-for-busy-dates)
+- [Set SiteMinder minimum stay and closed to arrival for peak dates](https://cotlet.dev/integrations/siteminder-api-mcp-server/set-minimum-stay-and-closed-to-arrival)
+- [Fill SiteMinder gap nights by lowering minimum stay](https://cotlet.dev/integrations/siteminder-api-mcp-server/fill-gap-nights)
+- [Weekly SiteMinder channel performance and pace report](https://cotlet.dev/integrations/siteminder-api-mcp-server/weekly-channel-performance-report)
 
 ### Skool
 
 - [Auto-approve Skool membership requests](https://cotlet.dev/integrations/skool-api-mcp-server/auto-approve-membership-requests)
 - [Schedule a weekly Skool post and pin it](https://cotlet.dev/integrations/skool-api-mcp-server/schedule-weekly-posts)
 - [Reply to unanswered Skool posts with AI](https://cotlet.dev/integrations/skool-api-mcp-server/reply-to-unanswered-posts)
-- [Answer Skool Chat messages with an AI agent](https://cotlet.dev/integrations/skool-api-mcp-server/answer-skool-chat-messages)
 - [Send new Skool members a personal welcome DM](https://cotlet.dev/integrations/skool-api-mcp-server/welcome-new-members)
-- [Get a weekly Skool MRR and churn report](https://cotlet.dev/integrations/skool-api-mcp-server/weekly-mrr-churn-report)
+
+### SmugMug
+
+- [Make SmugMug client galleries private](https://cotlet.dev/integrations/smugmug-api-mcp-server/make-client-galleries-private)
+- [Add captions and keywords to SmugMug photos](https://cotlet.dev/integrations/smugmug-api-mcp-server/add-captions-and-keywords-to-photos)
+- [Deliver photos to a SmugMug client](https://cotlet.dev/integrations/smugmug-api-mcp-server/deliver-photos-to-a-client)
+
+### SnelStart
+
+- [Create and send SnelStart sales invoices with AI](https://cotlet.dev/integrations/snelstart-api-mcp-server/create-and-send-sales-invoices)
+- [Send SnelStart payment reminders for overdue invoices with AI](https://cotlet.dev/integrations/snelstart-api-mcp-server/send-payment-reminders)
+- [Upload SnelStart purchase invoices and receipts with AI](https://cotlet.dev/integrations/snelstart-api-mcp-server/upload-purchase-invoices)
 
 ### SoundCloud
 
 - [Upload and schedule a SoundCloud track release](https://cotlet.dev/integrations/soundcloud-api-mcp-server/schedule-track-release)
-- [Reply to SoundCloud comments with an AI agent](https://cotlet.dev/integrations/soundcloud-api-mcp-server/reply-to-comments)
-- [Delete spam comments on SoundCloud with an AI agent](https://cotlet.dev/integrations/soundcloud-api-mcp-server/delete-spam-comments)
-- [Get a weekly SoundCloud plays report](https://cotlet.dev/integrations/soundcloud-api-mcp-server/weekly-plays-report)
-- [See where your SoundCloud listeners are](https://cotlet.dev/integrations/soundcloud-api-mcp-server/top-countries-and-cities)
-- [Create a private SoundCloud playlist with a secret link](https://cotlet.dev/integrations/soundcloud-api-mcp-server/private-playlist-secret-link)
+- [Reply to SoundCloud comments and clear spam with an AI agent](https://cotlet.dev/integrations/soundcloud-api-mcp-server/reply-to-comments)
+- [Find your top SoundCloud cities and countries for tour planning](https://cotlet.dev/integrations/soundcloud-api-mcp-server/top-countries-and-cities)
+
+### Sprout Social
+
+- [Triage Sprout Social Smart Inbox messages](https://cotlet.dev/integrations/sprout-social-api-mcp-server/triage-inbox-messages)
+- [Schedule social posts in Sprout Social from a brief](https://cotlet.dev/integrations/sprout-social-api-mcp-server/schedule-social-posts)
+- [Write a weekly Sprout Social performance summary](https://cotlet.dev/integrations/sprout-social-api-mcp-server/weekly-performance-report)
+
+### StreamElements
+
+- [Update StreamElements chat commands every week](https://cotlet.dev/integrations/streamelements-api-mcp-server/update-chat-commands)
+- [Approve or decline StreamElements store redemptions](https://cotlet.dev/integrations/streamelements-api-mcp-server/manage-store-redemptions)
+- [Reward your top StreamElements tippers with loyalty points](https://cotlet.dev/integrations/streamelements-api-mcp-server/reward-top-tippers-with-points)
 
 ### Substack
 
-- [Schedule Substack posts from Markdown with AI](https://cotlet.dev/integrations/substack-api-mcp-server/schedule-newsletter-posts)
-- [Post a Substack Note for every new post](https://cotlet.dev/integrations/substack-api-mcp-server/post-notes-for-new-posts)
-- [Get a weekly Substack subscriber and revenue report](https://cotlet.dev/integrations/substack-api-mcp-server/weekly-subscriber-report)
-- [Reply to unanswered Substack comments with AI](https://cotlet.dev/integrations/substack-api-mcp-server/reply-to-unanswered-comments)
-- [Add people to Substack as subscribers from a list](https://cotlet.dev/integrations/substack-api-mcp-server/add-subscribers-from-a-list)
+- [Schedule Substack posts from Markdown drafts](https://cotlet.dev/integrations/substack-api-mcp-server/schedule-newsletter-posts)
+- [Weekly Substack subscriber and revenue report](https://cotlet.dev/integrations/substack-api-mcp-server/weekly-subscriber-report)
+- [Reply to unanswered Substack comments](https://cotlet.dev/integrations/substack-api-mcp-server/reply-to-unanswered-comments)
 
 ### SuiteDash
 
-- [Create and send SuiteDash invoices with AI](https://cotlet.dev/integrations/suitedash-api-mcp-server/create-and-send-invoices)
-- [Check overdue SuiteDash invoices with AI](https://cotlet.dev/integrations/suitedash-api-mcp-server/check-overdue-invoices)
-- [Record SuiteDash invoice payments by bank transfer](https://cotlet.dev/integrations/suitedash-api-mcp-server/record-offline-payments)
-- [Onboard a new SuiteDash client with AI](https://cotlet.dev/integrations/suitedash-api-mcp-server/onboard-new-clients)
-- [Reply to SuiteDash portal messages with AI](https://cotlet.dev/integrations/suitedash-api-mcp-server/reply-to-portal-messages)
+- [Create and send SuiteDash invoices from a short note](https://cotlet.dev/integrations/suitedash-api-mcp-server/create-and-send-invoices)
+- [Record bank transfer and check payments on SuiteDash invoices](https://cotlet.dev/integrations/suitedash-api-mcp-server/record-offline-payments)
+- [Answer SuiteDash portal messages from clients with AI](https://cotlet.dev/integrations/suitedash-api-mcp-server/reply-to-portal-messages)
 
 ### Systeme.io
 
 - [Refund a Systeme.io customer and send the refund invoice](https://cotlet.dev/integrations/systeme-io-api-mcp-server/refund-customer-and-send-invoice)
-- [Get a weekly Systeme.io sales report by country](https://cotlet.dev/integrations/systeme-io-api-mcp-server/weekly-sales-report)
-- [Update text on a Systeme.io funnel page with AI](https://cotlet.dev/integrations/systeme-io-api-mcp-server/update-funnel-page-text)
-- [Duplicate a Systeme.io funnel page to test an offer](https://cotlet.dev/integrations/systeme-io-api-mcp-server/duplicate-funnel-page)
+- [Get a Systeme.io sales report by country and customer type](https://cotlet.dev/integrations/systeme-io-api-mcp-server/sales-report-by-country)
+- [Update text across Systeme.io funnel pages with AI](https://cotlet.dev/integrations/systeme-io-api-mcp-server/update-funnel-page-text)
 - [Publish Systeme.io blog posts from Markdown](https://cotlet.dev/integrations/systeme-io-api-mcp-server/publish-blog-posts-from-markdown)
+
+### Számlázz.hu
+
+- [Check NAV submission status of Számlázz.hu invoices](https://cotlet.dev/integrations/szamlazz-hu-api-mcp-server/check-nav-submission-status)
+- [Cancel a Számlázz.hu invoice with a storno invoice](https://cotlet.dev/integrations/szamlazz-hu-api-mcp-server/cancel-invoice-with-storno)
+- [Record Számlázz.hu invoice payments from bank transfers](https://cotlet.dev/integrations/szamlazz-hu-api-mcp-server/record-invoice-payments)
+
+### TaxDome
+
+- [Request documents from TaxDome clients with AI](https://cotlet.dev/integrations/taxdome-api-mcp-server/request-client-documents)
+- [Send TaxDome client invoices from one prompt](https://cotlet.dev/integrations/taxdome-api-mcp-server/send-client-invoices)
+- [Create TaxDome jobs for every client at once](https://cotlet.dev/integrations/taxdome-api-mcp-server/create-jobs-for-clients)
 
 ### Teachable
 
-- [Create Teachable coupons with an AI agent](https://cotlet.dev/integrations/teachable-api-mcp-server/create-discount-coupons)
-- [Email all students of a Teachable course](https://cotlet.dev/integrations/teachable-api-mcp-server/email-course-students)
+- [Create Teachable coupon codes for a sale](https://cotlet.dev/integrations/teachable-api-mcp-server/create-discount-coupons)
 - [Moderate and answer Teachable lesson comments](https://cotlet.dev/integrations/teachable-api-mcp-server/moderate-lesson-comments)
-- [Update Teachable lessons from a Markdown file](https://cotlet.dev/integrations/teachable-api-mcp-server/update-lessons-from-markdown)
-- [Enroll students in a Teachable course from a CSV](https://cotlet.dev/integrations/teachable-api-mcp-server/bulk-enroll-students)
+- [Update Teachable lessons from Markdown files](https://cotlet.dev/integrations/teachable-api-mcp-server/update-lessons-from-markdown)
 
 ### Teachers Pay Teachers
 
 - [Answer Teachers Pay Teachers buyer questions with AI](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server/answer-buyer-questions)
-- [Get a weekly Teachers Pay Teachers sales report](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server/weekly-sales-report)
-- [Schedule a Teachers Pay Teachers sale with AI](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server/schedule-a-sale)
+- [Throw a sale in your Teachers Pay Teachers store with AI](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server/throw-a-sale)
 - [Bulk update Teachers Pay Teachers product prices](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server/bulk-update-prices)
 - [Improve Teachers Pay Teachers titles with search keywords](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server/improve-titles-with-search-keywords)
-- [Upload a new Teachers Pay Teachers listing with AI](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server/upload-new-listing)
+
+### Teamleader
+
+- [Chase overdue Teamleader invoices with AI](https://cotlet.dev/integrations/teamleader-api-mcp-server/chase-overdue-invoices)
+- [Follow up open Teamleader quotations with AI](https://cotlet.dev/integrations/teamleader-api-mcp-server/follow-up-open-quotations)
 
 ### ThriveCart
 
-- [Create ThriveCart coupons with an AI agent](https://cotlet.dev/integrations/thrivecart-api-mcp-server/create-discount-coupons)
-- [Review ThriveCart coupon usage and disable old coupons](https://cotlet.dev/integrations/thrivecart-api-mcp-server/review-coupon-usage)
+- [Create ThriveCart coupons for a sale and retire old ones](https://cotlet.dev/integrations/thrivecart-api-mcp-server/create-discount-coupons)
 - [Clone a ThriveCart product for a new cohort](https://cotlet.dev/integrations/thrivecart-api-mcp-server/clone-product-for-new-cohort)
-- [Track overdue and paused ThriveCart subscriptions](https://cotlet.dev/integrations/thrivecart-api-mcp-server/track-overdue-subscriptions)
+- [Review overdue and paused ThriveCart subscriptions](https://cotlet.dev/integrations/thrivecart-api-mcp-server/track-overdue-subscriptions)
 - [Refund a ThriveCart customer and cancel their subscription](https://cotlet.dev/integrations/thrivecart-api-mcp-server/refund-and-cancel-subscription)
-- [Approve ThriveCart affiliate applications](https://cotlet.dev/integrations/thrivecart-api-mcp-server/approve-affiliate-applications)
 
 ### Thryv
 
-- [Get a daily Thryv schedule and unpaid invoices briefing](https://cotlet.dev/integrations/thryv-api-mcp-server/daily-schedule-and-unpaid-invoices)
-- [Invoice completed Thryv jobs automatically](https://cotlet.dev/integrations/thryv-api-mcp-server/invoice-completed-jobs)
-- [Reply to Thryv reviews with an AI agent](https://cotlet.dev/integrations/thryv-api-mcp-server/reply-to-reviews)
-- [Book Thryv appointments with an AI agent](https://cotlet.dev/integrations/thryv-api-mcp-server/book-appointments)
-- [Message Thryv clients about open slots](https://cotlet.dev/integrations/thryv-api-mcp-server/message-clients-about-open-slots)
+- [Reply to unanswered Thryv reviews with an AI agent](https://cotlet.dev/integrations/thryv-api-mcp-server/reply-to-reviews)
+- [Book Thryv appointments from client messages with an AI agent](https://cotlet.dev/integrations/thryv-api-mcp-server/book-appointments)
+- [Create Thryv estimates from quote requests in the inbox](https://cotlet.dev/integrations/thryv-api-mcp-server/create-estimates-from-quote-requests)
 
 ### Thumbtack
 
 - [Reply to new Thumbtack leads with an AI agent](https://cotlet.dev/integrations/thumbtack-api-mcp-server/reply-to-new-leads)
 - [Quote Thumbtack Opportunities with an AI agent](https://cotlet.dev/integrations/thumbtack-api-mcp-server/quote-opportunities)
 - [Send Thumbtack estimates with an AI agent](https://cotlet.dev/integrations/thumbtack-api-mcp-server/send-estimates)
-- [Reply to Thumbtack reviews with an AI agent](https://cotlet.dev/integrations/thumbtack-api-mcp-server/reply-to-reviews)
-- [Adjust your Thumbtack weekly budget with an AI agent](https://cotlet.dev/integrations/thumbtack-api-mcp-server/adjust-weekly-budget)
+
+### Tidio
+
+- [Triage Tidio support tickets by what the customer wrote](https://cotlet.dev/integrations/tidio-api-mcp-server/triage-support-tickets)
+- [Reply to waiting Tidio tickets with AI](https://cotlet.dev/integrations/tidio-api-mcp-server/reply-to-support-tickets)
+- [Update Tidio contact properties and tags in bulk](https://cotlet.dev/integrations/tidio-api-mcp-server/update-contact-properties)
+
+### Timetastic
+
+- [Approve Timetastic time off requests with AI](https://cotlet.dev/integrations/timetastic-api-mcp-server/approve-time-off-requests)
+- [Export a monthly Timetastic leave report for payroll](https://cotlet.dev/integrations/timetastic-api-mcp-server/monthly-leave-report)
+- [Book Timetastic time off from your AI agent](https://cotlet.dev/integrations/timetastic-api-mcp-server/book-time-off)
 
 ### Tiqets
 
-- [Find Tiqets attraction tickets for a date with AI](https://cotlet.dev/integrations/tiqets-api-mcp-server/find-attraction-tickets)
-- [List your upcoming Tiqets bookings with AI](https://cotlet.dev/integrations/tiqets-api-mcp-server/list-upcoming-bookings)
-- [Download your Tiqets e-tickets with AI](https://cotlet.dev/integrations/tiqets-api-mcp-server/download-e-tickets)
-- [Cancel a Tiqets booking with AI](https://cotlet.dev/integrations/tiqets-api-mcp-server/cancel-booking)
-- [Reschedule a Tiqets booking with AI](https://cotlet.dev/integrations/tiqets-api-mcp-server/reschedule-booking)
+- [Find Tiqets attraction tickets for a date and timeslot](https://cotlet.dev/integrations/tiqets-api-mcp-server/find-attraction-tickets)
+- [Cancel a Tiqets booking before the free cancellation deadline](https://cotlet.dev/integrations/tiqets-api-mcp-server/cancel-booking)
+- [Reschedule a Tiqets booking to another date or timeslot](https://cotlet.dev/integrations/tiqets-api-mcp-server/reschedule-booking)
+
+### tl;dv
+
+- [Share tl;dv recordings automatically](https://cotlet.dev/integrations/tldv-api-mcp-server/share-recordings-automatically)
+- [Turn tl;dv key moments into clips and notes](https://cotlet.dev/integrations/tldv-api-mcp-server/clip-key-moments)
+- [Rename tl;dv meetings and file them in folders](https://cotlet.dev/integrations/tldv-api-mcp-server/organize-meetings-in-folders)
 
 ### Tradify
 
-- [Chase overdue Tradify invoices with AI](https://cotlet.dev/integrations/tradify-api-mcp-server/chase-overdue-invoices)
-- [Create a Tradify job and book staff with AI](https://cotlet.dev/integrations/tradify-api-mcp-server/create-job-and-book-staff)
-- [Write Tradify quotes from your notes with AI](https://cotlet.dev/integrations/tradify-api-mcp-server/quote-from-notes)
-- [Send Tradify deposit invoices for accepted quotes](https://cotlet.dev/integrations/tradify-api-mcp-server/deposit-invoice-for-accepted-quotes)
-- [Get the Tradify schedule by staff member with AI](https://cotlet.dev/integrations/tradify-api-mcp-server/daily-schedule-by-staff)
-- [Record Tradify invoice payments with AI](https://cotlet.dev/integrations/tradify-api-mcp-server/record-invoice-payment)
+- [Chase overdue Tradify invoices after the reminders stop](https://cotlet.dev/integrations/tradify-api-mcp-server/chase-overdue-invoices)
+- [Create a Tradify job and book staff from a phone call](https://cotlet.dev/integrations/tradify-api-mcp-server/create-job-and-book-staff)
+- [Write a Tradify quote from your site notes](https://cotlet.dev/integrations/tradify-api-mcp-server/quote-from-notes)
+- [Send Tradify deposit invoices when quotes are accepted](https://cotlet.dev/integrations/tradify-api-mcp-server/deposit-invoice-for-accepted-quotes)
 
 ### Trainerize
 
-- [Remind Trainerize clients to log body stats](https://cotlet.dev/integrations/trainerize-api-mcp-server/remind-clients-to-log-body-stats)
-- [Summarize Trainerize check-ins with AI](https://cotlet.dev/integrations/trainerize-api-mcp-server/summarize-weekly-check-ins)
-- [Assign a Trainerize program to many clients at once](https://cotlet.dev/integrations/trainerize-api-mcp-server/assign-program-to-clients)
-- [Book recurring Trainerize appointments with AI](https://cotlet.dev/integrations/trainerize-api-mcp-server/book-recurring-appointments)
+- [Follow up with Trainerize clients who stopped logging body stats](https://cotlet.dev/integrations/trainerize-api-mcp-server/remind-clients-to-log-body-stats)
+- [Summarize weekly Trainerize check-in forms with AI](https://cotlet.dev/integrations/trainerize-api-mcp-server/summarize-weekly-check-ins)
+- [Assign the next Trainerize program when a client's program expires](https://cotlet.dev/integrations/trainerize-api-mcp-server/assign-next-program-when-program-expires)
 - [Draft replies to Trainerize client messages](https://cotlet.dev/integrations/trainerize-api-mcp-server/reply-to-client-messages)
-- [Log Trainerize body stats by talking to your agent](https://cotlet.dev/integrations/trainerize-api-mcp-server/log-client-body-stats)
+
+### Trakt
+
+- [Add a list of titles to your Trakt watchlist](https://cotlet.dev/integrations/trakt-api-mcp-server/bulk-add-to-watchlist)
+- [Log watched Trakt episodes in bulk](https://cotlet.dev/integrations/trakt-api-mcp-server/log-watched-episodes)
+
+### Trengo
+
+- [Triage new Trengo conversations with AI](https://cotlet.dev/integrations/trengo-api-mcp-server/triage-new-conversations)
+- [Reply to waiting Trengo customers with AI](https://cotlet.dev/integrations/trengo-api-mcp-server/reply-to-waiting-customers)
+- [Close resolved Trengo conversations with AI](https://cotlet.dev/integrations/trengo-api-mcp-server/close-resolved-conversations)
+
+### Tripleseat
+
+- [Convert Tripleseat leads to prospect events or bookings](https://cotlet.dev/integrations/tripleseat-api-mcp-server/convert-leads-to-bookings)
+- [Close finished Tripleseat events](https://cotlet.dev/integrations/tripleseat-api-mcp-server/close-finished-events)
+- [Follow up on tentative Tripleseat events](https://cotlet.dev/integrations/tripleseat-api-mcp-server/follow-up-tentative-events)
 
 ### TrueCoach
 
-- [Weekly TrueCoach client compliance check with AI](https://cotlet.dev/integrations/truecoach-api-mcp-server/weekly-client-compliance-check)
 - [Write TrueCoach workouts from a text prompt](https://cotlet.dev/integrations/truecoach-api-mcp-server/write-workouts-from-text)
-- [Assign a TrueCoach program to a client group with AI](https://cotlet.dev/integrations/truecoach-api-mcp-server/assign-program-to-group)
-- [Message TrueCoach clients who missed workouts](https://cotlet.dev/integrations/truecoach-api-mcp-server/check-in-with-clients-who-missed-workouts)
+- [Assign a TrueCoach program to a client group](https://cotlet.dev/integrations/truecoach-api-mcp-server/assign-program-to-group)
+- [Check in with TrueCoach clients who missed workouts](https://cotlet.dev/integrations/truecoach-api-mcp-server/check-in-with-clients-who-missed-workouts)
 - [Onboard new TrueCoach clients from a list](https://cotlet.dev/integrations/truecoach-api-mcp-server/onboard-new-clients)
+
+### Tumblr
+
+- [Fill your Tumblr queue from a list of posts](https://cotlet.dev/integrations/tumblr-api-mcp-server/fill-the-post-queue)
+- [Answer your Tumblr asks with AI](https://cotlet.dev/integrations/tumblr-api-mcp-server/answer-asks)
+- [Queue Tumblr reblogs from a tag](https://cotlet.dev/integrations/tumblr-api-mcp-server/queue-reblogs-from-a-tag)
 
 ### Udemy
 
-- [Create Udemy coupons with an AI agent](https://cotlet.dev/integrations/udemy-api-mcp-server/create-udemy-coupons)
-- [Get a monthly Udemy revenue report](https://cotlet.dev/integrations/udemy-api-mcp-server/monthly-revenue-report)
-- [Answer Udemy Q&A questions with AI](https://cotlet.dev/integrations/udemy-api-mcp-server/answer-udemy-qa-questions)
-- [Respond to Udemy reviews with an AI agent](https://cotlet.dev/integrations/udemy-api-mcp-server/respond-to-udemy-reviews)
-- [Send Udemy announcements to students with AI](https://cotlet.dev/integrations/udemy-api-mcp-server/send-student-announcements)
+- [Create Udemy instructor coupons every month](https://cotlet.dev/integrations/udemy-api-mcp-server/create-udemy-coupons)
+- [Respond to Udemy course reviews](https://cotlet.dev/integrations/udemy-api-mcp-server/respond-to-udemy-reviews)
+- [Send Udemy educational announcements and promotional emails](https://cotlet.dev/integrations/udemy-api-mcp-server/send-udemy-announcements)
 
 ### Uscreen
 
-- [Build a Uscreen course collection with drip](https://cotlet.dev/integrations/uscreen-api-mcp-server/build-course-collection)
-- [Schedule Uscreen video releases with AI](https://cotlet.dev/integrations/uscreen-api-mcp-server/schedule-video-releases)
-- [Schedule Uscreen live events with AI](https://cotlet.dev/integrations/uscreen-api-mcp-server/schedule-live-events)
-- [Create Uscreen promo coupons with AI](https://cotlet.dev/integrations/uscreen-api-mcp-server/create-promo-coupons)
-- [Report Uscreen top videos and watch time](https://cotlet.dev/integrations/uscreen-api-mcp-server/weekly-content-report)
-- [Post Uscreen community announcements with AI](https://cotlet.dev/integrations/uscreen-api-mcp-server/post-community-announcements)
+- [Build a Uscreen course collection with week dividers and drip](https://cotlet.dev/integrations/uscreen-api-mcp-server/build-course-collection)
+- [Schedule a batch of Uscreen video releases](https://cotlet.dev/integrations/uscreen-api-mcp-server/schedule-video-releases)
+- [Schedule recurring Uscreen live streams](https://cotlet.dev/integrations/uscreen-api-mcp-server/schedule-recurring-live-streams)
 
 ### Vagaro
 
-- [Get a daily Vagaro schedule and gap summary](https://cotlet.dev/integrations/vagaro-api-mcp-server/daily-schedule-summary)
-- [Fill cancelled Vagaro slots from the waitlist](https://cotlet.dev/integrations/vagaro-api-mcp-server/fill-cancelled-slots-from-waitlist)
 - [Reschedule Vagaro appointments when a stylist is out](https://cotlet.dev/integrations/vagaro-api-mcp-server/reschedule-appointments-when-staff-is-out)
-- [Reply to Vagaro customer reviews with AI](https://cotlet.dev/integrations/vagaro-api-mcp-server/reply-to-customer-reviews)
-- [Answer Vagaro Connect messages with an AI agent](https://cotlet.dev/integrations/vagaro-api-mcp-server/answer-client-messages-in-connect)
+- [Reply to Vagaro customer reviews every week](https://cotlet.dev/integrations/vagaro-api-mcp-server/reply-to-customer-reviews)
+
+### Vimeo
+
+- [Add captions to Vimeo videos in bulk](https://cotlet.dev/integrations/vimeo-api-mcp-server/add-captions-to-videos)
+- [Sort Vimeo videos into folders automatically](https://cotlet.dev/integrations/vimeo-api-mcp-server/organize-videos-into-folders)
+- [Weekly Vimeo video performance report](https://cotlet.dev/integrations/vimeo-api-mcp-server/report-video-performance)
 
 ### Wanderlog
 
 - [Plan a Wanderlog trip itinerary with AI](https://cotlet.dev/integrations/wanderlog-api-mcp-server/plan-trip-itinerary)
-- [Add hotel and flight bookings to Wanderlog](https://cotlet.dev/integrations/wanderlog-api-mcp-server/add-bookings-to-trip)
 - [Track and split Wanderlog trip expenses with AI](https://cotlet.dev/integrations/wanderlog-api-mcp-server/track-trip-expenses)
-- [Create Wanderlog packing checklists and invite tripmates](https://cotlet.dev/integrations/wanderlog-api-mcp-server/packing-checklist-and-invites)
-- [Rearrange Wanderlog itinerary days with AI](https://cotlet.dev/integrations/wanderlog-api-mcp-server/rearrange-itinerary-days)
 
 ### Whova
 
-- [Add sessions to a Whova agenda with AI](https://cotlet.dev/integrations/whova-api-mcp-server/add-sessions-to-agenda)
-- [Update Whova agenda sessions after a schedule change](https://cotlet.dev/integrations/whova-api-mcp-server/update-agenda-sessions)
-- [Send Whova announcements to attendees with AI](https://cotlet.dev/integrations/whova-api-mcp-server/send-attendee-announcements)
-- [Email Whova speakers in bulk with AI](https://cotlet.dev/integrations/whova-api-mcp-server/message-speakers)
-- [Export Whova registrations and attendees with AI](https://cotlet.dev/integrations/whova-api-mcp-server/export-registrations)
-- [Turn a Whova post-event report into a sponsor recap](https://cotlet.dev/integrations/whova-api-mcp-server/sponsor-recap-from-post-event-report)
+- [Update a Whova agenda after a schedule change and tell attendees](https://cotlet.dev/integrations/whova-api-mcp-server/update-agenda-sessions)
+- [Email each Whova speaker their own session details](https://cotlet.dev/integrations/whova-api-mcp-server/email-speakers-session-details)
+- [Turn a Whova post-event report into sponsor recaps](https://cotlet.dev/integrations/whova-api-mcp-server/sponsor-recap-from-post-event-report)
+
+### WooCommerce
+
+- [Mark shipped WooCommerce orders as completed](https://cotlet.dev/integrations/woocommerce-api-mcp-server/mark-orders-completed)
+- [Refund WooCommerce orders from a support list](https://cotlet.dev/integrations/woocommerce-api-mcp-server/refund-orders-from-a-list)
+- [Create single-use WooCommerce coupon codes](https://cotlet.dev/integrations/woocommerce-api-mcp-server/create-single-use-coupons)
 
 ### Workiz
 
-- [Invoice completed Workiz jobs automatically](https://cotlet.dev/integrations/workiz-api-mcp-server/invoice-completed-jobs)
-- [Follow up on unapproved Workiz estimates](https://cotlet.dev/integrations/workiz-api-mcp-server/follow-up-on-unapproved-estimates)
-- [Record Workiz cash and check payments with AI](https://cotlet.dev/integrations/workiz-api-mcp-server/record-job-payments)
-- [Reschedule Workiz jobs for a day with AI](https://cotlet.dev/integrations/workiz-api-mcp-server/reschedule-jobs-for-a-day)
-- [Book Workiz jobs from new leads with AI](https://cotlet.dev/integrations/workiz-api-mcp-server/book-jobs-from-new-leads)
+- [Invoice completed Workiz jobs and send the invoices](https://cotlet.dev/integrations/workiz-api-mcp-server/invoice-completed-jobs)
+- [Log cash and check payments on Workiz jobs](https://cotlet.dev/integrations/workiz-api-mcp-server/record-job-payments)
+- [Reschedule or reassign a Workiz technician's jobs for a day](https://cotlet.dev/integrations/workiz-api-mcp-server/reschedule-jobs-for-a-day)
+- [Book Workiz jobs from new leads](https://cotlet.dev/integrations/workiz-api-mcp-server/book-jobs-from-new-leads)
 
 ### Yardbook
 
-- [Chase unpaid Yardbook invoices with AI](https://cotlet.dev/integrations/yardbook-api-mcp-server/chase-unpaid-invoices)
-- [Schedule recurring Yardbook jobs for a new customer](https://cotlet.dev/integrations/yardbook-api-mcp-server/schedule-recurring-lawn-jobs)
-- [Create and send Yardbook estimates with AI](https://cotlet.dev/integrations/yardbook-api-mcp-server/send-landscaping-estimates)
-- [Invoice completed Yardbook jobs automatically](https://cotlet.dev/integrations/yardbook-api-mcp-server/invoice-completed-jobs)
-- [Record Yardbook invoice payments with AI](https://cotlet.dev/integrations/yardbook-api-mcp-server/record-invoice-payments)
-- [Get tomorrow's Yardbook crew schedule with AI](https://cotlet.dev/integrations/yardbook-api-mcp-server/daily-crew-schedule)
+- [Add a new Yardbook customer and schedule recurring lawn jobs](https://cotlet.dev/integrations/yardbook-api-mcp-server/schedule-recurring-lawn-jobs)
+- [Turn site-visit notes into a Yardbook estimate and send it](https://cotlet.dev/integrations/yardbook-api-mcp-server/send-landscaping-estimates)
+- [Record check and cash payments against Yardbook invoices](https://cotlet.dev/integrations/yardbook-api-mcp-server/record-invoice-payments)
+
+### Yousign
+
+- [Send Yousign contracts from a template with AI](https://cotlet.dev/integrations/yousign-api-mcp-server/send-contracts-from-template)
+- [Chase unsigned Yousign requests with reminders](https://cotlet.dev/integrations/yousign-api-mcp-server/chase-unsigned-signature-requests)
+- [Download signed Yousign documents and audit trails](https://cotlet.dev/integrations/yousign-api-mcp-server/archive-signed-documents)
 
 ### Zen Planner
 
-- [List failed Zen Planner payments every week](https://cotlet.dev/integrations/zen-planner-api-mcp-server/list-failed-payments)
-- [Book Zen Planner members into classes with AI](https://cotlet.dev/integrations/zen-planner-api-mcp-server/book-members-into-classes)
-- [Find Zen Planner members who stopped coming](https://cotlet.dev/integrations/zen-planner-api-mcp-server/find-inactive-members)
-- [Add leads to Zen Planner as prospects from a CSV](https://cotlet.dev/integrations/zen-planner-api-mcp-server/add-prospects-from-csv)
-- [Check in a Zen Planner class roster with AI](https://cotlet.dev/integrations/zen-planner-api-mcp-server/check-in-class-roster)
-- [Get a Zen Planner revenue report by membership type](https://cotlet.dev/integrations/zen-planner-api-mcp-server/monthly-revenue-report)
+- [Follow up on failed Zen Planner payments every week](https://cotlet.dev/integrations/zen-planner-api-mcp-server/list-failed-payments)
+- [Find Zen Planner members who stopped coming to class](https://cotlet.dev/integrations/zen-planner-api-mcp-server/find-inactive-members)
+- [Add leads from a CSV to Zen Planner as prospects](https://cotlet.dev/integrations/zen-planner-api-mcp-server/add-prospects-from-csv)
+
+### Zendesk
+
+- [Triage new Zendesk tickets with AI](https://cotlet.dev/integrations/zendesk-api-mcp-server/triage-new-support-tickets)
+- [Follow up on pending Zendesk tickets](https://cotlet.dev/integrations/zendesk-api-mcp-server/follow-up-on-pending-tickets)
+- [Apply Zendesk macros to tickets automatically](https://cotlet.dev/integrations/zendesk-api-mcp-server/apply-macros-to-tickets)
 
 ### ZenMaid
 
-- [Find unassigned ZenMaid appointments](https://cotlet.dev/integrations/zenmaid-api-mcp-server/find-unassigned-appointments)
-- [Book ZenMaid appointments with an AI agent](https://cotlet.dev/integrations/zenmaid-api-mcp-server/book-cleaning-appointments)
-- [Reassign a ZenMaid cleaner's appointments](https://cotlet.dev/integrations/zenmaid-api-mcp-server/reassign-cleaner-appointments)
-- [Reschedule ZenMaid appointments in bulk](https://cotlet.dev/integrations/zenmaid-api-mcp-server/reschedule-appointments)
-- [Mark ZenMaid appointments as paid](https://cotlet.dev/integrations/zenmaid-api-mcp-server/mark-appointments-paid)
-- [Cancel ZenMaid appointments and notify clients](https://cotlet.dev/integrations/zenmaid-api-mcp-server/cancel-appointments-notify-clients)
+- [Reassign a ZenMaid cleaner's appointments when they call in sick](https://cotlet.dev/integrations/zenmaid-api-mcp-server/reassign-cleaner-appointments)
+- [Reschedule or cancel a day of ZenMaid appointments in bulk](https://cotlet.dev/integrations/zenmaid-api-mcp-server/reschedule-appointments)
+- [Mark ZenMaid appointments paid and chase unpaid balances](https://cotlet.dev/integrations/zenmaid-api-mcp-server/mark-appointments-paid)
 
 ### Zola
 
-- [Add guests to your Zola guest list and invite them to events](https://cotlet.dev/integrations/zola-api-mcp-server/add-guests-and-invite-to-events)
 - [Get a weekly Zola RSVP and meal count report](https://cotlet.dev/integrations/zola-api-mcp-server/weekly-rsvp-and-meal-report)
-- [Record Zola RSVPs from phone calls and paper replies](https://cotlet.dev/integrations/zola-api-mcp-server/record-rsvps-from-phone-and-mail)
-- [Find Zola gifts that still need a thank-you note](https://cotlet.dev/integrations/zola-api-mcp-server/find-gifts-without-thank-you-note)
-- [Mark Zola thank-you notes as sent in bulk](https://cotlet.dev/integrations/zola-api-mcp-server/mark-thank-you-notes-sent)
-- [Track Zola Save the Dates and invitations mailed](https://cotlet.dev/integrations/zola-api-mcp-server/track-save-the-dates-and-invitations-mailed)
+- [Record Zola RSVPs from phone calls and paper RSVP cards](https://cotlet.dev/integrations/zola-api-mcp-server/record-rsvps-from-phone-and-mail)
+- [Track Zola thank-you notes and mark them sent](https://cotlet.dev/integrations/zola-api-mcp-server/track-thank-you-notes)
 
 ### Zoopla
 
-- [Get a weekly Zoopla leads report](https://cotlet.dev/integrations/zoopla-api-mcp-server/weekly-leads-report)
-- [Mark a Zoopla listing under offer, sold or let agreed](https://cotlet.dev/integrations/zoopla-api-mcp-server/mark-listing-under-offer)
+- [Get a weekly Zoopla leads report with missed calls and valuations](https://cotlet.dev/integrations/zoopla-api-mcp-server/weekly-leads-report)
+- [Mark Zoopla listings under offer, sold or let agreed](https://cotlet.dev/integrations/zoopla-api-mcp-server/mark-listing-under-offer)
 - [Send vendors their Zoopla listing performance report](https://cotlet.dev/integrations/zoopla-api-mcp-server/vendor-listing-performance-reports)
-- [Change a Zoopla listing price with an AI agent](https://cotlet.dev/integrations/zoopla-api-mcp-server/change-listing-price)
-- [Upgrade Zoopla listings to Premium with an AI agent](https://cotlet.dev/integrations/zoopla-api-mcp-server/upgrade-listings-to-premium)
-- [Find Zoopla listings with few leads](https://cotlet.dev/integrations/zoopla-api-mcp-server/find-underperforming-listings)
+- [Use Zoopla Premium Listing credits before they reset](https://cotlet.dev/integrations/zoopla-api-mcp-server/upgrade-listings-to-premium)
 
+### Zotero
+
+- [Add papers to Zotero by DOI](https://cotlet.dev/integrations/zotero-api-mcp-server/add-papers-by-doi)
+- [Export a Zotero collection as BibTeX](https://cotlet.dev/integrations/zotero-api-mcp-server/export-collection-bibtex)
+- [Turn Zotero PDF highlights into a literature note](https://cotlet.dev/integrations/zotero-api-mcp-server/pdf-annotations-to-note)

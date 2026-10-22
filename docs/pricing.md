@@ -6,7 +6,7 @@ Pay as you go, no subscription. You buy a credit pack once, it stays valid for 1
 
 ## Free trial
 
-Every account starts with a **free 7-day trial and 2,000 credits**, no card needed. You start it in the dashboard once your access is active.
+Every account starts with a **free 7-day trial and 2,000 credits**, no card needed. It starts when you sign up.
 
 ## Credit packs
 
@@ -16,14 +16,14 @@ Every account starts with a **free 7-day trial and 2,000 credits**, no card need
 | 15,000 credits | $79 | $5.27 |
 | 32,000 credits | $149 | $4.66 |
 | 60,000 credits | $249 | $4.15 |
-| 140,000 credits | $499 | $3.56 |
 
 Need more, or a DPA? [Talk to us](https://cotlet.dev/contact).
 
-## Two things use credits
+## What uses credits
 
 - **A successful call:** 20 to 30 credits, 25 for most tools. Each tool shows its rate in the dashboard.
 - **Your Cloud Browser:** 50 credits for every started day it has an app enabled for agents, however many apps that is. It is your own Chrome in the cloud, signed in to your apps 24/7.
+- **An agent driving the browser itself** over Chrome DevTools: 5 credits a minute.
 
 Example: one app, 20 calls a day = 20 × 25 + 50 = 550 credits a day, about 3,850 a week.
 

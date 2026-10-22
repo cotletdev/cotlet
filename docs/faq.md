@@ -17,7 +17,7 @@ Any MCP client: Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copi
 Search for it on the [integrations page](https://cotlet.dev/integrations) and press Request. No account needed. Sign up to count it toward what gets built next.
 
 **Why not a script from GitHub?**
-Scripts break when the app changes, and you fix them yourself. Cotlet tests every integration daily, fixes it for you, and refunds credits for failed calls.
+Scripts break when the app changes, and you fix them yourself. Cotlet tests every integration every 6 hours, fixes it for you, and refunds credits for failed calls.
 
 ## Connecting apps
 
@@ -25,7 +25,7 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 Open your Cloud Browser in the console: your own Chrome in the cloud. Sign in to the app there yourself, then press **Enable for agents**, read only or read and write.
 
 **What is the Cloud Browser?**
-One Chrome per workspace that runs on Cotlet's servers in the EU, with a fixed IP shown in your console. It sleeps when nobody uses it and wakes in seconds, so your agents can work in your apps 24/7, even when your computer is off.
+Your own Chrome that runs on Cotlet's servers in the EU, one per app you sign in to, with a fixed IP shown in your console. It sleeps when nobody uses it and wakes in seconds, so your agents can work in your apps 24/7, even when your computer is off.
 
 **Do you store my password?**
 No. Password saving and autofill are off in your Cloud Browser, so Cotlet never saves your password. The signed-in profile is stored encrypted with AES-256-GCM.
@@ -103,4 +103,4 @@ The action is outside what you allowed. Switch the app to read and write in your
 Check the app is enabled for agents, then ask your agent to list tools again. Each connected app adds its tools.
 
 **An integration is paused.**
-The daily test found a problem. Cotlet pauses it and fixes it; failed calls cost nothing.
+The test that runs every 6 hours found a problem. Cotlet pauses it and fixes it; failed calls cost nothing.

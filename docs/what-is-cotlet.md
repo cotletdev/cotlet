@@ -19,7 +19,7 @@
 | MCP server | `https://cotlet.dev/mcp/v1` (Streamable HTTP) |
 | REST API | `https://cotlet.dev/api/v1/{app}/{endpoint}` |
 | Auth | One API key (`Authorization: Bearer`) for MCP and REST; OAuth in MCP clients that support it |
-| Catalog | 97 apps, 526 documented use cases |
+| Catalog | 192 apps, 591 documented use cases |
 | Clients | Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n, any MCP client |
 | Pricing | Free 7-day trial with 2,000 credits; one-time credit packs from $29, no subscription |
 | Access | Request access; each account is reviewed and gets its API key by email |
@@ -35,7 +35,7 @@
 - **A catalog of integrations** for apps that never built an API: community platforms (Skool, Substack, Patreon), course platforms (Udemy, Teachable), travel (GetYourGuide, Klook), real estate (Idealista, Zoopla, DoorLoop), local services (Booksy, Fresha, Vagaro) and invoicing tools (Dubsado, Joist).
 - **One MCP server** for all of them. Every app a user connects shows up as tools, named `{app}_{endpoint}`.
 - **A REST API** with the same actions, for scripts, cron jobs and automation platforms.
-- **Maintained access.** Cotlet tests every integration daily, pauses calls when a site changes, fixes it and refunds credits for failed calls.
+- **Maintained access.** Cotlet tests every integration every 6 hours, pauses calls when a site changes, fixes it and refunds credits for failed calls.
 
 ## What Cotlet is not
 

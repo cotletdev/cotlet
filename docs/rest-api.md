@@ -22,15 +22,13 @@ Every endpoint, its parameters and an example response are readable without an a
 ## Making a call
 
 ```bash
-curl -X POST https://cotlet.dev/api/v1/skool/list_members \
-  -H "Authorization: Bearer $COTLET_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"group": "yourgroup", "role": "admin"}'
+curl "https://cotlet.dev/api/v1/skool/groups/yourgroup/members?role=admin" \
+  -H "Authorization: Bearer $COTLET_API_KEY"
 ```
 
 - Inputs are validated against the endpoint JSON Schema before anything runs.
 - Unknown fields are rejected, so a typo never runs silently.
-- `GET` with the inputs as query parameters works for read endpoints.
+- Each operation has its own method and path: path parameters in the URL, other inputs in the query for `GET` and `DELETE`, in a JSON body for `POST`, `PUT` and `PATCH`. Routes of any app: `GET https://cotlet.dev/api/v1/apps/{slug}`, no key needed.
 
 ## Responses
 

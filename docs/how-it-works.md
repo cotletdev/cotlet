@@ -14,7 +14,7 @@ Pick it from the [catalog](https://cotlet.dev/integrations). Its tools are ready
 
 [Request access](https://cotlet.dev/signup) and pick your apps. Each request is reviewed and you get an email when your account is ready. Then:
 
-1. **Open your Cloud Browser** in the console (`cotlet.dev/app/browser`). It is one Chrome per workspace that runs on Cotlet's servers in the EU, with a fixed IP shown in the console. You use it like a remote desktop: tabs, address bar, copy and paste.
+1. **Open your Cloud Browser** in the console (`cotlet.dev/app/browser`). It is your own Chrome that runs on Cotlet's servers in the EU, with a fixed IP shown in the console. Each app gets its own window, sharp as the app's own site, locked to that app's pages.
 2. **Sign in to the app yourself**, on the app's own page, also with Google if you like. You pass any 2FA or CAPTCHA yourself. Password saving and autofill are off in this browser, so Cotlet never saves your password.
 3. **Enable it for your agents.** The console shows the apps you are signed in to ("Skool: signed in as Jake"). Signing in alone gives agents nothing; you press **Enable for agents** and pick **read only** or **read and write**.
 
@@ -74,7 +74,7 @@ Every integration has its own status.
 
 | Stage | What happens |
 |---|---|
-| **Live** | The daily canary test passes. |
+| **Live** | The canary test, run every 6 hours, passes. |
 | **Paused** | The site changed and the test failed. Calls pause until the fix ships. |
 | **Fixed** | The integration is live again. Credits for failed calls are refunded. |
 

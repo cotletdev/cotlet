@@ -9,13 +9,13 @@ A program driven by a language model that acts through tools: Claude Code, Claud
 A documented way for code to talk to an app. Cotlet exists for apps where the official API is missing, limited, partners-only or a paid add-on.
 
 **Canary test**
-A test Cotlet runs every day against each integration. If it fails, calls to that integration pause until the fix ships.
+A test Cotlet runs every 6 hours against each integration. If it fails, calls to that integration pause until the fix ships.
 
 **Background activity**
 The list in the Cotlet console of every request Cotlet sends from the user's Cloud Browser, and every visit that keeps the user signed in: time, app, tool, method, address and status, without the content.
 
 **Cloud Browser**
-The user's own Chrome in the cloud, one per workspace, opened from the console at `cotlet.dev/app/browser`. The user signs in to apps there and enables them for agents. It has a fixed IP, sleeps when idle and wakes in seconds; password saving is off.
+The user's own Chrome in the cloud, one per app they sign in to, opened from the console at `cotlet.dev/app/browser`. The user signs in to apps there and enables them for agents. It has a fixed IP, sleeps when idle and wakes in seconds; password saving is off.
 
 **Confirmation**
 A step where an action that reaches other people (publish, message, email) waits for the user's OK before it runs. On by default; can be switched off per tool.
@@ -54,4 +54,4 @@ One action an agent can call. Over MCP each app is one tool, such as `skool`, an
 An integration built without the app vendor's involvement. Cotlet is unofficial and not affiliated with any app in its catalog.
 
 **Use case**
-One job a user hands to their agent in a specific app, such as "approve Skool membership requests". Cotlet documents 526 of them; see [use-cases.md](use-cases.md).
+One job a user hands to their agent in a specific app, such as "approve Skool membership requests". Cotlet documents 591 of them; see [use-cases.md](use-cases.md).

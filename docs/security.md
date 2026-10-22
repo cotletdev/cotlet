@@ -6,7 +6,7 @@ Your login stays yours. You sign in yourself, in your own Chrome in the cloud. Y
 
 ## Your Cloud Browser
 
-Every Cotlet workspace gets one Chrome browser of its own, running in Cotlet's EU data centre. You open it from the console like a remote desktop and use it the way you use Chrome at home.
+Every Cotlet workspace gets its own Chrome in the cloud, running in Cotlet's EU data centre, with one window per app you sign in to. You open it from the console and sign in the way you do in Chrome at home.
 
 | Question | Chrome on your computer | Your Cloud Browser |
 |---|---|---|
@@ -25,7 +25,7 @@ The browser runs on Cotlet's side, so what you type in it passes through Cotlet'
 To be fast, Cotlet doesn't click through pages. It sends the same requests your browser would, from your browser's IP with its cookies. Every request is listed in your Background activity.
 
 ```text
-You (sign in yourself) ──▶ Your Cloud Browser (one per workspace) ──▶ Encrypted profile (AES-256-GCM) ──▶ The app (same IP, human pace)
+You (sign in yourself) ──▶ Your Cloud Browser (one per app) ──▶ Encrypted profile (AES-256-GCM) ──▶ The app (same IP, human pace)
 
 AI model ──tool calls──▶ Cotlet        (the model never sees a login or a cookie)
 ```

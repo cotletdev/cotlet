@@ -10,7 +10,7 @@ When an app has no usable API, there are a few ways to get an AI agent or a scri
 | Stable tool names and JSON Schema | No | Depends | No | No | Yes | **Yes** |
 | Works over MCP with your agent | No | Build it yourself | Rarely | Yes | Sometimes | **Yes, one server for all apps** |
 | REST API for scripts | No | Build it yourself | Sometimes | No | Yes | **Yes, same key** |
-| Who fixes it when the site changes | Nobody needs to | You | You | Nobody, it retries | The vendor | **Cotlet, tested daily** |
+| Who fixes it when the site changes | Nobody needs to | You | You | Nobody, it retries | The vendor | **Cotlet, tested every 6 hours** |
 | Failed runs cost you | Time | Time | Licence + time | Tokens | Depends | **Nothing, credits refunded** |
 | Where your password lives | In your head | Often in a `.env` file | In the RPA vault | Often in the prompt or browser | OAuth | **Nowhere: you sign in in your own Cloud Browser, password saving off** |
 | Setup | None | Install, configure, host | Build flows | Prompting each time | Apply, get approved, code | **Sign in once in your Cloud Browser, paste one URL** |
@@ -24,7 +24,7 @@ When an app has no usable API, there are a few ways to get an AI agent or a scri
 
 ## Why not a script from GitHub?
 
-Scripts break when the app changes, and you fix them yourself. Cotlet tests every integration daily, pauses calls when a site changes, ships the fix and refunds credits for failed calls. How Cotlet reaches each app is its job; you just call the tools.
+Scripts break when the app changes, and you fix them yourself. Cotlet tests every integration every 6 hours, pauses calls when a site changes, ships the fix and refunds credits for failed calls. How Cotlet reaches each app is its job; you just call the tools.
 
 ## Per-app comparisons
 

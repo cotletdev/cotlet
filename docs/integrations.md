@@ -1,362 +1,345 @@
-# Cotlet integrations catalog
+# Cotlet integrations
 
 [← Back to README](../README.md) · Live catalog: [cotlet.dev/integrations](https://cotlet.dev/integrations) · Machine-readable: [cotlet.dev/integrations.json](https://cotlet.dev/integrations.json)
 
-Cotlet hosts an MCP server and a REST API for each of the **259 apps** below. Every one of them lacks a usable official API for the work people actually want to hand to an AI agent. The "Official API" column says what the vendor offers today:
+259 apps in 11 categories. This file is an index, generated from the live catalog. Each app's page on cotlet.dev has its tools with parameters, the official API status with sources, use cases and pricing. Add `.md` to a page URL for Markdown.
 
-| Label | Meaning | Apps |
-|---|---|---|
-| **No official API** | No public API, developer docs or keys | 31 |
-| **Limited official API** | Read-only, or missing the endpoints people need | 158 |
-| **Partners-only API** | Only for approved partners, after an application or contract | 46 |
-| **Paid API add-on** | Only on a top plan or as a separate paid product | 24 |
-
-Each app links to its page on cotlet.dev with sources for the official API status, every tool with its parameters and example responses, and use cases. Add `.md` to any integration URL for a Markdown version.
-
-Over MCP each app has a read tool and a write tool (`skool_read`, `skool_write`) and its endpoints are operations (`list_members`); over REST the same endpoint is `GET /api/v1/skool/groups/{group}/members`.
-
-## Creators & communities
-
-36 apps.
-
-| App | Official API | What your agent can do | Example tools |
-|---|---|---|---|
-| [Substack](https://cotlet.dev/integrations/substack-api-mcp-server) | Limited official API | Posts, Notes, messages, subscribers and stats for your publication. | Create post, Schedule post, Publish Note, Reply to Notes, Send direct message, Moderate comments |
-| [Skool](https://cotlet.dev/integrations/skool-api-mcp-server) | No official API | Posts, members, courses, events and DMs for your Skool community. | List members, Approve membership request, Create post, Reply to comment, Send DM, Get members, churn and MRR |
-| [Meetup](https://cotlet.dev/integrations/meetup-api-mcp-server) | Paid API add-on | Events, RSVPs and member messages without Meetup Pro. | Create event, Copy event, List RSVPs, Message members |
-| [Medium](https://cotlet.dev/integrations/medium-api-mcp-server) | Limited official API | Publish, edit and track stats for your Medium posts. | Create post, Edit post, Cross-post article, Get post stats |
-| [Riverside](https://cotlet.dev/integrations/riverside-api-mcp-server) | Limited official API | Studios, guest invites and recordings on Pro and Standard. | Create studio, Schedule session, Invite guest, Download recording |
-| [Partiful](https://cotlet.dev/integrations/partiful-api-mcp-server) | No official API | Invites, guest lists and text blasts for your events. | Create invite, List RSVPs, Export guest list, Send text blast |
-| [Dribbble](https://cotlet.dev/integrations/dribbble-api-mcp-server) | Limited official API | Messages, Pro analytics and engagement for designers. | Reply to message, Get Pro analytics, List shots, Upload shot |
-| [SoundCloud](https://cotlet.dev/integrations/soundcloud-api-mcp-server) | Paid API add-on | Tracks, playlists, comments and stats for your SoundCloud profile. | Upload track, Update track details, Create playlist, List comments, Reply to comment, Get track stats |
-| [Bandsintown](https://cotlet.dev/integrations/bandsintown-api-mcp-server) | Limited official API | Tour dates, fan messages and stats for your Bandsintown artist page. | Add event, Update event, Delete event, Send fan message, Get fan stats, List upcoming events |
-| [Patreon](https://cotlet.dev/integrations/patreon-api-mcp-server) | Limited official API | Posts, patron messages and members for your Patreon page. | Create post, Send message to patron, List members, Update tier, Schedule post, Export earnings |
-| [Bandcamp](https://cotlet.dev/integrations/bandcamp-api-mcp-server) | Partners-only API | Sales, merch orders, releases and fan messages for your Bandcamp page. | List sales, Mark order shipped, List merch orders, Update release, Send fan message, Export sales report |
-| [Quora](https://cotlet.dev/integrations/quora-api-mcp-server) | No official API | Answers, questions and Spaces from your Quora account. | Search questions, Post answer, List my answers, Get answer stats, Post to Space |
-| [Libsyn](https://cotlet.dev/integrations/libsyn-api-mcp-server) | Partners-only API | Episodes, scheduling and stats for your Libsyn podcast. | Upload episode, Schedule episode, Update show notes, Get download stats, List episodes |
-| [DICE](https://cotlet.dev/integrations/dice-api-mcp-server) | Limited official API | Events, ticket tiers, sales and guest lists for DICE promoters. | Create event, Update ticket tier, Get sales report, List ticket holders, Issue comp tickets |
-| [Whova](https://cotlet.dev/integrations/whova-api-mcp-server) | No official API | Agenda, attendees and announcements for your Whova event. | Add session, Import attendees, Send announcement, List registrations, Export engagement |
-| [SignUpGenius](https://cotlet.dev/integrations/signupgenius-api-mcp-server) | Paid API add-on | Create sign-ups, manage slots and message participants on SignUpGenius. | Create sign-up, Add slots, List participants, Swap participant, Message group |
-| [Paperless Post](https://cotlet.dev/integrations/paperless-post-api-mcp-server) | No official API | Guest lists, RSVPs and messages for Paperless Post events. | List events, Add guests, Send invitation, Get RSVPs, Message guests |
-| [Evite](https://cotlet.dev/integrations/evite-api-mcp-server) | No official API | Events, guest lists, RSVPs and messages on Evite. | Create event, Add guests, Get RSVPs, Message guests, Update event |
-| [Joy](https://cotlet.dev/integrations/joy-api-mcp-server) | No official API | Guest list, RSVPs and registry for your Joy wedding. | List guests, Add guest, Get RSVP status, Update event details, List registry gifts |
-| [AniList](https://cotlet.dev/integrations/anilist-api-mcp-server) | Limited official API | Your AniList anime and manga lists, ratings and activity, managed by your agent. | Update list entry, Rate anime or manga, List your anime list, Read notifications, Reply to activity, Favourite a title |
-| [Billetto](https://cotlet.dev/integrations/billetto-api-mcp-server) | Limited official API | Refund tickets, resend PDFs, send guest lists and manage orders in Billetto. | List orders, Refund tickets, Resend ticket, Cancel free tickets, Email guest list, Create access code |
-| [Bloomerang](https://cotlet.dev/integrations/bloomerang-api-mcp-server) | Limited official API | Donors, gifts, interactions and duplicates in your Bloomerang CRM. | Search constituents, Record received gift, Log interaction, Create task, Merge duplicate constituents, List lapsed donors |
-| [Discogs](https://cotlet.dev/integrations/discogs-api-mcp-server) | Limited official API | Collection, wantlist, listings and orders in your Discogs account. | Search releases, List copies for sale, Add release to collection, Add release to wantlist, Reprice listing, Update order status |
-| [DonorPerfect](https://cotlet.dev/integrations/donorperfect-api-mcp-server) | Limited official API | Donors, gifts, pledges and thank-yous in DonorPerfect, worked by your agent. | Search donors, Add gift, Apply pledge payment, Create pledge, Add contact, Send thank-you email |
-| [Flickr](https://cotlet.dev/integrations/flickr-api-mcp-server) | Limited official API | Photos, albums, tags and comments in your Flickr, worked by your agent. | List albums, Upload photo, Edit title and tags, Move photos between albums, Change privacy, Reply to comment |
-| [Ghost](https://cotlet.dev/integrations/ghost-api-mcp-server) | Limited official API | Posts, members, newsletters and tiers in your Ghost site, worked by your agent. | List posts, Create draft post, Schedule post, Send newsletter, List members, Label members |
-| [Lichess](https://cotlet.dev/integrations/lichess-api-mcp-server) | Limited official API | Teams, tournaments, studies, broadcasts and game exports for your Lichess account. | Accept team join request, Send team update, Create Arena tournament, Create broadcast, Import PGN to study, Export games |
-| [Planning Center](https://cotlet.dev/integrations/planning-center-api-mcp-server) | Limited official API | Volunteer scheduling, workflow cards, profile notes and first-timers for your church. | Send scheduling emails, List unconfirmed volunteers, Accept or decline a schedule request, Complete a workflow step, Snooze a workflow card, Add a profile note |
-| [Printful](https://cotlet.dev/integrations/printful-api-mcp-server) | Limited official API | Orders, products, mockups and shipping in your Printful account, worked by your agent. | List orders, Create draft order, Confirm order, Check shipping rates, List sync products, Upload design file |
-| [Printify](https://cotlet.dev/integrations/printify-api-mcp-server) | Limited official API | Products, orders and artwork in your Printify shop, worked by your agent. | List products, Create product, Publish product, Update variant prices, List orders, Cancel order |
-| [SmugMug](https://cotlet.dev/integrations/smugmug-api-mcp-server) | Limited official API | Galleries, uploads, sharing and captions in your SmugMug account. | List galleries, Create gallery, Upload photos, Change gallery privacy, Invite gallery viewers, Edit captions and keywords |
-| [StreamElements](https://cotlet.dev/integrations/streamelements-api-mcp-server) | Limited official API | Chat commands, timers, store, tips and points, worked by your agent. | List chat commands, Edit command, Edit timer, Edit store item, Review tips, Adjust loyalty points |
-| [Trakt](https://cotlet.dev/integrations/trakt-api-mcp-server) | Limited official API | Watchlist, ratings, history and lists in your Trakt account, worked by your agent. | Add to watchlist, Rate movies and shows, Mark episodes watched, Manage custom lists, Browse calendar |
-| [Tumblr](https://cotlet.dev/integrations/tumblr-api-mcp-server) | Limited official API | Posts, queue and asks on your Tumblr blogs, worked by your agent. | Create post, Schedule post, Edit post, Reply to ask, Reblog post, List queue |
-| [Vimeo](https://cotlet.dev/integrations/vimeo-api-mcp-server) | Limited official API | Captions, folders, showcases and stats for your Vimeo videos. | Search videos, Edit video details, Move videos to folder, Upload captions, Add videos to showcase, Get video analytics |
-| [Wild Apricot](https://cotlet.dev/integrations/wild-apricot-api-mcp-server) | Limited official API | Applications, contacts, events, emails and payments in your Wild Apricot admin. | List contacts, Approve membership application, Check in event registrant, Send email to event registrants, Record invoice payment, Register contact for event |
-
-## Courses & training
-
-13 apps.
-
-| App | Official API | What your agent can do | Example tools |
-|---|---|---|---|
-| [Udemy](https://cotlet.dev/integrations/udemy-api-mcp-server) | Limited official API | Coupons, course updates, announcements and revenue for instructors. | Create coupon, Update course, Send announcement, Get revenue report |
-| [Teachable](https://cotlet.dev/integrations/teachable-api-mcp-server) | Limited official API | Course content, coupons, emails and comments on any plan. | Update lecture, Create coupon, Send email, Reply to comment, List enrollments |
-| [ThriveCart](https://cotlet.dev/integrations/thrivecart-api-mcp-server) | Limited official API | Products, checkouts, refunds and affiliates for sellers. | Create product, Create checkout, Issue refund, List affiliates |
-| [Payhip](https://cotlet.dev/integrations/payhip-api-mcp-server) | Limited official API | Products, sales, customers, coupons and refunds for sellers. | Create product, List sales, List customers, Create coupon, Issue refund |
-| [Uscreen](https://cotlet.dev/integrations/uscreen-api-mcp-server) | Limited official API | Videos, collections, live events and analytics for creators. | Upload video, Update collection, Create live event, Get analytics |
-| [Systeme.io](https://cotlet.dev/integrations/systeme-io-api-mcp-server) | Limited official API | Funnels, email campaigns and sales reports for marketers. | Update funnel page, Edit email campaign, List orders, Get sales report |
-| [Teachers Pay Teachers](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server) | No official API | Products, prices and sales reports for TPT sellers. | List products, Create product listing, Update price, Get sales report, Answer buyer question |
-| [Absorb LMS](https://cotlet.dev/integrations/absorb-lms-api-mcp-server) | Limited official API | Enrollments, approvals, overdue learners and users in Absorb LMS. | List users, List course enrollments, List overdue learners, Approve enrollment request, Enroll users in a course, Message learners |
-| [iSpring Learn (iSpring LMS)](https://cotlet.dev/integrations/ispring-api-mcp-server) | Limited official API | Enroll learners, manage users and read progress in iSpring Learn. | Enroll users in courses, List enrollments, Get learner progress report, Cancel enrollment, Reset enrollment progress, Add users by email |
-| [LearnUpon](https://cotlet.dev/integrations/learnupon-api-mcp-server) | Limited official API | Invite learners, manage groups and enroll them on courses in LearnUpon. | List users, Invite users, Add users to group, Enroll group on course, Enroll users on course, Unenroll users |
-| [RemNote](https://cotlet.dev/integrations/remnote-api-mcp-server) | No official API | Notes and flashcards in RemNote, worked by your agent. | Search notes, Create note, Create flashcards, Edit note, Add to daily document, Check flashcard queue |
-| [Thought Industries](https://cotlet.dev/integrations/thought-industries-api-mcp-server) | Limited official API | Learners, enrollments, waitlists and completion reports for your Thought Industries academy. | List learners, Enroll learner in course, Import and invite learners, Read content actions log, Set content status, Add learner to waitlist |
-| [WorkRamp](https://cotlet.dev/integrations/workramp-api-mcp-server) | Limited official API | Assignments, reminders, due dates and automations in your WorkRamp. | List assignments, Remind learners, Assign training, Change due date, Unassign learner, Get learner transcript |
-
-## Health & fitness
-
-5 apps.
-
-| App | Official API | What your agent can do | Example tools |
-|---|---|---|---|
-| [Trainerize](https://cotlet.dev/integrations/trainerize-api-mcp-server) | Paid API add-on | Clients, programs, check-ins and messages for your Trainerize business. | List clients, Assign program, Message client, Log body stats, Schedule appointment |
-| [Everfit](https://cotlet.dev/integrations/everfit-api-mcp-server) | Paid API add-on | Clients, programs and messages for your Everfit coaching business. | List clients, Assign program, Message client, Add autoflow, Get client metrics |
-| [Fitatu](https://cotlet.dev/integrations/fitatu-api-mcp-server) | No official API | Food diary, macros and weight logging for your Fitatu account. | Get diary, Search food, Log food, Log quick entry, Copy day, Log measurement |
-| [PushPress](https://cotlet.dev/integrations/pushpress-api-mcp-server) | Limited official API | Members, classes, reservations and check-ins for your PushPress gym. | List members, Book class reservation, Check in member, Cancel reservation, Update membership plan |
-| [TrueCoach](https://cotlet.dev/integrations/truecoach-api-mcp-server) | Limited official API | Workouts, programs and client messages for your TrueCoach roster. | List clients, Create workout, Assign program, Read workout results, Message client |
-
-## Travel
-
-13 apps.
-
-| App | Official API | What your agent can do | Example tools |
-|---|---|---|---|
-| [GetYourGuide](https://cotlet.dev/integrations/getyourguide-api-mcp-server) | Partners-only API | Availability, pricing and bookings for tour operators. | List bookings, Update availability, Update pricing, Get booking |
-| [Wanderlog](https://cotlet.dev/integrations/wanderlog-api-mcp-server) | No official API | Build and edit trip itineraries from your agent. | Create trip, Add place, Import booking, Update itinerary |
-| [Hostelworld](https://cotlet.dev/integrations/hostelworld-api-mcp-server) | Partners-only API | Reviews, guest messages and reservations for hostel owners. | List reservations, Reply to review, Reply to guest, Get payouts report |
-| [Klook](https://cotlet.dev/integrations/klook-api-mcp-server) | Partners-only API | Search and book activities from your agent. | Search activities, Book activity, List bookings |
-| [Omio](https://cotlet.dev/integrations/omio-api-mcp-server) | Partners-only API | Book and change train, bus and flight tickets. | Search trips, Book ticket, Change booking |
-| [Polarsteps](https://cotlet.dev/integrations/polarsteps-api-mcp-server) | No official API | Export and import trips and steps. | Export trip, Import steps, List trips |
-| [Hipcamp](https://cotlet.dev/integrations/hipcamp-api-mcp-server) | Partners-only API | Calendar, pricing and guest messages for hosts. | Sync calendar, Update pricing, Reply to guest, List bookings |
-| [Kiwi.com](https://cotlet.dev/integrations/kiwi-com-api-mcp-server) | Limited official API | Bookings, trips and refunds on your Kiwi.com account. | Search flights, List my bookings, Add baggage, Request refund, Check in |
-| [SiteMinder](https://cotlet.dev/integrations/siteminder-api-mcp-server) | Partners-only API | Rates, availability and reservations in your SiteMinder channel manager. | Update rates, Close dates, List reservations, Update inventory, Get channel performance |
-| [Tiqets](https://cotlet.dev/integrations/tiqets-api-mcp-server) | Partners-only API | Book, fetch and cancel attraction tickets on your Tiqets account. | Search tickets, Check availability, Book tickets, List my bookings, Download e-tickets, Cancel booking |
-| [Little Hotelier](https://cotlet.dev/integrations/little-hotelier-api-mcp-server) | Partners-only API | Bookings, rates and availability for your Little Hotelier property. | List bookings, Update rates, Update availability, Create booking, Message guest, Get occupancy report |
-| [Airalo](https://cotlet.dev/integrations/airalo-api-mcp-server) | Partners-only API | Buy, top up and track eSIMs on your Airalo account. | List my eSIMs, Check data usage, Buy eSIM, Top up eSIM, Get install instructions |
-| [Civitatis](https://cotlet.dev/integrations/civitatis-api-mcp-server) | Partners-only API | Bookings, availability and tours for Civitatis activity suppliers. | List bookings, Update availability, Close dates, Get booking details, List payouts |
-
-## Real estate
-
-16 apps.
-
-| App | Official API | What your agent can do | Example tools |
-|---|---|---|---|
-| [Idealista](https://cotlet.dev/integrations/idealista-api-mcp-server) | Partners-only API | Your listings and leads on Idealista, managed by an agent. | List my listings, Update listing, Renew listing, Reply to lead |
-| [Crexi](https://cotlet.dev/integrations/crexi-api-mcp-server) | Partners-only API | Leads, comps and listing analytics for commercial real estate. | Export leads, List saved searches, Get comps, Get listing analytics, Create listing |
-| [Zoopla](https://cotlet.dev/integrations/zoopla-api-mcp-server) | Partners-only API | Listings, leads and performance stats for agents and landlords. | List my listings, Update listing, Reply to lead, Get listing stats |
-| [Mashvisor](https://cotlet.dev/integrations/mashvisor-api-mcp-server) | Paid API add-on | Saved searches, property analyses and exports from your account. | Run saved search, Get property analysis, Export properties |
-| [Rent Manager](https://cotlet.dev/integrations/rent-manager-api-mcp-server) | Partners-only API | Charges, work orders and tenant messages for property managers. | Post charge, Create work order, Message tenant, List tenants |
-| [REsimpli](https://cotlet.dev/integrations/resimpli-api-mcp-server) | Limited official API | Leads, deal stages and drip campaigns for real estate investors. | Create lead, Update deal stage, Start drip campaign, Get skip-trace results |
-| [DoorLoop](https://cotlet.dev/integrations/doorloop-api-mcp-server) | Paid API add-on | Tenants, leases, rent charges and payments for landlords. | List tenants, Create lease, Post rent charge, Record payment |
-| [Peerspace](https://cotlet.dev/integrations/peerspace-api-mcp-server) | No official API | Inquiries, bookings and listings for your Peerspace venue. | List booking requests, Reply to inquiry, Send custom proposal, Accept booking, Update listing pricing |
-| [Rently](https://cotlet.dev/integrations/rently-api-mcp-server) | Limited official API | Tours, prospects and listings in your Rently self-touring account. | List tours, Get prospect details, Update listing availability, Create lock code, Export leads |
-| [Hemnet](https://cotlet.dev/integrations/hemnet-api-mcp-server) | No official API | Listings, sold prices, saved homes and searches for Hemnet buyers. | Search listings, Get sold prices, List saved homes, Save search, Follow home value |
-| [Property Finder](https://cotlet.dev/integrations/property-finder-api-mcp-server) | Partners-only API | Listings, leads and credits in your Property Finder broker account. | Publish listing, Unpublish listing, List leads, Update agent, Get listing stats |
-| [Bayut](https://cotlet.dev/integrations/bayut-api-mcp-server) | Partners-only API | Listings, leads and performance for Bayut agents. | Publish listing, Edit listing, List leads, Get listing performance, Refresh listing |
-| [Immobiliare.it](https://cotlet.dev/integrations/immobiliare-api-mcp-server) | Partners-only API | Your listings, messages and visit requests on Immobiliare.it. | List my listings, Create listing, Reply to message, Request visit, Save search |
-| [Breezeway](https://cotlet.dev/integrations/breezeway-api-mcp-server) | Limited official API | Create, assign, comment on and approve Breezeway property tasks. | List tasks, Create task, Assign task, Add task comment, Close task, Approve task |
-| [ResMan](https://cotlet.dev/integrations/resman-api-mcp-server) | Partners-only API | Work orders, units, leases and ledgers from your ResMan account. | List work orders, Create work order, Update work order status, List units and make-ready status, List leases, List move-outs |
-| [VaultRE](https://cotlet.dev/integrations/vaultre-api-mcp-server) | Partners-only API | Enquiries, contacts, properties, viewings and notes in your VaultRE CRM. | List enquiries, Process enquiry, Search contacts, Add contact, Add note, Search properties |
+**Self-hosted:** 9 apps also have a repo you can run yourself, in Python on your own Chrome session, for personal use. They are linked in the last column.
 
 ## Local services & SaaS
 
 44 apps.
 
-| App | Official API | What your agent can do | Example tools |
+| App | What your agent can do | API docs | Self-hosted |
 |---|---|---|---|
-| [Faire](https://cotlet.dev/integrations/faire-api-mcp-server) | Limited official API | Orders, inventory, reorders and messages for wholesale brands. | List orders, Update inventory, Create reorder, Reply to message |
-| [Booksy](https://cotlet.dev/integrations/booksy-api-mcp-server) | Partners-only API | Bookings, clients, reviews and reports for beauty businesses. | List bookings, Create booking, Reschedule booking, Reply to review, Read reports |
-| [Vagaro](https://cotlet.dev/integrations/vagaro-api-mcp-server) | Limited official API | Bookings, waitlists and client replies across locations. | List appointments, Create appointment, Reschedule appointment, Manage waitlist, Reply to client |
-| [Buildertrend](https://cotlet.dev/integrations/buildertrend-api-mcp-server) | Partners-only API | Schedules, daily logs, change orders and selections for builders. | Get schedule, Create daily log, Create change order, List selections |
-| [Pirate Ship](https://cotlet.dev/integrations/pirate-ship-api-mcp-server) | No official API | Labels, rates and tracking for small shippers. | Get rates, Buy labels in bulk, Import orders, Track shipment, Refund labels |
-| [Fresha](https://cotlet.dev/integrations/fresha-api-mcp-server) | Partners-only API | Appointments, clients, sales and reviews for salons and spas. | List appointments, Create appointment, Reschedule appointment, List clients, Get sales summary |
-| [Workiz](https://cotlet.dev/integrations/workiz-api-mcp-server) | Limited official API | Jobs, scheduling, invoices and payments for field service. | List jobs, Schedule job, Create invoice, Record payment |
-| [GlossGenius](https://cotlet.dev/integrations/glossgenius-api-mcp-server) | No official API | Appointments, clients and sales for salon owners. | List appointments, Book appointment, Reschedule appointment, List clients, Get sales |
-| [Nextdoor](https://cotlet.dev/integrations/nextdoor-api-mcp-server) | Partners-only API | Posts, comments and recommendations for your Nextdoor business page. | Create post, Reply to comment, List recommendations, Create event, Create For Sale listing, Get page stats |
-| [AccuLynx](https://cotlet.dev/integrations/acculynx-api-mcp-server) | Paid API add-on | Jobs, contacts, photos and estimates in your AccuLynx account. | Create job, Update job milestone, Add contact, Upload photo, List estimates, Add job note |
-| [Thumbtack](https://cotlet.dev/integrations/thumbtack-api-mcp-server) | Partners-only API | Leads, messages, quotes and reviews for your Thumbtack pro profile. | List leads, Reply to lead, Send quote, Update weekly budget, List reviews, Export past leads |
-| [Milanote](https://cotlet.dev/integrations/milanote-api-mcp-server) | No official API | Boards, notes and links in your Milanote workspace. | List boards, Add note, Add link, Upload image, Move and edit cards, Tick off tasks |
-| [Setmore](https://cotlet.dev/integrations/setmore-api-mcp-server) | Paid API add-on | Bookings, customers and staff calendars in your Setmore account. | List appointments, Create appointment, Reschedule appointment, Cancel appointment, Find customer |
-| [Service Fusion](https://cotlet.dev/integrations/service-fusion-api-mcp-server) | Paid API add-on | Jobs, customers, estimates and invoices in your Service Fusion account. | Create job, List customers, Create estimate, Create invoice, Update job status |
-| [Mangomint](https://cotlet.dev/integrations/mangomint-api-mcp-server) | No official API | Appointments, clients and sales for your Mangomint salon or spa. | List appointments, Book appointment, Reschedule appointment, Find client, Export sales report |
-| [Momence](https://cotlet.dev/integrations/momence-api-mcp-server) | Limited official API | Classes, bookings and members for your Momence studio. | List sessions, Book customer into class, Check in member, Create class, Freeze membership |
-| [Mariana Tek](https://cotlet.dev/integrations/mariana-tek-api-mcp-server) | Partners-only API | Classes, reservations and customers for your Mariana Tek studio. | List classes, Book reservation, Cancel reservation, Find customer, Add class credits |
-| [Meevo](https://cotlet.dev/integrations/meevo-api-mcp-server) | Partners-only API | Appointments, clients and memberships in your Meevo salon. | List appointments, Book appointment, Find client, Sell package, Pull daily sales |
-| [MarketSharp](https://cotlet.dev/integrations/marketsharp-api-mcp-server) | Limited official API | Leads, appointments and jobs in your MarketSharp contractor CRM. | Create lead, Update appointment, List jobs, Add note, Get contract status |
-| [DaySmart](https://cotlet.dev/integrations/daysmart-api-mcp-server) | No official API | Appointments, clients, pets and sales in DaySmart Salon or Pet. | List appointments, Book appointment, Find client, Update pet record, Export sales |
-| [ClockShark](https://cotlet.dev/integrations/clockshark-api-mcp-server) | Limited official API | Timesheets, schedules and jobs in your ClockShark account. | List time entries, Approve timesheet, Create job, Schedule shift, Export payroll hours |
-| [Houzz Pro](https://cotlet.dev/integrations/houzz-pro-api-mcp-server) | No official API | Leads, projects, estimates and invoices in Houzz Pro. | List leads, Create project, Create estimate, Send invoice, Update lead status |
-| [Perfect Venue](https://cotlet.dev/integrations/perfect-venue-api-mcp-server) | Paid API add-on | Events, leads, proposals and payments for your Perfect Venue venue. | List events, Create lead, Update event details, Send proposal, List payments |
-| [Zola](https://cotlet.dev/integrations/zola-api-mcp-server) | No official API | Guest list, RSVPs and registry for your Zola wedding. | List guests, Add guest, Track RSVPs, List registry gifts, Mark thank-you sent |
-| [Contractor Foreman](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server) | Limited official API | Projects, estimates, daily logs and invoices in Contractor Foreman. | Create estimate, Add daily log, Create change order, Update schedule, List invoices, Get job costing |
-| [Zen Planner](https://cotlet.dev/integrations/zen-planner-api-mcp-server) | Partners-only API | Members, classes, attendance and billing in Zen Planner. | List members, Book class, Record attendance, Enroll in membership, List failed payments |
-| [Service Autopilot](https://cotlet.dev/integrations/service-autopilot-api-mcp-server) | Partners-only API | Jobs, schedules, estimates and invoices in Service Autopilot. | Create job, Reschedule visit, Send estimate, List invoices, Add client, Get route |
-| [ZenMaid](https://cotlet.dev/integrations/zenmaid-api-mcp-server) | No official API | Appointments, cleaners and customers for your ZenMaid business. | Create appointment, Reschedule appointment, Assign cleaner, List customers, Get schedule |
-| [Beautiful.ai](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server) | Limited official API | Create, edit, duplicate and export Beautiful.ai decks from your agent. | List presentations, Create presentation, Update slide text, Duplicate presentation, Export to PDF |
-| [Yardbook](https://cotlet.dev/integrations/yardbook-api-mcp-server) | No official API | Customers, jobs, schedules and invoices in Yardbook for landscapers. | List customers, Schedule job, Create invoice, List unpaid invoices, Add estimate |
-| [Thryv](https://cotlet.dev/integrations/thryv-api-mcp-server) | Limited official API | Clients, appointments, invoices and messages in Thryv. | List appointments, Book appointment, Create invoice, Add client, Send message |
-| [Kickserv](https://cotlet.dev/integrations/kickserv-api-mcp-server) | Paid API add-on | Jobs, customers, estimates and invoices in Kickserv. | Create job, List customers, Create estimate, Send invoice, Log time entry |
-| [Bark](https://cotlet.dev/integrations/bark-api-mcp-server) | Limited official API | Leads, responses and credits for Bark professionals. | List new leads, Get lead details, Contact buyer, List my responses, Check credit balance |
-| [BookingKoala](https://cotlet.dev/integrations/bookingkoala-api-mcp-server) | Limited official API | Bookings, providers and customers in your BookingKoala store. | List bookings, Assign provider, Reschedule booking, Cancel booking, Refund charge |
-| [Jobber](https://cotlet.dev/integrations/jobber-api-mcp-server) | Partners-only API | Quotes, jobs, invoices and clients in your Jobber account. | Create quote, Convert quote to job, Create invoice, Send invoice, List unpaid invoices |
-| [Housecall Pro](https://cotlet.dev/integrations/housecall-pro-api-mcp-server) | Paid API add-on | Jobs, estimates, invoices and customers in Housecall Pro. | Create job, Create estimate, Create invoice, Send invoice, List customers |
-| [WooCommerce](https://cotlet.dev/integrations/woocommerce-api-mcp-server) | Limited official API | Orders, products, customers, coupons and refunds in your WooCommerce store. | List orders, Update order status, Create refund, Create coupon, Update product, Get sales report |
-| [Acuity Scheduling](https://cotlet.dev/integrations/acuity-scheduling-api-mcp-server) | Limited official API | Appointments, availability and blocked time in Acuity, worked by your agent. | List appointments, Check availability, Book appointment, Reschedule appointment, Cancel appointment, Block off time |
-| [AroFlo](https://cotlet.dev/integrations/aroflo-api-mcp-server) | Limited official API | Tasks, schedules, quotes and invoices in your AroFlo account. | List tasks, Create task, Schedule technician, Create final invoice, Approve invoice, Email invoice |
-| [Planity](https://cotlet.dev/integrations/planity-api-mcp-server) | No official API | Read and edit your Planity agenda, clients and booking statistics. | List appointments, Add appointment, Move appointment, Delete appointment, Block staff time, List no-shows |
-| [Podium](https://cotlet.dev/integrations/podium-api-mcp-server) | Partners-only API | Inbox, reviews, review invites, contacts and payment requests for Podium. | List conversations, Send message, Assign conversation, List reviews, Reply to review, Send review invite |
-| [ServiceTrade](https://cotlet.dev/integrations/servicetrade-api-mcp-server) | Limited official API | Jobs, appointments, deficiencies and quotes in ServiceTrade, worked by your agent. | List jobs, Create appointment, Release appointment to technicians, List deficiencies, Create quote, Submit quote |
-| [Simpro](https://cotlet.dev/integrations/simpro-api-mcp-server) | Limited official API | Quotes, jobs, schedules and customers in Simpro, worked by your agent. | List jobs, Create quote, Convert quote to job, Update job status, Look up customer, Check schedule |
-| [Tripleseat](https://cotlet.dev/integrations/tripleseat-api-mcp-server) | Limited official API | Leads, events and bookings in your Tripleseat venue account, worked by your agent. | List leads, Convert lead to event, Turn down lead, Check room availability, Change event status, Create follow-up task |
+| [AccuLynx](https://cotlet.dev/integrations/acculynx-api-mcp-server) | Jobs, contacts, photos and estimates in your AccuLynx account. | [docs](https://cotlet.dev/docs/api/acculynx) |  |
+| [Acuity Scheduling](https://cotlet.dev/integrations/acuity-scheduling-api-mcp-server) | Appointments, availability and blocked time in Acuity, worked by your agent. | [docs](https://cotlet.dev/docs/api/acuity-scheduling) |  |
+| [AroFlo](https://cotlet.dev/integrations/aroflo-api-mcp-server) | Tasks, schedules, quotes and invoices in your AroFlo account. | [docs](https://cotlet.dev/docs/api/aroflo) |  |
+| [Bark](https://cotlet.dev/integrations/bark-api-mcp-server) | Leads, responses and credits for Bark professionals. | [docs](https://cotlet.dev/docs/api/bark) |  |
+| [Beautiful.ai](https://cotlet.dev/integrations/beautiful-ai-api-mcp-server) | Create, edit, duplicate and export Beautiful.ai decks from your agent. | [docs](https://cotlet.dev/docs/api/beautiful-ai) |  |
+| [BookingKoala](https://cotlet.dev/integrations/bookingkoala-api-mcp-server) | Bookings, providers and customers in your BookingKoala store. | [docs](https://cotlet.dev/docs/api/bookingkoala) | [bookingkoala-api-mcp-server](https://github.com/cotletdev/bookingkoala-api-mcp-server) |
+| [Booksy](https://cotlet.dev/integrations/booksy-api-mcp-server) | Bookings, clients, reviews and reports for beauty businesses. | [docs](https://cotlet.dev/docs/api/booksy) | [booksy-api-mcp-server](https://github.com/cotletdev/booksy-api-mcp-server) |
+| [Buildertrend](https://cotlet.dev/integrations/buildertrend-api-mcp-server) | Schedules, daily logs, change orders and selections for builders. | [docs](https://cotlet.dev/docs/api/buildertrend) |  |
+| [ClockShark](https://cotlet.dev/integrations/clockshark-api-mcp-server) | Timesheets, schedules and jobs in your ClockShark account. | [docs](https://cotlet.dev/docs/api/clockshark) |  |
+| [Contractor Foreman](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server) | Projects, estimates, daily logs and invoices in Contractor Foreman. | [docs](https://cotlet.dev/docs/api/contractor-foreman) | [contractor-foreman-api-mcp-server](https://github.com/cotletdev/contractor-foreman-api-mcp-server) |
+| [DaySmart](https://cotlet.dev/integrations/daysmart-api-mcp-server) | Appointments, clients, pets and sales in DaySmart Salon or Pet. | [docs](https://cotlet.dev/docs/api/daysmart) |  |
+| [Faire](https://cotlet.dev/integrations/faire-api-mcp-server) | Orders, inventory, reorders and messages for wholesale brands. | [docs](https://cotlet.dev/docs/api/faire) |  |
+| [Fresha](https://cotlet.dev/integrations/fresha-api-mcp-server) | Appointments, clients, sales and reviews for salons and spas. | [docs](https://cotlet.dev/docs/api/fresha) |  |
+| [GlossGenius](https://cotlet.dev/integrations/glossgenius-api-mcp-server) | Appointments, clients and sales for salon owners. | [docs](https://cotlet.dev/docs/api/glossgenius) |  |
+| [Housecall Pro](https://cotlet.dev/integrations/housecall-pro-api-mcp-server) | Jobs, estimates, invoices and customers in Housecall Pro. | [docs](https://cotlet.dev/docs/api/housecall-pro) |  |
+| [Houzz Pro](https://cotlet.dev/integrations/houzz-pro-api-mcp-server) | Leads, projects, estimates and invoices in Houzz Pro. | [docs](https://cotlet.dev/docs/api/houzz-pro) |  |
+| [Jobber](https://cotlet.dev/integrations/jobber-api-mcp-server) | Quotes, jobs, invoices and clients in your Jobber account. | [docs](https://cotlet.dev/docs/api/jobber) |  |
+| [Kickserv](https://cotlet.dev/integrations/kickserv-api-mcp-server) | Jobs, customers, estimates and invoices in Kickserv. | [docs](https://cotlet.dev/docs/api/kickserv) |  |
+| [Mangomint](https://cotlet.dev/integrations/mangomint-api-mcp-server) | Appointments, clients and sales for your Mangomint salon or spa. | [docs](https://cotlet.dev/docs/api/mangomint) |  |
+| [Mariana Tek](https://cotlet.dev/integrations/mariana-tek-api-mcp-server) | Classes, reservations and customers for your Mariana Tek studio. | [docs](https://cotlet.dev/docs/api/mariana-tek) |  |
+| [MarketSharp](https://cotlet.dev/integrations/marketsharp-api-mcp-server) | Leads, appointments and jobs in your MarketSharp contractor CRM. | [docs](https://cotlet.dev/docs/api/marketsharp) |  |
+| [Meevo](https://cotlet.dev/integrations/meevo-api-mcp-server) | Appointments, clients and memberships in your Meevo salon. | [docs](https://cotlet.dev/docs/api/meevo) |  |
+| [Milanote](https://cotlet.dev/integrations/milanote-api-mcp-server) | Boards, notes and links in your Milanote workspace. | [docs](https://cotlet.dev/docs/api/milanote) | [milanote-api-mcp-server](https://github.com/cotletdev/milanote-api-mcp-server) |
+| [Momence](https://cotlet.dev/integrations/momence-api-mcp-server) | Classes, bookings and members for your Momence studio. | [docs](https://cotlet.dev/docs/api/momence) |  |
+| [Nextdoor](https://cotlet.dev/integrations/nextdoor-api-mcp-server) | Posts, comments and recommendations for your Nextdoor business page. | [docs](https://cotlet.dev/docs/api/nextdoor) |  |
+| [Perfect Venue](https://cotlet.dev/integrations/perfect-venue-api-mcp-server) | Events, leads, proposals and payments for your Perfect Venue venue. | [docs](https://cotlet.dev/docs/api/perfect-venue) |  |
+| [Pirate Ship](https://cotlet.dev/integrations/pirate-ship-api-mcp-server) | Labels, rates and tracking for small shippers. | [docs](https://cotlet.dev/docs/api/pirate-ship) | [pirate-ship-api-mcp-server](https://github.com/cotletdev/pirate-ship-api-mcp-server) |
+| [Planity](https://cotlet.dev/integrations/planity-api-mcp-server) | Read and edit your Planity agenda, clients and booking statistics. | [docs](https://cotlet.dev/docs/api/planity) |  |
+| [Podium](https://cotlet.dev/integrations/podium-api-mcp-server) | Inbox, reviews, review invites, contacts and payment requests for Podium. | [docs](https://cotlet.dev/docs/api/podium) |  |
+| [Service Autopilot](https://cotlet.dev/integrations/service-autopilot-api-mcp-server) | Jobs, schedules, estimates and invoices in Service Autopilot. | [docs](https://cotlet.dev/docs/api/service-autopilot) |  |
+| [Service Fusion](https://cotlet.dev/integrations/service-fusion-api-mcp-server) | Jobs, customers, estimates and invoices in your Service Fusion account. | [docs](https://cotlet.dev/docs/api/service-fusion) |  |
+| [ServiceTrade](https://cotlet.dev/integrations/servicetrade-api-mcp-server) | Jobs, appointments, deficiencies and quotes in ServiceTrade, worked by your agent. | [docs](https://cotlet.dev/docs/api/servicetrade) |  |
+| [Setmore](https://cotlet.dev/integrations/setmore-api-mcp-server) | Bookings, customers and staff calendars in your Setmore account. | [docs](https://cotlet.dev/docs/api/setmore) |  |
+| [Simpro](https://cotlet.dev/integrations/simpro-api-mcp-server) | Quotes, jobs, schedules and customers in Simpro, worked by your agent. | [docs](https://cotlet.dev/docs/api/simpro) |  |
+| [Thryv](https://cotlet.dev/integrations/thryv-api-mcp-server) | Clients, appointments, invoices and messages in Thryv. | [docs](https://cotlet.dev/docs/api/thryv) |  |
+| [Thumbtack](https://cotlet.dev/integrations/thumbtack-api-mcp-server) | Leads, messages, quotes and reviews for your Thumbtack pro profile. | [docs](https://cotlet.dev/docs/api/thumbtack) |  |
+| [Tripleseat](https://cotlet.dev/integrations/tripleseat-api-mcp-server) | Leads, events and bookings in your Tripleseat venue account, worked by your agent. | [docs](https://cotlet.dev/docs/api/tripleseat) |  |
+| [Vagaro](https://cotlet.dev/integrations/vagaro-api-mcp-server) | Bookings, waitlists and client replies across locations. | [docs](https://cotlet.dev/docs/api/vagaro) |  |
+| [WooCommerce](https://cotlet.dev/integrations/woocommerce-api-mcp-server) | Orders, products, customers, coupons and refunds in your WooCommerce store. | [docs](https://cotlet.dev/docs/api/woocommerce) |  |
+| [Workiz](https://cotlet.dev/integrations/workiz-api-mcp-server) | Jobs, scheduling, invoices and payments for field service. | [docs](https://cotlet.dev/docs/api/workiz) |  |
+| [Yardbook](https://cotlet.dev/integrations/yardbook-api-mcp-server) | Customers, jobs, schedules and invoices in Yardbook for landscapers. | [docs](https://cotlet.dev/docs/api/yardbook) |  |
+| [Zen Planner](https://cotlet.dev/integrations/zen-planner-api-mcp-server) | Members, classes, attendance and billing in Zen Planner. | [docs](https://cotlet.dev/docs/api/zen-planner) |  |
+| [ZenMaid](https://cotlet.dev/integrations/zenmaid-api-mcp-server) | Appointments, cleaners and customers for your ZenMaid business. | [docs](https://cotlet.dev/docs/api/zenmaid) |  |
+| [Zola](https://cotlet.dev/integrations/zola-api-mcp-server) | Guest list, RSVPs and registry for your Zola wedding. | [docs](https://cotlet.dev/docs/api/zola) |  |
 
 ## Invoicing & freelance CRM
 
 44 apps.
 
-| App | Official API | What your agent can do | Example tools |
+| App | What your agent can do | API docs | Self-hosted |
 |---|---|---|---|
-| [Dubsado](https://cotlet.dev/integrations/dubsado-api-mcp-server) | No official API | Projects, proposals, contracts and invoices for creative businesses. | Create project, Send proposal, Send contract, Send invoice, Get form responses |
-| [PeoplePerHour](https://cotlet.dev/integrations/peopleperhour-api-mcp-server) | No official API | Search projects, freelancers and Offers on PeoplePerHour, read briefs and profiles, keep a watchlist and saved searches. | Search projects, Get project brief, Search freelancers, Get freelancer profile, Search Offers, Get Offer |
-| [Pixieset](https://cotlet.dev/integrations/pixieset-api-mcp-server) | No official API | Galleries, clients, invoices and bookings in your Pixieset studio. | Create gallery, Upload photos, Send invoice, List bookings, Add client |
-| [SuiteDash](https://cotlet.dev/integrations/suitedash-api-mcp-server) | Limited official API | Clients, projects, invoices and tasks in your SuiteDash portal. | Create contact, Create project, Create invoice, Add task, Send portal message |
-| [Tradify](https://cotlet.dev/integrations/tradify-api-mcp-server) | No official API | Jobs, quotes, invoices and schedule in Tradify. | Create job, Create quote, Send invoice, Schedule staff, List unpaid invoices |
-| [Knowify](https://cotlet.dev/integrations/knowify-api-mcp-server) | Limited official API | Jobs, bids, invoices and job costing in Knowify. | Create job, Create bid, Create invoice, Log time, Get job cost report |
-| [Joist](https://cotlet.dev/integrations/joist-api-mcp-server) | No official API | Estimates, invoices, clients and payments in Joist for contractors. | Create estimate, Convert estimate to invoice, List invoices, Add client, Record payment |
-| [Expensify](https://cotlet.dev/integrations/expensify-api-mcp-server) | Limited official API | Expenses, receipts and reports in Expensify. | Create expense, Attach receipt, Create report, Submit report, Approve report |
-| [Exact Online](https://cotlet.dev/integrations/exact-online-api-mcp-server) | Partners-only API | Sales invoices, relations and journal entries in Exact Online. | Create sales invoice, Send invoice, Create relation, Book journal entry, List outstanding items |
-| [Acumatica](https://cotlet.dev/integrations/acumatica-api-mcp-server) | Limited official API | Bills, invoices and payments in Acumatica. | Create AP bill, Create AR invoice, Release invoice, List open invoices, Approve payment |
-| [Fortnox](https://cotlet.dev/integrations/fortnox-api-mcp-server) | Partners-only API | Invoices, customers and vouchers in Fortnox. | Create invoice, Send invoice, Create customer, Book voucher, List unpaid invoices |
-| [TaxDome](https://cotlet.dev/integrations/taxdome-api-mcp-server) | No official API | Clients, jobs, document requests and invoices in TaxDome. | Create job, Request documents, Send invoice, Message client, List overdue tasks |
-| [Pennylane](https://cotlet.dev/integrations/pennylane-api-mcp-server) | Paid API add-on | Invoices, suppliers and transactions in Pennylane. | Create customer invoice, Send invoice, Upload supplier invoice, Categorise transaction, List unpaid invoices |
-| [ERPNext](https://cotlet.dev/integrations/erpnext-api-mcp-server) | Limited official API | Invoices, payments, customers and stock in ERPNext. | Create sales invoice, Submit invoice, Create payment entry, List overdue invoices, Create customer |
-| [Holded](https://cotlet.dev/integrations/holded-api-mcp-server) | Paid API add-on | Invoices, expenses and contacts in Holded. | Create invoice, Send invoice, Create expense, Add contact, List unpaid invoices |
-| [MYOB](https://cotlet.dev/integrations/myob-api-mcp-server) | Partners-only API | Invoices, bills and payments in MYOB. | Create invoice, Send invoice, Record payment, Create bill, List overdue invoices |
-| [Invoice Ninja](https://cotlet.dev/integrations/invoice-ninja-api-mcp-server) | Paid API add-on | Invoices, quotes, clients and payments in Invoice Ninja. | Create invoice, Send invoice, Create quote, Record payment, List overdue invoices |
-| [Dext](https://cotlet.dev/integrations/dext-api-mcp-server) | No official API | Receipts and bills in Dext: upload, review, publish. | Upload receipt, List items to review, Edit extracted data, Publish to ledger, Export costs |
-| [sevdesk](https://cotlet.dev/integrations/sevdesk-api-mcp-server) | Paid API add-on | Invoices, receipts and contacts in sevdesk. | Create invoice, Send invoice, Upload receipt, Book voucher, List open invoices |
-| [Recurly](https://cotlet.dev/integrations/recurly-api-mcp-server) | Limited official API | Accounts, subscriptions and invoices in Recurly. | Find account, Change subscription, Cancel subscription, Refund invoice, List past-due accounts |
-| [Lexware Office (lexoffice)](https://cotlet.dev/integrations/lexware-office-api-mcp-server) | Paid API add-on | Quotes, invoices, contacts and receipts in Lexware Office. | Create quote, Create invoice, Finalise invoice, Upload receipt, Add contact |
-| [Alegra](https://cotlet.dev/integrations/alegra-api-mcp-server) | Paid API add-on | Invoices, contacts and payments in Alegra. | Create invoice, Email invoice, Record payment, Add contact, List unpaid invoices |
-| [Fiken](https://cotlet.dev/integrations/fiken-api-mcp-server) | Paid API add-on | Invoices, purchases and contacts in Fiken. | Create invoice, Send invoice, Book purchase, Add contact, List unpaid invoices |
-| [Fakturownia (InvoiceOcean)](https://cotlet.dev/integrations/fakturownia-api-mcp-server) | Limited official API | Invoices, clients and products in Fakturownia and InvoiceOcean. | Issue invoice, Send invoice, Mark invoice paid, Add client, List unpaid invoices |
-| [Facturama](https://cotlet.dev/integrations/facturama-api-mcp-server) | Paid API add-on | CFDI invoices, credit notes and clients in Facturama. | Issue CFDI invoice, Issue credit note, Cancel invoice, Add client, Download XML/PDF |
-| [e-Boekhouden](https://cotlet.dev/integrations/e-boekhouden-api-mcp-server) | Limited official API | Invoices, relations and bookings in e-Boekhouden. | Create invoice, Book mutation, Add relation, List open items, Export ledger |
-| [Fatture in Cloud](https://cotlet.dev/integrations/fatture-in-cloud-api-mcp-server) | Limited official API | E-invoices, clients and expenses in Fatture in Cloud. | Create invoice, Send to SDI, Add client, Record expense, List unpaid invoices |
-| [SnelStart](https://cotlet.dev/integrations/snelstart-api-mcp-server) | Partners-only API | Sales invoices, relations and bookings in SnelStart. | Create sales invoice, Add relation, Book entry, List open items, Upload document |
-| [e-conomic](https://cotlet.dev/integrations/e-conomic-api-mcp-server) | Partners-only API | Invoices, customers and entries in e-conomic. | Create draft invoice, Book invoice, Add customer, List unpaid invoices, Create entry |
-| [Procountor](https://cotlet.dev/integrations/procountor-api-mcp-server) | Partners-only API | Invoices, receipts and partners in Procountor. | Create invoice, Approve invoice, Create receipt, Add partner, List unpaid invoices |
-| [Számlázz.hu](https://cotlet.dev/integrations/szamlazz-hu-api-mcp-server) | Paid API add-on | Invoices, receipts and NAV status in Számlázz.hu, run by your agent. | Issue invoice, Cancel invoice, Issue receipt, Record payment, Get invoice PDF |
-| [iFirma](https://cotlet.dev/integrations/ifirma-api-mcp-server) | Limited official API | Invoices, costs and KSeF sending in iFirma, run by your agent. | Issue invoice, Send invoice, Send to KSeF, Add cost, List unpaid invoices |
-| [Bokio](https://cotlet.dev/integrations/bokio-api-mcp-server) | Partners-only API | Invoices, receipts and journal entries in Bokio, run by your agent. | Create invoice, Send invoice, Upload receipt, Create journal entry, List unpaid invoices |
-| [Odoo](https://cotlet.dev/integrations/odoo-api-mcp-server) | Paid API add-on | Invoices, payments, contacts and sales orders in your Odoo. | Create invoice, Send invoice, Register payment, List unpaid invoices, Create contact |
-| [Chargebee](https://cotlet.dev/integrations/chargebee-api-mcp-server) | Limited official API | Subscriptions, invoices and credit notes in Chargebee. | Find customer, Change subscription plan, Cancel subscription, Issue credit note, List overdue invoices |
-| [Accelo](https://cotlet.dev/integrations/accelo-api-mcp-server) | Limited official API | Tickets, projects, time and quotes in your Accelo, worked by your agent. | List tickets, Reply to ticket, Update ticket, Log time, Create task, Create quote |
-| [Agile CRM](https://cotlet.dev/integrations/agile-crm-api-mcp-server) | Limited official API | Campaign reports, bulk enrolment, deals, tasks and notes for Agile CRM. | Get campaign report, Add contacts to campaign, List contacts, Add contact tags, List deals, Move deal to milestone |
-| [Copper CRM](https://cotlet.dev/integrations/copper-crm-api-mcp-server) | Limited official API | Leads, deals, tasks and activities in your Copper CRM, for AI agents. | List opportunities, Update opportunity stage, Mark opportunity won or lost, Create task, Log activity, Convert lead |
-| [Freshsales](https://cotlet.dev/integrations/freshsales-api-mcp-server) | Limited official API | Deals, contacts, tasks and notes in your Freshsales CRM, for agents. | List rotten deals, Move deal to another stage, Mark deal won or lost, Create task, Add note, List overdue tasks |
-| [Kommo](https://cotlet.dev/integrations/kommo-api-mcp-server) | Limited official API | Leads, incoming chats, tasks and pipeline stages in your Kommo CRM. | List leads, Accept incoming lead, Move lead to stage, Create task, Reply to chat, Add note |
-| [Method CRM](https://cotlet.dev/integrations/method-crm-api-mcp-server) | Limited official API | Customers, estimates, invoices, payments and activities in Method. | List customers and leads, List overdue invoices, Create estimate, Convert estimate to invoice, Send invoice, Record payment |
-| [SuiteCRM](https://cotlet.dev/integrations/suitecrm-api-mcp-server) | Limited official API | Leads, contacts, deals, cases and tasks in SuiteCRM without OAuth setup. | List leads, Convert lead, Create lead, Update opportunity, Create task, Log call |
-| [Teamleader](https://cotlet.dev/integrations/teamleader-api-mcp-server) | Limited official API | Deals, quotations, invoices and reminders in Teamleader Focus, worked by your agent. | List overdue invoices, Send invoice reminder, List quotations, Send quotation, Move deal to a phase, Create task |
-| [Vtiger](https://cotlet.dev/integrations/vtiger-api-mcp-server) | Limited official API | Contacts, deals, cases and pipeline stages in your Vtiger CRM. | List contacts, Convert contact to deal, List deals, Update deal stage, List cases, Create case |
+| [Accelo](https://cotlet.dev/integrations/accelo-api-mcp-server) | Tickets, projects, time and quotes in your Accelo, worked by your agent. | [docs](https://cotlet.dev/docs/api/accelo) |  |
+| [Acumatica](https://cotlet.dev/integrations/acumatica-api-mcp-server) | Bills, invoices and payments in Acumatica. | [docs](https://cotlet.dev/docs/api/acumatica) |  |
+| [Agile CRM](https://cotlet.dev/integrations/agile-crm-api-mcp-server) | Campaign reports, bulk enrolment, deals, tasks and notes for Agile CRM. | [docs](https://cotlet.dev/docs/api/agile-crm) |  |
+| [Alegra](https://cotlet.dev/integrations/alegra-api-mcp-server) | Invoices, contacts and payments in Alegra. | [docs](https://cotlet.dev/docs/api/alegra) |  |
+| [Bokio](https://cotlet.dev/integrations/bokio-api-mcp-server) | Invoices, receipts and journal entries in Bokio, run by your agent. | [docs](https://cotlet.dev/docs/api/bokio) |  |
+| [Chargebee](https://cotlet.dev/integrations/chargebee-api-mcp-server) | Subscriptions, invoices and credit notes in Chargebee. | [docs](https://cotlet.dev/docs/api/chargebee) |  |
+| [Copper CRM](https://cotlet.dev/integrations/copper-crm-api-mcp-server) | Leads, deals, tasks and activities in your Copper CRM, for AI agents. | [docs](https://cotlet.dev/docs/api/copper-crm) |  |
+| [Dext](https://cotlet.dev/integrations/dext-api-mcp-server) | Receipts and bills in Dext: upload, review, publish. | [docs](https://cotlet.dev/docs/api/dext) |  |
+| [Dubsado](https://cotlet.dev/integrations/dubsado-api-mcp-server) | Projects, proposals, contracts and invoices for creative businesses. | [docs](https://cotlet.dev/docs/api/dubsado) |  |
+| [e-Boekhouden](https://cotlet.dev/integrations/e-boekhouden-api-mcp-server) | Invoices, relations and bookings in e-Boekhouden. | [docs](https://cotlet.dev/docs/api/e-boekhouden) |  |
+| [e-conomic](https://cotlet.dev/integrations/e-conomic-api-mcp-server) | Invoices, customers and entries in e-conomic. | [docs](https://cotlet.dev/docs/api/e-conomic) |  |
+| [ERPNext](https://cotlet.dev/integrations/erpnext-api-mcp-server) | Invoices, payments, customers and stock in ERPNext. | [docs](https://cotlet.dev/docs/api/erpnext) |  |
+| [Exact Online](https://cotlet.dev/integrations/exact-online-api-mcp-server) | Sales invoices, relations and journal entries in Exact Online. | [docs](https://cotlet.dev/docs/api/exact-online) |  |
+| [Expensify](https://cotlet.dev/integrations/expensify-api-mcp-server) | Expenses, receipts and reports in Expensify. | [docs](https://cotlet.dev/docs/api/expensify) |  |
+| [Facturama](https://cotlet.dev/integrations/facturama-api-mcp-server) | CFDI invoices, credit notes and clients in Facturama. | [docs](https://cotlet.dev/docs/api/facturama) |  |
+| [Fakturownia (InvoiceOcean)](https://cotlet.dev/integrations/fakturownia-api-mcp-server) | Invoices, clients and products in Fakturownia and InvoiceOcean. | [docs](https://cotlet.dev/docs/api/fakturownia) |  |
+| [Fatture in Cloud](https://cotlet.dev/integrations/fatture-in-cloud-api-mcp-server) | E-invoices, clients and expenses in Fatture in Cloud. | [docs](https://cotlet.dev/docs/api/fatture-in-cloud) |  |
+| [Fiken](https://cotlet.dev/integrations/fiken-api-mcp-server) | Invoices, purchases and contacts in Fiken. | [docs](https://cotlet.dev/docs/api/fiken) |  |
+| [Fortnox](https://cotlet.dev/integrations/fortnox-api-mcp-server) | Invoices, customers and vouchers in Fortnox. | [docs](https://cotlet.dev/docs/api/fortnox) |  |
+| [Freshsales](https://cotlet.dev/integrations/freshsales-api-mcp-server) | Deals, contacts, tasks and notes in your Freshsales CRM, for agents. | [docs](https://cotlet.dev/docs/api/freshsales) |  |
+| [Holded](https://cotlet.dev/integrations/holded-api-mcp-server) | Invoices, expenses and contacts in Holded. | [docs](https://cotlet.dev/docs/api/holded) |  |
+| [iFirma](https://cotlet.dev/integrations/ifirma-api-mcp-server) | Invoices, costs and KSeF sending in iFirma, run by your agent. | [docs](https://cotlet.dev/docs/api/ifirma) |  |
+| [Invoice Ninja](https://cotlet.dev/integrations/invoice-ninja-api-mcp-server) | Invoices, quotes, clients and payments in Invoice Ninja. | [docs](https://cotlet.dev/docs/api/invoice-ninja) |  |
+| [Joist](https://cotlet.dev/integrations/joist-api-mcp-server) | Estimates, invoices, clients and payments in Joist for contractors. | [docs](https://cotlet.dev/docs/api/joist) |  |
+| [Knowify](https://cotlet.dev/integrations/knowify-api-mcp-server) | Jobs, bids, invoices and job costing in Knowify. | [docs](https://cotlet.dev/docs/api/knowify) |  |
+| [Kommo](https://cotlet.dev/integrations/kommo-api-mcp-server) | Leads, incoming chats, tasks and pipeline stages in your Kommo CRM. | [docs](https://cotlet.dev/docs/api/kommo) |  |
+| [Lexware Office (lexoffice)](https://cotlet.dev/integrations/lexware-office-api-mcp-server) | Quotes, invoices, contacts and receipts in Lexware Office. | [docs](https://cotlet.dev/docs/api/lexware-office) |  |
+| [Method CRM](https://cotlet.dev/integrations/method-crm-api-mcp-server) | Customers, estimates, invoices, payments and activities in Method. | [docs](https://cotlet.dev/docs/api/method-crm) |  |
+| [MYOB](https://cotlet.dev/integrations/myob-api-mcp-server) | Invoices, bills and payments in MYOB. | [docs](https://cotlet.dev/docs/api/myob) |  |
+| [Odoo](https://cotlet.dev/integrations/odoo-api-mcp-server) | Invoices, payments, contacts and sales orders in your Odoo. | [docs](https://cotlet.dev/docs/api/odoo) |  |
+| [Pennylane](https://cotlet.dev/integrations/pennylane-api-mcp-server) | Invoices, suppliers and transactions in Pennylane. | [docs](https://cotlet.dev/docs/api/pennylane) |  |
+| [PeoplePerHour](https://cotlet.dev/integrations/peopleperhour-api-mcp-server) | Search projects, freelancers and Offers on PeoplePerHour, read briefs and profiles, keep a watchlist and saved searches. | [docs](https://cotlet.dev/docs/api/peopleperhour) | [peopleperhour-api-mcp-server](https://github.com/cotletdev/peopleperhour-api-mcp-server) |
+| [Pixieset](https://cotlet.dev/integrations/pixieset-api-mcp-server) | Galleries, clients, invoices and bookings in your Pixieset studio. | [docs](https://cotlet.dev/docs/api/pixieset) |  |
+| [Procountor](https://cotlet.dev/integrations/procountor-api-mcp-server) | Invoices, receipts and partners in Procountor. | [docs](https://cotlet.dev/docs/api/procountor) |  |
+| [Recurly](https://cotlet.dev/integrations/recurly-api-mcp-server) | Accounts, subscriptions and invoices in Recurly. | [docs](https://cotlet.dev/docs/api/recurly) |  |
+| [sevdesk](https://cotlet.dev/integrations/sevdesk-api-mcp-server) | Invoices, receipts and contacts in sevdesk. | [docs](https://cotlet.dev/docs/api/sevdesk) |  |
+| [SnelStart](https://cotlet.dev/integrations/snelstart-api-mcp-server) | Sales invoices, relations and bookings in SnelStart. | [docs](https://cotlet.dev/docs/api/snelstart) |  |
+| [SuiteCRM](https://cotlet.dev/integrations/suitecrm-api-mcp-server) | Leads, contacts, deals, cases and tasks in SuiteCRM without OAuth setup. | [docs](https://cotlet.dev/docs/api/suitecrm) |  |
+| [SuiteDash](https://cotlet.dev/integrations/suitedash-api-mcp-server) | Clients, projects, invoices and tasks in your SuiteDash portal. | [docs](https://cotlet.dev/docs/api/suitedash) |  |
+| [Számlázz.hu](https://cotlet.dev/integrations/szamlazz-hu-api-mcp-server) | Invoices, receipts and NAV status in Számlázz.hu, run by your agent. | [docs](https://cotlet.dev/docs/api/szamlazz-hu) |  |
+| [TaxDome](https://cotlet.dev/integrations/taxdome-api-mcp-server) | Clients, jobs, document requests and invoices in TaxDome. | [docs](https://cotlet.dev/docs/api/taxdome) |  |
+| [Teamleader](https://cotlet.dev/integrations/teamleader-api-mcp-server) | Deals, quotations, invoices and reminders in Teamleader Focus, worked by your agent. | [docs](https://cotlet.dev/docs/api/teamleader) |  |
+| [Tradify](https://cotlet.dev/integrations/tradify-api-mcp-server) | Jobs, quotes, invoices and schedule in Tradify. | [docs](https://cotlet.dev/docs/api/tradify) |  |
+| [Vtiger](https://cotlet.dev/integrations/vtiger-api-mcp-server) | Contacts, deals, cases and pipeline stages in your Vtiger CRM. | [docs](https://cotlet.dev/docs/api/vtiger) |  |
+
+## Creators & communities
+
+36 apps.
+
+| App | What your agent can do | API docs | Self-hosted |
+|---|---|---|---|
+| [AniList](https://cotlet.dev/integrations/anilist-api-mcp-server) | Your AniList anime and manga lists, ratings and activity, managed by your agent. | [docs](https://cotlet.dev/docs/api/anilist) |  |
+| [Bandcamp](https://cotlet.dev/integrations/bandcamp-api-mcp-server) | Sales, merch orders, releases and fan messages for your Bandcamp page. | [docs](https://cotlet.dev/docs/api/bandcamp) |  |
+| [Bandsintown](https://cotlet.dev/integrations/bandsintown-api-mcp-server) | Tour dates, fan messages and stats for your Bandsintown artist page. | [docs](https://cotlet.dev/docs/api/bandsintown) |  |
+| [Billetto](https://cotlet.dev/integrations/billetto-api-mcp-server) | Refund tickets, resend PDFs, send guest lists and manage orders in Billetto. | [docs](https://cotlet.dev/docs/api/billetto) |  |
+| [Bloomerang](https://cotlet.dev/integrations/bloomerang-api-mcp-server) | Donors, gifts, interactions and duplicates in your Bloomerang CRM. | [docs](https://cotlet.dev/docs/api/bloomerang) |  |
+| [DICE](https://cotlet.dev/integrations/dice-api-mcp-server) | Events, ticket tiers, sales and guest lists for DICE promoters. | [docs](https://cotlet.dev/docs/api/dice) |  |
+| [Discogs](https://cotlet.dev/integrations/discogs-api-mcp-server) | Collection, wantlist, listings and orders in your Discogs account. | [docs](https://cotlet.dev/docs/api/discogs) |  |
+| [DonorPerfect](https://cotlet.dev/integrations/donorperfect-api-mcp-server) | Donors, gifts, pledges and thank-yous in DonorPerfect, worked by your agent. | [docs](https://cotlet.dev/docs/api/donorperfect) |  |
+| [Dribbble](https://cotlet.dev/integrations/dribbble-api-mcp-server) | Messages, Pro analytics and engagement for designers. | [docs](https://cotlet.dev/docs/api/dribbble) |  |
+| [Evite](https://cotlet.dev/integrations/evite-api-mcp-server) | Events, guest lists, RSVPs and messages on Evite. | [docs](https://cotlet.dev/docs/api/evite) |  |
+| [Flickr](https://cotlet.dev/integrations/flickr-api-mcp-server) | Photos, albums, tags and comments in your Flickr, worked by your agent. | [docs](https://cotlet.dev/docs/api/flickr) |  |
+| [Ghost](https://cotlet.dev/integrations/ghost-api-mcp-server) | Posts, members, newsletters and tiers in your Ghost site, worked by your agent. | [docs](https://cotlet.dev/docs/api/ghost) |  |
+| [Joy](https://cotlet.dev/integrations/joy-api-mcp-server) | Guest list, RSVPs and registry for your Joy wedding. | [docs](https://cotlet.dev/docs/api/joy) |  |
+| [Libsyn](https://cotlet.dev/integrations/libsyn-api-mcp-server) | Episodes, scheduling and stats for your Libsyn podcast. | [docs](https://cotlet.dev/docs/api/libsyn) |  |
+| [Lichess](https://cotlet.dev/integrations/lichess-api-mcp-server) | Teams, tournaments, studies, broadcasts and game exports for your Lichess account. | [docs](https://cotlet.dev/docs/api/lichess) |  |
+| [Medium](https://cotlet.dev/integrations/medium-api-mcp-server) | Publish, edit and track stats for your Medium posts. | [docs](https://cotlet.dev/docs/api/medium) |  |
+| [Meetup](https://cotlet.dev/integrations/meetup-api-mcp-server) | Events, RSVPs and member messages without Meetup Pro. | [docs](https://cotlet.dev/docs/api/meetup) |  |
+| [Paperless Post](https://cotlet.dev/integrations/paperless-post-api-mcp-server) | Guest lists, RSVPs and messages for Paperless Post events. | [docs](https://cotlet.dev/docs/api/paperless-post) |  |
+| [Partiful](https://cotlet.dev/integrations/partiful-api-mcp-server) | Invites, guest lists and text blasts for your events. | [docs](https://cotlet.dev/docs/api/partiful) | [partiful-api-mcp-server](https://github.com/cotletdev/partiful-api-mcp-server) |
+| [Patreon](https://cotlet.dev/integrations/patreon-api-mcp-server) | Posts, patron messages and members for your Patreon page. | [docs](https://cotlet.dev/docs/api/patreon) |  |
+| [Planning Center](https://cotlet.dev/integrations/planning-center-api-mcp-server) | Volunteer scheduling, workflow cards, profile notes and first-timers for your church. | [docs](https://cotlet.dev/docs/api/planning-center) |  |
+| [Printful](https://cotlet.dev/integrations/printful-api-mcp-server) | Orders, products, mockups and shipping in your Printful account, worked by your agent. | [docs](https://cotlet.dev/docs/api/printful) |  |
+| [Printify](https://cotlet.dev/integrations/printify-api-mcp-server) | Products, orders and artwork in your Printify shop, worked by your agent. | [docs](https://cotlet.dev/docs/api/printify) |  |
+| [Quora](https://cotlet.dev/integrations/quora-api-mcp-server) | Answers, questions and Spaces from your Quora account. | [docs](https://cotlet.dev/docs/api/quora) |  |
+| [Riverside](https://cotlet.dev/integrations/riverside-api-mcp-server) | Studios, guest invites and recordings on Pro and Standard. | [docs](https://cotlet.dev/docs/api/riverside) |  |
+| [SignUpGenius](https://cotlet.dev/integrations/signupgenius-api-mcp-server) | Create sign-ups, manage slots and message participants on SignUpGenius. | [docs](https://cotlet.dev/docs/api/signupgenius) |  |
+| [Skool](https://cotlet.dev/integrations/skool-api-mcp-server) | Posts, members, courses, events and DMs for your Skool community. | [docs](https://cotlet.dev/docs/api/skool) | [skool-api-mcp-server](https://github.com/cotletdev/skool-api-mcp-server) |
+| [SmugMug](https://cotlet.dev/integrations/smugmug-api-mcp-server) | Galleries, uploads, sharing and captions in your SmugMug account. | [docs](https://cotlet.dev/docs/api/smugmug) |  |
+| [SoundCloud](https://cotlet.dev/integrations/soundcloud-api-mcp-server) | Tracks, playlists, comments and stats for your SoundCloud profile. | [docs](https://cotlet.dev/docs/api/soundcloud) |  |
+| [StreamElements](https://cotlet.dev/integrations/streamelements-api-mcp-server) | Chat commands, timers, store, tips and points, worked by your agent. | [docs](https://cotlet.dev/docs/api/streamelements) |  |
+| [Substack](https://cotlet.dev/integrations/substack-api-mcp-server) | Posts, Notes, messages, subscribers and stats for your publication. | [docs](https://cotlet.dev/docs/api/substack) | [substack-api-mcp-server](https://github.com/cotletdev/substack-api-mcp-server) |
+| [Trakt](https://cotlet.dev/integrations/trakt-api-mcp-server) | Watchlist, ratings, history and lists in your Trakt account, worked by your agent. | [docs](https://cotlet.dev/docs/api/trakt) |  |
+| [Tumblr](https://cotlet.dev/integrations/tumblr-api-mcp-server) | Posts, queue and asks on your Tumblr blogs, worked by your agent. | [docs](https://cotlet.dev/docs/api/tumblr) |  |
+| [Vimeo](https://cotlet.dev/integrations/vimeo-api-mcp-server) | Captions, folders, showcases and stats for your Vimeo videos. | [docs](https://cotlet.dev/docs/api/vimeo) |  |
+| [Whova](https://cotlet.dev/integrations/whova-api-mcp-server) | Agenda, attendees and announcements for your Whova event. | [docs](https://cotlet.dev/docs/api/whova) |  |
+| [Wild Apricot](https://cotlet.dev/integrations/wild-apricot-api-mcp-server) | Applications, contacts, events, emails and payments in your Wild Apricot admin. | [docs](https://cotlet.dev/docs/api/wild-apricot) |  |
 
 ## Marketing & SEO
 
 25 apps.
 
-| App | Official API | What your agent can do | Example tools |
+| App | What your agent can do | API docs | Self-hosted |
 |---|---|---|---|
-| [Google Search Console](https://cotlet.dev/integrations/google-search-console-api-mcp-server) | Limited official API | Request indexing, removals, users and index reports for your sites. | Request indexing, Request URL removal, Add user to property, List not indexed URLs, Get links report, Get performance stats |
-| [AccuRanker](https://cotlet.dev/integrations/accuranker-api-mcp-server) | Limited official API | Add keywords, tags, domains and competitors to AccuRanker. | Add keywords, List keywords and ranks, Add tags to keywords, Add domain, Add competitor, Delete keywords |
-| [Brand24](https://cotlet.dev/integrations/brand24-api-mcp-server) | Limited official API | Mentions, tags, sentiment and cleanup in your Brand24 projects. | List mentions, Tag mentions, Change mention sentiment, Delete and block mentions, Add mention manually, Get project stats |
-| [BrightLocal](https://cotlet.dev/integrations/brightlocal-api-mcp-server) | Limited official API | Rankings, reviews and citations in BrightLocal, worked by your agent. | List locations, Get rank tracker report, List reviews, Respond to review, Update rank tracker keywords, Re-run report |
-| [Campaign Monitor](https://cotlet.dev/integrations/campaign-monitor-api-mcp-server) | Limited official API | Campaign reports, segments, subscribers, drafts and journeys in Campaign Monitor. | Get campaign report, List who did not open, Create segment from campaign, Create campaign draft, Schedule campaign, Add subscriber |
-| [ClickSend](https://cotlet.dev/integrations/clicksend-api-mcp-server) | Limited official API | SMS campaigns, contact lists, opt-outs and delivery reports for your ClickSend account. | Create SMS campaign, Send SMS, Cancel scheduled SMS, List SMS history, Add contacts, Remove opted-out contacts |
-| [Constant Contact](https://cotlet.dev/integrations/constant-contact-api-mcp-server) | Limited official API | Email reports, lists, contacts and scheduled sends in Constant Contact. | Get email report, List contacts who did not open, Create list, Add contacts to list, Copy email, Schedule email |
-| [EmailOctopus](https://cotlet.dev/integrations/emailoctopus-api-mcp-server) | Limited official API | Campaigns, segments, sends and reports in your EmailOctopus, worked by your agent. | List campaigns, Get campaign report, Duplicate campaign, Create segment, Set campaign recipients, Schedule campaign |
-| [Findymail](https://cotlet.dev/integrations/findymail-api-mcp-server) | Limited official API | Find and verify emails, run lead searches and keep exclusion lists. | Find email, Verify email, Start lead search, Add excluded domains, List contact lists, Get credits |
-| [Google Discover](https://cotlet.dev/integrations/google-discover-api-mcp-server) | Limited official API | Read your Discover feed, follow or hide publishers, get Discover stats. | Read Discover feed, Check domain in feed, Get story cluster, List followed publishers, Follow publisher, Hide publisher |
-| [Judge.me](https://cotlet.dev/integrations/judge-me-api-mcp-server) | Limited official API | Review replies, moderation and review requests in Judge.me, worked by your agent. | List reviews, Reply to review, Send private reply, Hide review, Publish review, Send review request |
-| [Mailjet](https://cotlet.dev/integrations/mailjet-api-mcp-server) | Limited official API | Campaigns, segments, lists and stats in your Mailjet, worked by your agent. | List contacts, Create segment, Duplicate campaign, Update campaign subject, Schedule campaign, Send campaign |
-| [Mailshake](https://cotlet.dev/integrations/mailshake-api-mcp-server) | Limited official API | Reply to leads, add follow-ups and manage campaigns in Mailshake. | List campaigns, Add recipients to a campaign, List replies and leads, Reply to a lead, Add a follow-up to a campaign, Move leads to another campaign |
-| [Mautic](https://cotlet.dev/integrations/mautic-api-mcp-server) | Limited official API | Contacts, segments, campaigns and email stats in your Mautic, worked by your agent. | List contacts, Merge contacts, Change contact segments, Set Do Not Contact, Create segment, Get email stats |
-| [Okendo](https://cotlet.dev/integrations/okendo-api-mcp-server) | Limited official API | Moderate, reply to and report on Okendo reviews and questions. | List pending reviews, Publish review, Reject review, Reply to review, Answer product question, Get product performance |
-| [Plausible](https://cotlet.dev/integrations/plausible-api-mcp-server) | Limited official API | Read stats, add goals, share dashboards and invite guests in Plausible. | List sites, Get site stats, Get top pages, Get traffic sources, Create site, Add goal |
-| [Postscript](https://cotlet.dev/integrations/postscript-api-mcp-server) | Limited official API | Build SMS campaigns, segments and keywords, and reply to subscribers. | Create segment, Create campaign draft, Schedule campaign, Create keyword, Reply to subscriber, Get message analytics |
-| [Privy](https://cotlet.dev/integrations/privy-api-mcp-server) | Limited official API | Segments, campaigns, popups and tags for your Privy account. | List campaigns, Create segment, Duplicate campaign, Create email campaign, Send or schedule campaign, Pause display |
-| [REVIEWS.io](https://cotlet.dev/integrations/reviews-io-api-mcp-server) | Limited official API | Reviews, replies, moderation, invitations and tags in your REVIEWS.io dashboard. | List reviews, Reply to review, Moderate review, Tag reviews, List invitations, Pause invitations |
-| [Sendible](https://cotlet.dev/integrations/sendible-api-mcp-server) | Limited official API | Posts, inbox replies, approvals and reports for your Sendible workspaces. | List workspaces, Schedule post, Queue post, Send post for approval, Approve or reject task, Reply to message |
-| [SimpleTexting](https://cotlet.dev/integrations/simpletexting-api-mcp-server) | Limited official API | Inbox replies, scheduled texts and lists for SimpleTexting, no API token. | List conversations, Send message, Schedule message, Schedule campaign, Add contact to list, Assign conversation |
-| [Sprout Social](https://cotlet.dev/integrations/sprout-social-api-mcp-server) | Limited official API | Publishing, inbox and reports in your Sprout Social, worked by your agent. | Schedule post, Reply to message, Tag message, Assign case, Get post performance, List queued posts |
-| [SpyFu](https://cotlet.dev/integrations/spyfu-api-mcp-server) | Limited official API | Backlinks, leads, Site Audit, My Sites and PDF reports for SpyFu. | Find backlink prospects, Search business leads, Create scheduled PDF report, Get Site Audit issues, Compare competitor keywords, List SEO keywords |
-| [Ubersuggest](https://cotlet.dev/integrations/ubersuggest-api-mcp-server) | Limited official API | Projects, rank-tracking keywords, competitors and keyword lists for Ubersuggest. | List projects, Get rank tracking, Add tracked keywords, Create project, Add competitors, Delete tracked keywords |
-| [Yotpo](https://cotlet.dev/integrations/yotpo-api-mcp-server) | Limited official API | Moderate and reply to reviews, answer questions, adjust loyalty points. | List reviews, Publish review, Hide review, Reply to review, Answer question, Adjust loyalty points |
-
-## Customer support
-
-19 apps.
-
-| App | Official API | What your agent can do | Example tools |
-|---|---|---|---|
-| [Zendesk](https://cotlet.dev/integrations/zendesk-api-mcp-server) | Limited official API | Tickets, replies, macros and views in your Zendesk, worked by your agent. | List tickets, Reply to ticket, Update ticket, Apply macro, Add internal note, Search tickets |
-| [Help Scout](https://cotlet.dev/integrations/help-scout-api-mcp-server) | Paid API add-on | Conversations, replies, tags and Docs in Help Scout, from your agent. | Reply to conversation, Add note, Tag conversation, Assign conversation, Update Docs article, Search conversations |
-| [Aircall](https://cotlet.dev/integrations/aircall-api-mcp-server) | Limited official API | Calls, tags, notes, SMS and contacts in your Aircall, worked by your agent. | List calls, Get call summary, Tag call, Add call note, Send SMS, Search contacts |
-| [Chatwoot](https://cotlet.dev/integrations/chatwoot-api-mcp-server) | Limited official API | Conversations, replies, labels and assignments in your Chatwoot inbox. | List conversations, Reply to conversation, Add private note, Assign conversation, Add labels, Resolve or snooze conversation |
-| [eDesk](https://cotlet.dev/integrations/edesk-api-mcp-server) | Limited official API | Tickets, replies, orders and tags in your eDesk, worked by your agent. | List tickets, Reply to ticket, Assign owner and add tags, Add internal note, Get order and tracking, List templates |
-| [FreeScout](https://cotlet.dev/integrations/freescout-api-mcp-server) | Limited official API | Conversations, replies, notes and customers in your FreeScout, worked by your agent. | List conversations, Read conversation, Draft reply, Add internal note, Assign conversation, Change status |
-| [Freshchat](https://cotlet.dev/integrations/freshchat-api-mcp-server) | Limited official API | Inbox, replies, assignment and labels in Freshchat, worked by your agent. | List conversations, Read conversation, Send reply, Assign conversation, Resolve conversation with label, List canned responses |
-| [Gladly](https://cotlet.dev/integrations/gladly-api-mcp-server) | Limited official API | Conversations, customer profiles, topics and tasks in Gladly, worked by your agent. | List conversations, Search customers, Reply to customer, Add note, Apply topics, Assign conversation |
-| [Gorgias](https://cotlet.dev/integrations/gorgias-api-mcp-server) | Limited official API | Tickets, replies, macros and rules in your Gorgias helpdesk. | Search tickets, Reply to ticket, Update ticket, Apply macro, Merge tickets, Edit macro |
-| [HappyFox](https://cotlet.dev/integrations/happyfox-api-mcp-server) | Limited official API | Tickets, replies, private notes and canned actions in your HappyFox help desk. | Search tickets, Reply to ticket, Add private note, Update ticket, Apply canned action, List queues |
-| [Jitbit](https://cotlet.dev/integrations/jitbit-api-mcp-server) | Limited official API | Assign, prioritise, close, merge and create Jitbit tickets with your agent. | Assign ticket, Update ticket, Close ticket, Merge tickets, Create ticket, List tickets |
-| [JivoChat](https://cotlet.dev/integrations/jivochat-api-mcp-server) | Limited official API | Chats, clients, quick phrases and reports in JivoChat, worked by your agent. | List chats, Reply to chat, Accept chat, List clients, Merge clients, Get aggregated report |
-| [Kustomer](https://cotlet.dev/integrations/kustomer-api-mcp-server) | Limited official API | Conversations, customers and notes in your Kustomer, worked by your agent. | Search conversations, Reply to conversation, Add internal note, Tag conversation, Snooze conversation, Merge conversations |
-| [LiveChat (Text)](https://cotlet.dev/integrations/livechat-api-mcp-server) | Limited official API | Chats, tags and canned replies in your LiveChat, worked by your agent. | List chats, Reply in chat, Tag chat, Transfer chat, Archive chat, Save canned response |
-| [Ringover](https://cotlet.dev/integrations/ringover-api-mcp-server) | Limited official API | Calls, transcripts, call tags and SMS in your Ringover, worked by your agent. | List calls, Read call transcript, Tag call, Send SMS, Search contacts, List missed calls and voicemails |
-| [SysAid](https://cotlet.dev/integrations/sysaid-api-mcp-server) | Limited official API | Tickets, notes, assignments and resolutions in your SysAid, worked by your agent. | Search tickets, Update ticket, Assign ticket, Add note, Resolve ticket, Merge tickets |
-| [Tidio](https://cotlet.dev/integrations/tidio-api-mcp-server) | Limited official API | Tickets, chats, contacts, macros and flows in your Tidio, worked by your agent. | List tickets, Reply to ticket, Update ticket, Update contact properties, Create macro, Read conversation history |
-| [Trengo](https://cotlet.dev/integrations/trengo-api-mcp-server) | Limited official API | Triage, label, reply to and close Trengo conversations with your agent. | List conversations, Search conversations, Read a conversation, Add label, Assign conversation, Reply to customer |
-| [Zammad](https://cotlet.dev/integrations/zammad-api-mcp-server) | Limited official API | Tickets, replies, tags and macros in your Zammad, worked by your agent. | Search tickets, Update ticket, Reply to customer, Add internal note, Run macro, Merge tickets |
-
-## HR & recruiting
-
-21 apps.
-
-| App | Official API | What your agent can do | Example tools |
-|---|---|---|---|
-| [Personio](https://cotlet.dev/integrations/personio-api-mcp-server) | Limited official API | Time off, employees and attendance in Personio, handled by your agent. | Request time off, Approve time off, List absences, Get employee, Update employee, Log attendance |
-| [Ashby](https://cotlet.dev/integrations/ashby-api-mcp-server) | Limited official API | Candidates, interviews and pipeline stages in Ashby, run by your agent. | Create candidate, Move candidate stage, Schedule interview, Reject candidate, Add note, List open jobs |
-| [BambooHR](https://cotlet.dev/integrations/bamboohr-api-mcp-server) | Limited official API | Employees, time off and onboarding in BambooHR, done by your agent. | Request time off, Approve time off, Update employee, Create onboarding task, Get report, List employees |
-| [Bizneo](https://cotlet.dev/integrations/bizneo-api-mcp-server) | Limited official API | Approve absences, request time off and remote work in Bizneo HR. | List absence requests, Get absence balance, Request absence, Approve absence request, Reject absence request, Request remote work |
-| [Bullhorn](https://cotlet.dev/integrations/bullhorn-api-mcp-server) | Partners-only API | Candidates, notes and submissions in your Bullhorn ATS. | Search candidates, Find matching candidates for a job, Add candidate note, Submit candidates to a job, Update submission status, List job submissions |
-| [CharlieHR](https://cotlet.dev/integrations/charliehr-api-mcp-server) | Limited official API | Approve leave, book time off, adjust allowances and offboard people. | List team members, List time off requests, Approve time off request, Deny time off request, Book time off, Record sick day |
-| [Comeet](https://cotlet.dev/integrations/comeet-api-mcp-server) | Partners-only API | Candidates, positions and hiring decisions in Comeet, from your agent. | List candidates, Change candidate status, Reject candidate with reason, Decide Go/No-go step, Invite candidate to self-schedule, Add comment |
-| [Deputy](https://cotlet.dev/integrations/deputy-api-mcp-server) | Limited official API | Approve timesheets and leave, and roster shifts in Deputy. | List timesheets, Approve timesheet, Discard timesheet, List leave requests, Approve leave request, Decline leave request |
-| [Homerun](https://cotlet.dev/integrations/homerun-api-mcp-server) | Limited official API | Move, tag, email and disqualify candidates; close jobs, from your agent. | List jobs, List candidates, Move candidate to stage, Disqualify candidate, Send candidate email, Add candidate note |
-| [JazzHR](https://cotlet.dev/integrations/jazzhr-api-mcp-server) | Limited official API | Move candidates, email them and manage jobs in your JazzHR. | List candidates, Move candidate to a workflow stage, Bulk change candidate status, Email candidate, Add candidate note, Create task |
-| [JobAdder](https://cotlet.dev/integrations/jobadder-api-mcp-server) | Partners-only API | Candidates, applications, notes and tasks for your JobAdder account. | Search candidates, Get candidate, List job applications, Rate application, Update application status, Add candidate note |
-| [JobDiva](https://cotlet.dev/integrations/jobdiva-api-mcp-server) | Partners-only API | Candidates, notes, hotlists and submittals in your JobDiva account. | Search candidates, Find candidate, Search jobs, Add candidate note, Add candidates to hotlist, Create submittal |
-| [Lever](https://cotlet.dev/integrations/lever-api-mcp-server) | Limited official API | Move, archive and note candidates in Lever, run by your agent. | List opportunities, Move candidate to a stage, Archive with a reason and email, Add note, Tag candidate, Email candidate |
-| [Loxo](https://cotlet.dev/integrations/loxo-api-mcp-server) | Limited official API | Pipelines, candidates, activity, stage emails and reports in Loxo. | List jobs, Read a job pipeline, Search people, Log candidate activity, Move candidate to a stage, Email a pipeline stage |
-| [Manatal](https://cotlet.dev/integrations/manatal-api-mcp-server) | Partners-only API | Candidates, jobs, pipeline stages and notes in your Manatal, worked by your agent. | Search candidates, Create candidate, Add candidate to job, Move candidate to stage, Drop candidate with reason, Add candidate note |
-| [Officient](https://cotlet.dev/integrations/officient-api-mcp-server) | Limited official API | Time off, approvals, colleagues and your details in Officient, worked by your agent. | Request time off, Approve absence request, List colleague absences, Get calendar budget, Add overtime, Update personal information |
-| [PeopleHR](https://cotlet.dev/integrations/peoplehr-api-mcp-server) | Limited official API | Approve holiday requests, assign tasks and run saved queries in PeopleHR. | List holiday requests, Approve holiday request, Decline holiday request, List employees, Get employee planner, Create task |
-| [Quinyx](https://cotlet.dev/integrations/quinyx-api-mcp-server) | Limited official API | Approve requests, offer open shifts, attest hours and publish Quinyx schedules. | List approval requests, Approve request, Deny request, Offer open shift, Add absence, Create shift |
-| [Recruiterflow](https://cotlet.dev/integrations/recruiterflow-api-mcp-server) | Limited official API | Move candidates, add notes, create tasks and close jobs in Recruiterflow. | List jobs, Get job pipeline, List candidates, Get candidate, List job candidates, List activities |
-| [Shiftbase](https://cotlet.dev/integrations/shiftbase-api-mcp-server) | Limited official API | Approve hours, leave and shift swaps in Shiftbase from your agent. | List timesheet entries, Approve timesheet entries, Approve absence request, Decline absence request, Approve exchange request, List open shifts |
-| [Vincere](https://cotlet.dev/integrations/vincere-api-mcp-server) | Partners-only API | Shortlists, LiveLists, pipeline stages, notes and tasks in Vincere. | List jobs, List candidates, Shortlist candidates, Send candidates to a client, Send job list to candidates, Move application stage |
+| [AccuRanker](https://cotlet.dev/integrations/accuranker-api-mcp-server) | Add keywords, tags, domains and competitors to AccuRanker. | [docs](https://cotlet.dev/docs/api/accuranker) |  |
+| [Brand24](https://cotlet.dev/integrations/brand24-api-mcp-server) | Mentions, tags, sentiment and cleanup in your Brand24 projects. | [docs](https://cotlet.dev/docs/api/brand24) |  |
+| [BrightLocal](https://cotlet.dev/integrations/brightlocal-api-mcp-server) | Rankings, reviews and citations in BrightLocal, worked by your agent. | [docs](https://cotlet.dev/docs/api/brightlocal) |  |
+| [Campaign Monitor](https://cotlet.dev/integrations/campaign-monitor-api-mcp-server) | Campaign reports, segments, subscribers, drafts and journeys in Campaign Monitor. | [docs](https://cotlet.dev/docs/api/campaign-monitor) |  |
+| [ClickSend](https://cotlet.dev/integrations/clicksend-api-mcp-server) | SMS campaigns, contact lists, opt-outs and delivery reports for your ClickSend account. | [docs](https://cotlet.dev/docs/api/clicksend) |  |
+| [Constant Contact](https://cotlet.dev/integrations/constant-contact-api-mcp-server) | Email reports, lists, contacts and scheduled sends in Constant Contact. | [docs](https://cotlet.dev/docs/api/constant-contact) |  |
+| [EmailOctopus](https://cotlet.dev/integrations/emailoctopus-api-mcp-server) | Campaigns, segments, sends and reports in your EmailOctopus, worked by your agent. | [docs](https://cotlet.dev/docs/api/emailoctopus) |  |
+| [Findymail](https://cotlet.dev/integrations/findymail-api-mcp-server) | Find and verify emails, run lead searches and keep exclusion lists. | [docs](https://cotlet.dev/docs/api/findymail) |  |
+| [Google Discover](https://cotlet.dev/integrations/google-discover-api-mcp-server) | Read your Discover feed, follow or hide publishers, get Discover stats. | [docs](https://cotlet.dev/docs/api/google-discover) |  |
+| [Google Search Console](https://cotlet.dev/integrations/google-search-console-api-mcp-server) | Request indexing, removals, users and index reports for your sites. | [docs](https://cotlet.dev/docs/api/google-search-console) |  |
+| [Judge.me](https://cotlet.dev/integrations/judge-me-api-mcp-server) | Review replies, moderation and review requests in Judge.me, worked by your agent. | [docs](https://cotlet.dev/docs/api/judge-me) |  |
+| [Mailjet](https://cotlet.dev/integrations/mailjet-api-mcp-server) | Campaigns, segments, lists and stats in your Mailjet, worked by your agent. | [docs](https://cotlet.dev/docs/api/mailjet) |  |
+| [Mailshake](https://cotlet.dev/integrations/mailshake-api-mcp-server) | Reply to leads, add follow-ups and manage campaigns in Mailshake. | [docs](https://cotlet.dev/docs/api/mailshake) |  |
+| [Mautic](https://cotlet.dev/integrations/mautic-api-mcp-server) | Contacts, segments, campaigns and email stats in your Mautic, worked by your agent. | [docs](https://cotlet.dev/docs/api/mautic) |  |
+| [Okendo](https://cotlet.dev/integrations/okendo-api-mcp-server) | Moderate, reply to and report on Okendo reviews and questions. | [docs](https://cotlet.dev/docs/api/okendo) |  |
+| [Plausible](https://cotlet.dev/integrations/plausible-api-mcp-server) | Read stats, add goals, share dashboards and invite guests in Plausible. | [docs](https://cotlet.dev/docs/api/plausible) |  |
+| [Postscript](https://cotlet.dev/integrations/postscript-api-mcp-server) | Build SMS campaigns, segments and keywords, and reply to subscribers. | [docs](https://cotlet.dev/docs/api/postscript) |  |
+| [Privy](https://cotlet.dev/integrations/privy-api-mcp-server) | Segments, campaigns, popups and tags for your Privy account. | [docs](https://cotlet.dev/docs/api/privy) |  |
+| [REVIEWS.io](https://cotlet.dev/integrations/reviews-io-api-mcp-server) | Reviews, replies, moderation, invitations and tags in your REVIEWS.io dashboard. | [docs](https://cotlet.dev/docs/api/reviews-io) |  |
+| [Sendible](https://cotlet.dev/integrations/sendible-api-mcp-server) | Posts, inbox replies, approvals and reports for your Sendible workspaces. | [docs](https://cotlet.dev/docs/api/sendible) |  |
+| [SimpleTexting](https://cotlet.dev/integrations/simpletexting-api-mcp-server) | Inbox replies, scheduled texts and lists for SimpleTexting, no API token. | [docs](https://cotlet.dev/docs/api/simpletexting) |  |
+| [Sprout Social](https://cotlet.dev/integrations/sprout-social-api-mcp-server) | Publishing, inbox and reports in your Sprout Social, worked by your agent. | [docs](https://cotlet.dev/docs/api/sprout-social) |  |
+| [SpyFu](https://cotlet.dev/integrations/spyfu-api-mcp-server) | Backlinks, leads, Site Audit, My Sites and PDF reports for SpyFu. | [docs](https://cotlet.dev/docs/api/spyfu) |  |
+| [Ubersuggest](https://cotlet.dev/integrations/ubersuggest-api-mcp-server) | Projects, rank-tracking keywords, competitors and keyword lists for Ubersuggest. | [docs](https://cotlet.dev/docs/api/ubersuggest) |  |
+| [Yotpo](https://cotlet.dev/integrations/yotpo-api-mcp-server) | Moderate and reply to reviews, answer questions, adjust loyalty points. | [docs](https://cotlet.dev/docs/api/yotpo) |  |
 
 ## Productivity & teams
 
 23 apps.
 
-| App | Official API | What your agent can do | Example tools |
+| App | What your agent can do | API docs | Self-hosted |
 |---|---|---|---|
-| [Redmine](https://cotlet.dev/integrations/redmine-api-mcp-server) | Limited official API | Issues, time entries and projects in your Redmine, from your agent. | Create issue, Update issue, Log time, List my issues, Add comment, List projects |
-| [Zotero](https://cotlet.dev/integrations/zotero-api-mcp-server) | Limited official API | Your Zotero library: add papers, organize collections and pull notes. | Add item by DOI, Search library, Add to collection, Get annotations, Create note, Export citations |
-| [Nextcloud](https://cotlet.dev/integrations/nextcloud-api-mcp-server) | Limited official API | Files, calendar, contacts and Deck boards in your Nextcloud. | Upload file, Share file, Create calendar event, Add contact, Create Deck card, Search files |
-| [Otter.ai](https://cotlet.dev/integrations/otter-api-mcp-server) | Partners-only API | Meeting transcripts, highlights and sharing in Otter, by your agent. | Search transcripts, Export transcript, Share conversation, Add highlight, Upload audio, List action items |
-| [123FormBuilder](https://cotlet.dev/integrations/123formbuilder-api-mcp-server) | Limited official API | Forms, fields, submissions and notification emails for your 123FormBuilder account. | List forms, List submissions, Edit submission, Resend submission email, Change notification email, Add form field |
-| [Bluedot](https://cotlet.dev/integrations/bluedot-api-mcp-server) | Limited official API | Organize, template, comment on and share Bluedot meetings; read transcripts too. | List meetings, Search transcripts, Get meeting summary and transcript, Move meeting to collection, Create collection, Create notes template |
-| [Connecteam](https://cotlet.dev/integrations/connecteam-api-mcp-server) | Limited official API | Approve timesheets, publish shifts, answer time off and create tasks in Connecteam. | List timesheets, Approve timesheet, Copy previous week, Publish shifts, List time off requests, Approve time off request |
-| [Fathom](https://cotlet.dev/integrations/fathom-video-api-mcp-server) | Limited official API | Complete action items, share calls and edit summaries in Fathom. | List calls, Complete action item, Add action item, Share call, Set link access, Regenerate summary |
-| [Feedly](https://cotlet.dev/integrations/feedly-api-mcp-server) | Limited official API | Feeds, Boards, Read Later and read state in your Feedly, worked by your agent. | List feeds, List articles, Search articles, Save article to Board, Mark articles as read, Follow source |
-| [Fillout](https://cotlet.dev/integrations/fillout-api-mcp-server) | Limited official API | Forms, questions, logic and submissions in your Fillout, worked by your agent. | Create form, Add question, Set form logic, Publish form, Close form, Read submissions |
-| [Formstack](https://cotlet.dev/integrations/formstack-api-mcp-server) | Limited official API | Forms, submissions, folders and notification emails in your Formstack account. | List forms, Read submissions, Edit submission, Change notification recipients, Close form after a set number of entries, Copy form |
-| [Habitica](https://cotlet.dev/integrations/habitica-api-mcp-server) | Limited official API | Habits, dailies and to-dos in your Habitica, worked by your agent. | List tasks, Create task, Score habit or daily, Update checklist, Hatch and feed pets, Start party quest |
-| [Hubstaff](https://cotlet.dev/integrations/hubstaff-api-mcp-server) | Limited official API | Timesheets, approvals, projects and tasks in your Hubstaff, worked by your agent. | List timesheets, Approve timesheet, Review manual time request, Add time entry, Create project, Create task |
-| [Inoreader](https://cotlet.dev/integrations/inoreader-api-mcp-server) | Limited official API | Feeds, folders, rules and starred articles in your Inoreader, worked by your agent. | List subscriptions, Read unread articles, Star article, Mark as read, Add feed, Create rule |
-| [Instapaper](https://cotlet.dev/integrations/instapaper-api-mcp-server) | Limited official API | Reading list, folders, tags and highlights, worked by your agent. | List unread articles, Save URL, Archive article, Move to folder, Read highlights, Fetch article text |
-| [Jotform](https://cotlet.dev/integrations/jotform-api-mcp-server) | Limited official API | Forms, submissions, reports and notifications in your Jotform, worked by your agent. | List forms, Read submissions, Edit submission, Archive submissions, Set notification recipients, Create report |
-| [Krisp](https://cotlet.dev/integrations/krisp-api-mcp-server) | Limited official API | Share meetings, file them in folders and assign action items. | List meetings, Get meeting notes and transcript, List action items, Share meeting, Change meeting access, Add meeting to folder |
-| [Productboard](https://cotlet.dev/integrations/productboard-api-mcp-server) | Limited official API | Feedback, insights, features and statuses in your Productboard, worked by your agent. | Search features, Read feedback, Add feedback, Link feedback to a feature, Mark feedback processed, Update feature status |
-| [Quickbase](https://cotlet.dev/integrations/quickbase-api-mcp-server) | Limited official API | Records, reports and users in your Quickbase apps, worked by your agent. | List apps and tables, Run report, Search records, Create record, Update record, Export report to CSV |
-| [Resource Guru](https://cotlet.dev/integrations/resource-guru-api-mcp-server) | Limited official API | Bookings, approvals, time off and projects in your Resource Guru schedule. | List bookings, Create booking, Confirm tentative booking, Approve or decline booking, Add time off, Create project |
-| [Timetastic](https://cotlet.dev/integrations/timetastic-api-mcp-server) | Limited official API | Leave requests, wallchart, approvals and absence reports for Timetastic. | List wallchart absences, List pending leave requests, Approve leave request, Decline leave request, Book time off, Cancel booking |
-| [tl;dv](https://cotlet.dev/integrations/tldv-api-mcp-server) | Limited official API | Meetings, transcripts, notes, clips and sharing for your tl;dv account. | List meetings, Get transcript, Create clip, Add note, Share meeting, Add meeting to folder |
-| [Yousign](https://cotlet.dev/integrations/yousign-api-mcp-server) | Limited official API | Signature requests, reminders, signed PDFs and audit trails in Yousign. | List signature requests, Create request from template, Send signature request, Send reminder, Cancel signature request, Download signed documents |
+| [123FormBuilder](https://cotlet.dev/integrations/123formbuilder-api-mcp-server) | Forms, fields, submissions and notification emails for your 123FormBuilder account. | [docs](https://cotlet.dev/docs/api/123formbuilder) |  |
+| [Bluedot](https://cotlet.dev/integrations/bluedot-api-mcp-server) | Organize, template, comment on and share Bluedot meetings; read transcripts too. | [docs](https://cotlet.dev/docs/api/bluedot) |  |
+| [Connecteam](https://cotlet.dev/integrations/connecteam-api-mcp-server) | Approve timesheets, publish shifts, answer time off and create tasks in Connecteam. | [docs](https://cotlet.dev/docs/api/connecteam) |  |
+| [Fathom](https://cotlet.dev/integrations/fathom-video-api-mcp-server) | Complete action items, share calls and edit summaries in Fathom. | [docs](https://cotlet.dev/docs/api/fathom-video) |  |
+| [Feedly](https://cotlet.dev/integrations/feedly-api-mcp-server) | Feeds, Boards, Read Later and read state in your Feedly, worked by your agent. | [docs](https://cotlet.dev/docs/api/feedly) |  |
+| [Fillout](https://cotlet.dev/integrations/fillout-api-mcp-server) | Forms, questions, logic and submissions in your Fillout, worked by your agent. | [docs](https://cotlet.dev/docs/api/fillout) |  |
+| [Formstack](https://cotlet.dev/integrations/formstack-api-mcp-server) | Forms, submissions, folders and notification emails in your Formstack account. | [docs](https://cotlet.dev/docs/api/formstack) |  |
+| [Habitica](https://cotlet.dev/integrations/habitica-api-mcp-server) | Habits, dailies and to-dos in your Habitica, worked by your agent. | [docs](https://cotlet.dev/docs/api/habitica) |  |
+| [Hubstaff](https://cotlet.dev/integrations/hubstaff-api-mcp-server) | Timesheets, approvals, projects and tasks in your Hubstaff, worked by your agent. | [docs](https://cotlet.dev/docs/api/hubstaff) |  |
+| [Inoreader](https://cotlet.dev/integrations/inoreader-api-mcp-server) | Feeds, folders, rules and starred articles in your Inoreader, worked by your agent. | [docs](https://cotlet.dev/docs/api/inoreader) |  |
+| [Instapaper](https://cotlet.dev/integrations/instapaper-api-mcp-server) | Reading list, folders, tags and highlights, worked by your agent. | [docs](https://cotlet.dev/docs/api/instapaper) |  |
+| [Jotform](https://cotlet.dev/integrations/jotform-api-mcp-server) | Forms, submissions, reports and notifications in your Jotform, worked by your agent. | [docs](https://cotlet.dev/docs/api/jotform) |  |
+| [Krisp](https://cotlet.dev/integrations/krisp-api-mcp-server) | Share meetings, file them in folders and assign action items. | [docs](https://cotlet.dev/docs/api/krisp) |  |
+| [Nextcloud](https://cotlet.dev/integrations/nextcloud-api-mcp-server) | Files, calendar, contacts and Deck boards in your Nextcloud. | [docs](https://cotlet.dev/docs/api/nextcloud) |  |
+| [Otter.ai](https://cotlet.dev/integrations/otter-api-mcp-server) | Meeting transcripts, highlights and sharing in Otter, by your agent. | [docs](https://cotlet.dev/docs/api/otter) |  |
+| [Productboard](https://cotlet.dev/integrations/productboard-api-mcp-server) | Feedback, insights, features and statuses in your Productboard, worked by your agent. | [docs](https://cotlet.dev/docs/api/productboard) |  |
+| [Quickbase](https://cotlet.dev/integrations/quickbase-api-mcp-server) | Records, reports and users in your Quickbase apps, worked by your agent. | [docs](https://cotlet.dev/docs/api/quickbase) |  |
+| [Redmine](https://cotlet.dev/integrations/redmine-api-mcp-server) | Issues, time entries and projects in your Redmine, from your agent. | [docs](https://cotlet.dev/docs/api/redmine) |  |
+| [Resource Guru](https://cotlet.dev/integrations/resource-guru-api-mcp-server) | Bookings, approvals, time off and projects in your Resource Guru schedule. | [docs](https://cotlet.dev/docs/api/resource-guru) |  |
+| [Timetastic](https://cotlet.dev/integrations/timetastic-api-mcp-server) | Leave requests, wallchart, approvals and absence reports for Timetastic. | [docs](https://cotlet.dev/docs/api/timetastic) |  |
+| [tl;dv](https://cotlet.dev/integrations/tldv-api-mcp-server) | Meetings, transcripts, notes, clips and sharing for your tl;dv account. | [docs](https://cotlet.dev/docs/api/tldv) |  |
+| [Yousign](https://cotlet.dev/integrations/yousign-api-mcp-server) | Signature requests, reminders, signed PDFs and audit trails in Yousign. | [docs](https://cotlet.dev/docs/api/yousign) |  |
+| [Zotero](https://cotlet.dev/integrations/zotero-api-mcp-server) | Your Zotero library: add papers, organize collections and pull notes. | [docs](https://cotlet.dev/docs/api/zotero) |  |
 
-## Missing an app?
+## HR & recruiting
 
-Search for it at [cotlet.dev/integrations](https://cotlet.dev/integrations#catalog-search) and press **Request**. No account needed. Requests from signed-up users decide what we build next.
+21 apps.
 
-AI agents can file a request directly: `POST https://cotlet.dev/api/v1/integration-requests` with `{"app": "Notion", "app_url": "https://notion.so", "use_case": "what the user wants done", "client": "your agent name"}`. See [for-ai-agents.md](for-ai-agents.md).
+| App | What your agent can do | API docs | Self-hosted |
+|---|---|---|---|
+| [Ashby](https://cotlet.dev/integrations/ashby-api-mcp-server) | Candidates, interviews and pipeline stages in Ashby, run by your agent. | [docs](https://cotlet.dev/docs/api/ashby) |  |
+| [BambooHR](https://cotlet.dev/integrations/bamboohr-api-mcp-server) | Employees, time off and onboarding in BambooHR, done by your agent. | [docs](https://cotlet.dev/docs/api/bamboohr) |  |
+| [Bizneo](https://cotlet.dev/integrations/bizneo-api-mcp-server) | Approve absences, request time off and remote work in Bizneo HR. | [docs](https://cotlet.dev/docs/api/bizneo) |  |
+| [Bullhorn](https://cotlet.dev/integrations/bullhorn-api-mcp-server) | Candidates, notes and submissions in your Bullhorn ATS. | [docs](https://cotlet.dev/docs/api/bullhorn) |  |
+| [CharlieHR](https://cotlet.dev/integrations/charliehr-api-mcp-server) | Approve leave, book time off, adjust allowances and offboard people. | [docs](https://cotlet.dev/docs/api/charliehr) |  |
+| [Comeet](https://cotlet.dev/integrations/comeet-api-mcp-server) | Candidates, positions and hiring decisions in Comeet, from your agent. | [docs](https://cotlet.dev/docs/api/comeet) |  |
+| [Deputy](https://cotlet.dev/integrations/deputy-api-mcp-server) | Approve timesheets and leave, and roster shifts in Deputy. | [docs](https://cotlet.dev/docs/api/deputy) |  |
+| [Homerun](https://cotlet.dev/integrations/homerun-api-mcp-server) | Move, tag, email and disqualify candidates; close jobs, from your agent. | [docs](https://cotlet.dev/docs/api/homerun) |  |
+| [JazzHR](https://cotlet.dev/integrations/jazzhr-api-mcp-server) | Move candidates, email them and manage jobs in your JazzHR. | [docs](https://cotlet.dev/docs/api/jazzhr) |  |
+| [JobAdder](https://cotlet.dev/integrations/jobadder-api-mcp-server) | Candidates, applications, notes and tasks for your JobAdder account. | [docs](https://cotlet.dev/docs/api/jobadder) |  |
+| [JobDiva](https://cotlet.dev/integrations/jobdiva-api-mcp-server) | Candidates, notes, hotlists and submittals in your JobDiva account. | [docs](https://cotlet.dev/docs/api/jobdiva) |  |
+| [Lever](https://cotlet.dev/integrations/lever-api-mcp-server) | Move, archive and note candidates in Lever, run by your agent. | [docs](https://cotlet.dev/docs/api/lever) |  |
+| [Loxo](https://cotlet.dev/integrations/loxo-api-mcp-server) | Pipelines, candidates, activity, stage emails and reports in Loxo. | [docs](https://cotlet.dev/docs/api/loxo) |  |
+| [Manatal](https://cotlet.dev/integrations/manatal-api-mcp-server) | Candidates, jobs, pipeline stages and notes in your Manatal, worked by your agent. | [docs](https://cotlet.dev/docs/api/manatal) |  |
+| [Officient](https://cotlet.dev/integrations/officient-api-mcp-server) | Time off, approvals, colleagues and your details in Officient, worked by your agent. | [docs](https://cotlet.dev/docs/api/officient) |  |
+| [PeopleHR](https://cotlet.dev/integrations/peoplehr-api-mcp-server) | Approve holiday requests, assign tasks and run saved queries in PeopleHR. | [docs](https://cotlet.dev/docs/api/peoplehr) |  |
+| [Personio](https://cotlet.dev/integrations/personio-api-mcp-server) | Time off, employees and attendance in Personio, handled by your agent. | [docs](https://cotlet.dev/docs/api/personio) |  |
+| [Quinyx](https://cotlet.dev/integrations/quinyx-api-mcp-server) | Approve requests, offer open shifts, attest hours and publish Quinyx schedules. | [docs](https://cotlet.dev/docs/api/quinyx) |  |
+| [Recruiterflow](https://cotlet.dev/integrations/recruiterflow-api-mcp-server) | Move candidates, add notes, create tasks and close jobs in Recruiterflow. | [docs](https://cotlet.dev/docs/api/recruiterflow) |  |
+| [Shiftbase](https://cotlet.dev/integrations/shiftbase-api-mcp-server) | Approve hours, leave and shift swaps in Shiftbase from your agent. | [docs](https://cotlet.dev/docs/api/shiftbase) |  |
+| [Vincere](https://cotlet.dev/integrations/vincere-api-mcp-server) | Shortlists, LiveLists, pipeline stages, notes and tasks in Vincere. | [docs](https://cotlet.dev/docs/api/vincere) |  |
 
----
+## Customer support
 
-Product names are trademarks of their owners. Cotlet is unofficial and not affiliated with, or endorsed by, any app in this catalog.
+19 apps.
+
+| App | What your agent can do | API docs | Self-hosted |
+|---|---|---|---|
+| [Aircall](https://cotlet.dev/integrations/aircall-api-mcp-server) | Calls, tags, notes, SMS and contacts in your Aircall, worked by your agent. | [docs](https://cotlet.dev/docs/api/aircall) |  |
+| [Chatwoot](https://cotlet.dev/integrations/chatwoot-api-mcp-server) | Conversations, replies, labels and assignments in your Chatwoot inbox. | [docs](https://cotlet.dev/docs/api/chatwoot) |  |
+| [eDesk](https://cotlet.dev/integrations/edesk-api-mcp-server) | Tickets, replies, orders and tags in your eDesk, worked by your agent. | [docs](https://cotlet.dev/docs/api/edesk) |  |
+| [FreeScout](https://cotlet.dev/integrations/freescout-api-mcp-server) | Conversations, replies, notes and customers in your FreeScout, worked by your agent. | [docs](https://cotlet.dev/docs/api/freescout) |  |
+| [Freshchat](https://cotlet.dev/integrations/freshchat-api-mcp-server) | Inbox, replies, assignment and labels in Freshchat, worked by your agent. | [docs](https://cotlet.dev/docs/api/freshchat) |  |
+| [Gladly](https://cotlet.dev/integrations/gladly-api-mcp-server) | Conversations, customer profiles, topics and tasks in Gladly, worked by your agent. | [docs](https://cotlet.dev/docs/api/gladly) |  |
+| [Gorgias](https://cotlet.dev/integrations/gorgias-api-mcp-server) | Tickets, replies, macros and rules in your Gorgias helpdesk. | [docs](https://cotlet.dev/docs/api/gorgias) |  |
+| [HappyFox](https://cotlet.dev/integrations/happyfox-api-mcp-server) | Tickets, replies, private notes and canned actions in your HappyFox help desk. | [docs](https://cotlet.dev/docs/api/happyfox) |  |
+| [Help Scout](https://cotlet.dev/integrations/help-scout-api-mcp-server) | Conversations, replies, tags and Docs in Help Scout, from your agent. | [docs](https://cotlet.dev/docs/api/help-scout) |  |
+| [Jitbit](https://cotlet.dev/integrations/jitbit-api-mcp-server) | Assign, prioritise, close, merge and create Jitbit tickets with your agent. | [docs](https://cotlet.dev/docs/api/jitbit) |  |
+| [JivoChat](https://cotlet.dev/integrations/jivochat-api-mcp-server) | Chats, clients, quick phrases and reports in JivoChat, worked by your agent. | [docs](https://cotlet.dev/docs/api/jivochat) |  |
+| [Kustomer](https://cotlet.dev/integrations/kustomer-api-mcp-server) | Conversations, customers and notes in your Kustomer, worked by your agent. | [docs](https://cotlet.dev/docs/api/kustomer) |  |
+| [LiveChat (Text)](https://cotlet.dev/integrations/livechat-api-mcp-server) | Chats, tags and canned replies in your LiveChat, worked by your agent. | [docs](https://cotlet.dev/docs/api/livechat) |  |
+| [Ringover](https://cotlet.dev/integrations/ringover-api-mcp-server) | Calls, transcripts, call tags and SMS in your Ringover, worked by your agent. | [docs](https://cotlet.dev/docs/api/ringover) |  |
+| [SysAid](https://cotlet.dev/integrations/sysaid-api-mcp-server) | Tickets, notes, assignments and resolutions in your SysAid, worked by your agent. | [docs](https://cotlet.dev/docs/api/sysaid) |  |
+| [Tidio](https://cotlet.dev/integrations/tidio-api-mcp-server) | Tickets, chats, contacts, macros and flows in your Tidio, worked by your agent. | [docs](https://cotlet.dev/docs/api/tidio) |  |
+| [Trengo](https://cotlet.dev/integrations/trengo-api-mcp-server) | Triage, label, reply to and close Trengo conversations with your agent. | [docs](https://cotlet.dev/docs/api/trengo) |  |
+| [Zammad](https://cotlet.dev/integrations/zammad-api-mcp-server) | Tickets, replies, tags and macros in your Zammad, worked by your agent. | [docs](https://cotlet.dev/docs/api/zammad) |  |
+| [Zendesk](https://cotlet.dev/integrations/zendesk-api-mcp-server) | Tickets, replies, macros and views in your Zendesk, worked by your agent. | [docs](https://cotlet.dev/docs/api/zendesk) |  |
+
+## Real estate
+
+16 apps.
+
+| App | What your agent can do | API docs | Self-hosted |
+|---|---|---|---|
+| [Bayut](https://cotlet.dev/integrations/bayut-api-mcp-server) | Listings, leads and performance for Bayut agents. | [docs](https://cotlet.dev/docs/api/bayut) |  |
+| [Breezeway](https://cotlet.dev/integrations/breezeway-api-mcp-server) | Create, assign, comment on and approve Breezeway property tasks. | [docs](https://cotlet.dev/docs/api/breezeway) |  |
+| [Crexi](https://cotlet.dev/integrations/crexi-api-mcp-server) | Leads, comps and listing analytics for commercial real estate. | [docs](https://cotlet.dev/docs/api/crexi) |  |
+| [DoorLoop](https://cotlet.dev/integrations/doorloop-api-mcp-server) | Tenants, leases, rent charges and payments for landlords. | [docs](https://cotlet.dev/docs/api/doorloop) |  |
+| [Hemnet](https://cotlet.dev/integrations/hemnet-api-mcp-server) | Listings, sold prices, saved homes and searches for Hemnet buyers. | [docs](https://cotlet.dev/docs/api/hemnet) |  |
+| [Idealista](https://cotlet.dev/integrations/idealista-api-mcp-server) | Your listings and leads on Idealista, managed by an agent. | [docs](https://cotlet.dev/docs/api/idealista) |  |
+| [Immobiliare.it](https://cotlet.dev/integrations/immobiliare-api-mcp-server) | Your listings, messages and visit requests on Immobiliare.it. | [docs](https://cotlet.dev/docs/api/immobiliare) |  |
+| [Mashvisor](https://cotlet.dev/integrations/mashvisor-api-mcp-server) | Saved searches, property analyses and exports from your account. | [docs](https://cotlet.dev/docs/api/mashvisor) |  |
+| [Peerspace](https://cotlet.dev/integrations/peerspace-api-mcp-server) | Inquiries, bookings and listings for your Peerspace venue. | [docs](https://cotlet.dev/docs/api/peerspace) |  |
+| [Property Finder](https://cotlet.dev/integrations/property-finder-api-mcp-server) | Listings, leads and credits in your Property Finder broker account. | [docs](https://cotlet.dev/docs/api/property-finder) |  |
+| [Rent Manager](https://cotlet.dev/integrations/rent-manager-api-mcp-server) | Charges, work orders and tenant messages for property managers. | [docs](https://cotlet.dev/docs/api/rent-manager) |  |
+| [Rently](https://cotlet.dev/integrations/rently-api-mcp-server) | Tours, prospects and listings in your Rently self-touring account. | [docs](https://cotlet.dev/docs/api/rently) |  |
+| [REsimpli](https://cotlet.dev/integrations/resimpli-api-mcp-server) | Leads, deal stages and drip campaigns for real estate investors. | [docs](https://cotlet.dev/docs/api/resimpli) |  |
+| [ResMan](https://cotlet.dev/integrations/resman-api-mcp-server) | Work orders, units, leases and ledgers from your ResMan account. | [docs](https://cotlet.dev/docs/api/resman) |  |
+| [VaultRE](https://cotlet.dev/integrations/vaultre-api-mcp-server) | Enquiries, contacts, properties, viewings and notes in your VaultRE CRM. | [docs](https://cotlet.dev/docs/api/vaultre) |  |
+| [Zoopla](https://cotlet.dev/integrations/zoopla-api-mcp-server) | Listings, leads and performance stats for agents and landlords. | [docs](https://cotlet.dev/docs/api/zoopla) |  |
+
+## Courses & training
+
+13 apps.
+
+| App | What your agent can do | API docs | Self-hosted |
+|---|---|---|---|
+| [Absorb LMS](https://cotlet.dev/integrations/absorb-lms-api-mcp-server) | Enrollments, approvals, overdue learners and users in Absorb LMS. | [docs](https://cotlet.dev/docs/api/absorb-lms) |  |
+| [iSpring Learn (iSpring LMS)](https://cotlet.dev/integrations/ispring-api-mcp-server) | Enroll learners, manage users and read progress in iSpring Learn. | [docs](https://cotlet.dev/docs/api/ispring) |  |
+| [LearnUpon](https://cotlet.dev/integrations/learnupon-api-mcp-server) | Invite learners, manage groups and enroll them on courses in LearnUpon. | [docs](https://cotlet.dev/docs/api/learnupon) |  |
+| [Payhip](https://cotlet.dev/integrations/payhip-api-mcp-server) | Products, sales, customers, coupons and refunds for sellers. | [docs](https://cotlet.dev/docs/api/payhip) |  |
+| [RemNote](https://cotlet.dev/integrations/remnote-api-mcp-server) | Notes and flashcards in RemNote, worked by your agent. | [docs](https://cotlet.dev/docs/api/remnote) |  |
+| [Systeme.io](https://cotlet.dev/integrations/systeme-io-api-mcp-server) | Funnels, email campaigns and sales reports for marketers. | [docs](https://cotlet.dev/docs/api/systeme-io) |  |
+| [Teachable](https://cotlet.dev/integrations/teachable-api-mcp-server) | Course content, coupons, emails and comments on any plan. | [docs](https://cotlet.dev/docs/api/teachable) |  |
+| [Teachers Pay Teachers](https://cotlet.dev/integrations/teachers-pay-teachers-api-mcp-server) | Products, prices and sales reports for TPT sellers. | [docs](https://cotlet.dev/docs/api/teachers-pay-teachers) |  |
+| [Thought Industries](https://cotlet.dev/integrations/thought-industries-api-mcp-server) | Learners, enrollments, waitlists and completion reports for your Thought Industries academy. | [docs](https://cotlet.dev/docs/api/thought-industries) |  |
+| [ThriveCart](https://cotlet.dev/integrations/thrivecart-api-mcp-server) | Products, checkouts, refunds and affiliates for sellers. | [docs](https://cotlet.dev/docs/api/thrivecart) |  |
+| [Udemy](https://cotlet.dev/integrations/udemy-api-mcp-server) | Coupons, course updates, announcements and revenue for instructors. | [docs](https://cotlet.dev/docs/api/udemy) |  |
+| [Uscreen](https://cotlet.dev/integrations/uscreen-api-mcp-server) | Videos, collections, live events and analytics for creators. | [docs](https://cotlet.dev/docs/api/uscreen) |  |
+| [WorkRamp](https://cotlet.dev/integrations/workramp-api-mcp-server) | Assignments, reminders, due dates and automations in your WorkRamp. | [docs](https://cotlet.dev/docs/api/workramp) |  |
+
+## Travel
+
+13 apps.
+
+| App | What your agent can do | API docs | Self-hosted |
+|---|---|---|---|
+| [Airalo](https://cotlet.dev/integrations/airalo-api-mcp-server) | Buy, top up and track eSIMs on your Airalo account. | [docs](https://cotlet.dev/docs/api/airalo) |  |
+| [Civitatis](https://cotlet.dev/integrations/civitatis-api-mcp-server) | Bookings, availability and tours for Civitatis activity suppliers. | [docs](https://cotlet.dev/docs/api/civitatis) |  |
+| [GetYourGuide](https://cotlet.dev/integrations/getyourguide-api-mcp-server) | Availability, pricing and bookings for tour operators. | [docs](https://cotlet.dev/docs/api/getyourguide) |  |
+| [Hipcamp](https://cotlet.dev/integrations/hipcamp-api-mcp-server) | Calendar, pricing and guest messages for hosts. | [docs](https://cotlet.dev/docs/api/hipcamp) |  |
+| [Hostelworld](https://cotlet.dev/integrations/hostelworld-api-mcp-server) | Reviews, guest messages and reservations for hostel owners. | [docs](https://cotlet.dev/docs/api/hostelworld) |  |
+| [Kiwi.com](https://cotlet.dev/integrations/kiwi-com-api-mcp-server) | Bookings, trips and refunds on your Kiwi.com account. | [docs](https://cotlet.dev/docs/api/kiwi-com) |  |
+| [Klook](https://cotlet.dev/integrations/klook-api-mcp-server) | Search and book activities from your agent. | [docs](https://cotlet.dev/docs/api/klook) |  |
+| [Little Hotelier](https://cotlet.dev/integrations/little-hotelier-api-mcp-server) | Bookings, rates and availability for your Little Hotelier property. | [docs](https://cotlet.dev/docs/api/little-hotelier) |  |
+| [Omio](https://cotlet.dev/integrations/omio-api-mcp-server) | Book and change train, bus and flight tickets. | [docs](https://cotlet.dev/docs/api/omio) |  |
+| [Polarsteps](https://cotlet.dev/integrations/polarsteps-api-mcp-server) | Export and import trips and steps. | [docs](https://cotlet.dev/docs/api/polarsteps) |  |
+| [SiteMinder](https://cotlet.dev/integrations/siteminder-api-mcp-server) | Rates, availability and reservations in your SiteMinder channel manager. | [docs](https://cotlet.dev/docs/api/siteminder) |  |
+| [Tiqets](https://cotlet.dev/integrations/tiqets-api-mcp-server) | Book, fetch and cancel attraction tickets on your Tiqets account. | [docs](https://cotlet.dev/docs/api/tiqets) |  |
+| [Wanderlog](https://cotlet.dev/integrations/wanderlog-api-mcp-server) | Build and edit trip itineraries from your agent. | [docs](https://cotlet.dev/docs/api/wanderlog) |  |
+
+## Health & fitness
+
+5 apps.
+
+| App | What your agent can do | API docs | Self-hosted |
+|---|---|---|---|
+| [Everfit](https://cotlet.dev/integrations/everfit-api-mcp-server) | Clients, programs and messages for your Everfit coaching business. | [docs](https://cotlet.dev/docs/api/everfit) |  |
+| [Fitatu](https://cotlet.dev/integrations/fitatu-api-mcp-server) | Food diary, macros and weight logging for your Fitatu account. | [docs](https://cotlet.dev/docs/api/fitatu) |  |
+| [PushPress](https://cotlet.dev/integrations/pushpress-api-mcp-server) | Members, classes, reservations and check-ins for your PushPress gym. | [docs](https://cotlet.dev/docs/api/pushpress) |  |
+| [Trainerize](https://cotlet.dev/integrations/trainerize-api-mcp-server) | Clients, programs, check-ins and messages for your Trainerize business. | [docs](https://cotlet.dev/docs/api/trainerize) |  |
+| [TrueCoach](https://cotlet.dev/integrations/truecoach-api-mcp-server) | Workouts, programs and client messages for your TrueCoach roster. | [docs](https://cotlet.dev/docs/api/truecoach) |  |
+
+Missing an app? [Request it on cotlet.dev](https://cotlet.dev/integrations#catalog-search), no account needed.

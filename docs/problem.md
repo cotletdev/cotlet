@@ -25,7 +25,7 @@ When a vendor does publish an API, it rarely covers the work people want to hand
 | **Partners only** | 46 | Only after an application, a contract or a review. Example: Booksy's API is partner-only, docs behind a login, no self-serve keys. |
 | **Paid add-on** | 24 | Only on a top plan or as a separate product. Example: Meetup's API needs an active Meetup Pro subscription, and approval is not guaranteed. |
 
-The details for every app, with sources, are on its page at [cotlet.dev/integrations](https://cotlet.dev/integrations) and in [integrations.md](integrations.md).
+The details for every app, with sources, are on its page at [cotlet.dev/integrations](https://cotlet.dev/integrations); [integrations.md](integrations.md) links every page.
 
 ## What people do today
 

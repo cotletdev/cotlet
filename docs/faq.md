@@ -11,7 +11,7 @@ Hosted integrations for apps that have no API. Your AI agent signs in as you and
 [Sign up free](https://cotlet.dev/signup) and add your apps in the console. Then sign in to your apps in your Cloud Browser, enable them for your agents and create your API key in the console.
 
 **Which agents does it work with?**
-Any MCP client: Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n and more. Scripts use the REST API.
+Any MCP client: ChatGPT, Claude, Cursor and others. Scripts use the REST API.
 
 **My app is not in the catalog.**
 Search for it on the [integrations page](https://cotlet.dev/integrations) and press Request. No account needed. Sign up to count it toward what gets built next.

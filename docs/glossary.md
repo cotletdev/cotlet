@@ -3,7 +3,7 @@
 [← Back to README](../README.md)
 
 **Agent (AI agent)**
-A program driven by a language model that acts through tools: Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n workflows and others.
+A program driven by a language model that acts through tools: ChatGPT, Claude, Cursor, n8n workflows and others.
 
 **API (application programming interface)**
 A documented way for code to talk to an app. Cotlet exists for apps where the official API is missing, limited, partners-only or a paid add-on.
@@ -54,4 +54,4 @@ One action an agent can call. Over MCP each app has a read tool and a write tool
 An integration built without the app vendor's involvement. Cotlet is unofficial and not affiliated with any app in its catalog.
 
 **Use case**
-One job a user hands to their agent in a specific app, such as "approve Skool membership requests". Cotlet documents 784 of them; see [use-cases.md](use-cases.md).
+One job a user hands to their agent in a specific app, such as "approve Skool membership requests". Cotlet documents 784 of them; see [cotlet.dev/use-cases](https://cotlet.dev/use-cases).

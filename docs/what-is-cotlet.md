@@ -20,7 +20,7 @@
 | REST API | `https://cotlet.dev/api/v1/{app}/{endpoint}` |
 | Auth | One API key (`Authorization: Bearer`) for MCP and REST; OAuth in MCP clients that support it |
 | Catalog | 259 apps in 11 categories, 784 documented use cases |
-| Clients | Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n, any MCP client |
+| Clients | ChatGPT, Claude, Cursor and any other MCP client |
 | Pricing | Free 7-day trial with 2,000 credits; one-time credit packs from $29, no subscription; 10 credits a successful call |
 | Access | Open sign-up; apps are added and requested one by one in the console |
 | Hosting | European Union (Finland) |
@@ -51,7 +51,7 @@ The outcome comes first: **your agent signs in and does the work**. MCP is how t
 
 ## Who it is for
 
-People and small teams who already work with AI agents and keep clicking through the same apps by hand: community owners, creators, course sellers, tour operators, real estate agents and landlords, salons and local service businesses, field-service trades, freelancers, agencies and developers. See [use-cases.md](use-cases.md).
+People and small teams who already work with AI agents and keep clicking through the same apps by hand: community owners, creators, course sellers, tour operators, real estate agents and landlords, salons and local service businesses, field-service trades, freelancers, agencies and developers. See [cotlet.dev/use-cases](https://cotlet.dev/use-cases).
 
 ## Related
 

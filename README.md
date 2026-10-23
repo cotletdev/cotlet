@@ -41,7 +41,7 @@ Your agent works in them over one MCP server. A REST API too.
 
 Your agent reaches the signed-in apps three ways:
 
-- as tools in **one remote MCP server** (`https://cotlet.dev/mcp/v1`) for AI agents such as Claude, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf and n8n;
+- as tools in **one remote MCP server** (`https://cotlet.dev/mcp/v1`) for ChatGPT, Claude, Cursor and other AI agents;
 - as a **REST API** (`https://cotlet.dev/api/v1`) for your own scripts and cron jobs;
 - by **driving the Cloud Browser itself**, with browser tools over MCP or over Chrome DevTools, when no tool does the job.
 
@@ -56,8 +56,8 @@ Cotlet builds, tests and maintains the tools for every app in the catalog.
 | **MCP endpoint** | `https://cotlet.dev/mcp/v1` |
 | **REST base URL** | `https://cotlet.dev/api/v1` |
 | **For** | People and small teams who work with AI agents: creators, community owners, course sellers, agencies, local service businesses, real estate pros, freelancers, developers |
-| **Works with** | Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n and any MCP client |
-| **Catalog** | 259 apps in 11 categories ([full list](docs/integrations.md)), 784 documented use cases ([list](docs/use-cases.md)) |
+| **Works with** | ChatGPT, Claude, Cursor and any other MCP client |
+| **Catalog** | 259 apps in 11 categories ([index](docs/integrations.md)), use cases on [cotlet.dev/use-cases](https://cotlet.dev/use-cases) |
 | **Pricing** | Free 7-day trial with 2,000 credits, then credit packs from $29, one-time, no subscription; 10 credits a successful call ([details](docs/pricing.md)) |
 | **Market** | Worldwide, English |
 | **Company** | Take Group sp. z o.o., Katowice, Poland (EU) |
@@ -181,7 +181,7 @@ Each operation has its own method and path; same key, same inputs, same outputs 
 
 ## Integrations
 
-259 apps in 11 categories. Each one has its own page on cotlet.dev with the official API status, sources, and every tool with its parameters.
+259 apps in 11 categories. Each one has its own page on cotlet.dev with the official API status, sources, and every tool with its parameters. This repository only links to them, so nothing here goes out of date.
 
 | Category | Apps | Examples |
 |---|---|---|
@@ -197,9 +197,11 @@ Each operation has its own method and path; same key, same inputs, same outputs 
 | HR & recruiting | 21 | [Personio](https://cotlet.dev/integrations/personio-api-mcp-server), [Ashby](https://cotlet.dev/integrations/ashby-api-mcp-server), [BambooHR](https://cotlet.dev/integrations/bamboohr-api-mcp-server), [CharlieHR](https://cotlet.dev/integrations/charliehr-api-mcp-server), [Deputy](https://cotlet.dev/integrations/deputy-api-mcp-server) |
 | Productivity & teams | 23 | [Redmine](https://cotlet.dev/integrations/redmine-api-mcp-server), [Zotero](https://cotlet.dev/integrations/zotero-api-mcp-server), [Nextcloud](https://cotlet.dev/integrations/nextcloud-api-mcp-server), [Otter.ai](https://cotlet.dev/integrations/otter-api-mcp-server), [Bluedot](https://cotlet.dev/integrations/bluedot-api-mcp-server) |
 
-**Full catalog with every app, its official API status and its tools: [docs/integrations.md](docs/integrations.md).**
+**Every app with links to its page, its API docs and its self-hosted repo: [docs/integrations.md](docs/integrations.md).**
 
-Want to try it yourself first? Self-hosted API and MCP servers in Python, on your own Chrome session, for personal use: [Skool](https://github.com/cotletdev/skool-api-mcp-server), [Substack](https://github.com/cotletdev/substack-api-mcp-server), [Booksy](https://github.com/cotletdev/booksy-api-mcp-server), [BookingKoala](https://github.com/cotletdev/bookingkoala-api-mcp-server), [Contractor Foreman](https://github.com/cotletdev/contractor-foreman-api-mcp-server), [Pirate Ship](https://github.com/cotletdev/pirate-ship-api-mcp-server), [Partiful](https://github.com/cotletdev/partiful-api-mcp-server), [Milanote](https://github.com/cotletdev/milanote-api-mcp-server), [PeoplePerHour](https://github.com/cotletdev/peopleperhour-api-mcp-server).
+<!-- self-hosted:start -->
+Want to run one yourself? Self-hosted API and MCP servers in Python, on your own Chrome session, for personal use: [BookingKoala](https://github.com/cotletdev/bookingkoala-api-mcp-server), [Booksy](https://github.com/cotletdev/booksy-api-mcp-server), [Contractor Foreman](https://github.com/cotletdev/contractor-foreman-api-mcp-server), [Milanote](https://github.com/cotletdev/milanote-api-mcp-server), [Partiful](https://github.com/cotletdev/partiful-api-mcp-server), [PeoplePerHour](https://github.com/cotletdev/peopleperhour-api-mcp-server), [Pirate Ship](https://github.com/cotletdev/pirate-ship-api-mcp-server), [Skool](https://github.com/cotletdev/skool-api-mcp-server), [Substack](https://github.com/cotletdev/substack-api-mcp-server).
+<!-- self-hosted:end -->
 
 Missing an app? [Request it on cotlet.dev](https://cotlet.dev/integrations#catalog-search), no account needed. Requests from signed-up users decide what we build next.
 
@@ -246,8 +248,7 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 | [docs/how-it-works.md](docs/how-it-works.md) | The four steps, the Cloud Browser, approvals, what happens when a site changes |
 | [docs/mcp-server.md](docs/mcp-server.md) | MCP server setup for every client, read and write tools, approvals, browser tools, errors |
 | [docs/rest-api.md](docs/rest-api.md) | REST API: auth, calls, pagination, approval, error codes, rate limits |
-| [docs/integrations.md](docs/integrations.md) | All 259 apps with official API status and tools |
-| [docs/use-cases.md](docs/use-cases.md) | 784 jobs people hand to their agent, app by app |
+| [docs/integrations.md](docs/integrations.md) | Index of all apps: page on cotlet.dev, API docs, self-hosted repo |
 | [docs/security.md](docs/security.md) | The Cloud Browser, how access is held, what we never do |
 | [docs/pricing.md](docs/pricing.md) | Trial, credit packs, what uses credits |
 | [docs/comparison.md](docs/comparison.md) | Cotlet vs DIY scripts, RPA, browser agents and official APIs |

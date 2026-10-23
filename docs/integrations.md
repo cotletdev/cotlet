@@ -4,7 +4,7 @@
 
 259 apps in 11 categories. This file is an index, generated from the live catalog. Each app's page on cotlet.dev has its tools with parameters, the official API status with sources, use cases and pricing. Add `.md` to a page URL for Markdown.
 
-**Self-hosted:** 10 apps also have a repo you can run yourself, in Python on your own Chrome session, for noncommercial use. They are linked in the last column.
+**Self-hosted:** 11 apps also have a repo you can run yourself, in Python on your own Chrome session, for noncommercial use. They are linked in the last column.
 
 ## Local services & SaaS
 
@@ -105,7 +105,7 @@
 | [Számlázz.hu](https://cotlet.dev/integrations/szamlazz-hu-api-mcp-server) | Invoices, receipts and NAV status in Számlázz.hu, run by your agent. | [docs](https://cotlet.dev/docs/api/szamlazz-hu) |  |
 | [TaxDome](https://cotlet.dev/integrations/taxdome-api-mcp-server) | Clients, jobs, document requests and invoices in TaxDome. | [docs](https://cotlet.dev/docs/api/taxdome) |  |
 | [Teamleader](https://cotlet.dev/integrations/teamleader-api-mcp-server) | Deals, quotations, invoices and reminders in Teamleader Focus, worked by your agent. | [docs](https://cotlet.dev/docs/api/teamleader) |  |
-| [Tradify](https://cotlet.dev/integrations/tradify-api-mcp-server) | Jobs, quotes, invoices and schedule in Tradify. | [docs](https://cotlet.dev/docs/api/tradify) |  |
+| [Tradify](https://cotlet.dev/integrations/tradify-api-mcp-server) | Jobs, quotes, invoices and schedule in Tradify. | [docs](https://cotlet.dev/docs/api/tradify) | [tradify-api-mcp-server](https://github.com/cotletdev/tradify-api-mcp-server) |
 | [Vtiger](https://cotlet.dev/integrations/vtiger-api-mcp-server) | Contacts, deals, cases and pipeline stages in your Vtiger CRM. | [docs](https://cotlet.dev/docs/api/vtiger) |  |
 
 ## Creators & communities

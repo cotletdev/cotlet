@@ -4,7 +4,7 @@
 
 259 apps in 11 categories. This file is an index, generated from the live catalog. Each app's page on cotlet.dev has its tools with parameters, the official API status with sources, use cases and pricing. Add `.md` to a page URL for Markdown.
 
-**Self-hosted:** 10 apps also have a repo you can run yourself, in Python on your own Chrome session, for personal use. They are linked in the last column.
+**Self-hosted:** 10 apps also have a repo you can run yourself, in Python on your own Chrome session, for noncommercial use. They are linked in the last column.
 
 ## Local services & SaaS
 

@@ -19,17 +19,17 @@ Your agent works in them over one MCP server. A REST API too.
 [REST API](https://cotlet.dev/docs/api) ·
 [Pricing](https://cotlet.dev/pricing) ·
 [Security](https://cotlet.dev/security) ·
-[Request access](https://cotlet.dev/signup) ·
+[Sign up free](https://cotlet.dev/signup) ·
 [X](https://x.com/cotletdev)
 
-[![Website](https://img.shields.io/badge/website-cotlet.dev-6d4aef)](https://cotlet.dev)
-[![MCP](https://img.shields.io/badge/MCP-Streamable%20HTTP-6d4aef)](https://cotlet.dev/docs/mcp)
-[![REST API](https://img.shields.io/badge/REST-%2Fapi%2Fv1-141318)](https://cotlet.dev/docs/api)
-[![Integrations](https://img.shields.io/badge/integrations-192%20apps-141318)](https://cotlet.dev/integrations)
-[![llms.txt](https://img.shields.io/badge/llms.txt-available-141318)](https://cotlet.dev/llms.txt)
-[![X](https://img.shields.io/badge/X-%40cotletdev-141318)](https://x.com/cotletdev)
+[![Website](https://img.shields.io/badge/website-cotlet.dev-7c5cff)](https://cotlet.dev)
+[![MCP](https://img.shields.io/badge/MCP-Streamable%20HTTP-7c5cff)](https://cotlet.dev/docs/mcp)
+[![REST API](https://img.shields.io/badge/REST-%2Fapi%2Fv1-08090a)](https://cotlet.dev/docs/api)
+[![Integrations](https://img.shields.io/badge/integrations-259%20apps-08090a)](https://cotlet.dev/integrations)
+[![llms.txt](https://img.shields.io/badge/llms.txt-available-08090a)](https://cotlet.dev/llms.txt)
+[![X](https://img.shields.io/badge/X-%40cotletdev-08090a)](https://x.com/cotletdev)
 
-<img src="assets/og.png" alt="Cotlet: your AI agent, logged in to apps with no API. An agent chat moves bookings over MCP." width="720">
+<a href="https://cotlet.dev"><img src="assets/homepage.png" alt="The cotlet.dev home page: Give your AI agents your signed-in browser. A Cloud Browser signed in to Skool, and Claude Code counting new members with skool_read over MCP." width="800"></a>
 
 </div>
 
@@ -43,7 +43,7 @@ Your agent reaches the signed-in apps three ways:
 
 - as tools in **one remote MCP server** (`https://cotlet.dev/mcp/v1`) for AI agents such as Claude, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf and n8n;
 - as a **REST API** (`https://cotlet.dev/api/v1`) for your own scripts and cron jobs;
-- by **driving the Cloud Browser itself** over Chrome DevTools, when no tool does the job.
+- by **driving the Cloud Browser itself**, with browser tools over MCP or over Chrome DevTools, when no tool does the job.
 
 Cotlet builds, tests and maintains the tools for every app in the catalog.
 
@@ -57,11 +57,12 @@ Cotlet builds, tests and maintains the tools for every app in the catalog.
 | **REST base URL** | `https://cotlet.dev/api/v1` |
 | **For** | People and small teams who work with AI agents: creators, community owners, course sellers, agencies, local service businesses, real estate pros, freelancers, developers |
 | **Works with** | Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n and any MCP client |
-| **Catalog** | 192 apps in 11 categories ([full list](docs/integrations.md)), 591 documented use cases ([list](docs/use-cases.md)) |
-| **Pricing** | Free 7-day trial with 2,000 credits, then credit packs from $29, one-time, no subscription ([details](docs/pricing.md)) |
+| **Catalog** | 259 apps in 11 categories ([full list](docs/integrations.md)), 784 documented use cases ([list](docs/use-cases.md)) |
+| **Pricing** | Free 7-day trial with 2,000 credits, then credit packs from $29, one-time, no subscription; 10 credits a successful call ([details](docs/pricing.md)) |
 | **Market** | Worldwide, English |
 | **Company** | Take Group sp. z o.o., Katowice, Poland (EU) |
 | **Contact** | [contact@cotlet.dev](mailto:contact@cotlet.dev) |
+| **Status** | [status.cotlet.dev](https://status.cotlet.dev) |
 | **X** | [@cotletdev](https://x.com/cotletdev) |
 
 ## The problem
@@ -81,7 +82,7 @@ AI agents are good at doing work, but they can only reach tools that expose an A
 - **gated**: partners only, after an application, a contract or a review;
 - **paid**: locked behind a top plan or a separate add-on.
 
-Of the 192 apps in the Cotlet catalog today, **30 have no official API at all**, **100 have a limited one**, **38 are partners-only** and **24 sell API access as a paid add-on**. Read more in [docs/problem.md](docs/problem.md).
+Of the 259 apps in the Cotlet catalog today, **31 have no official API at all**, **158 have a limited one**, **46 are partners-only** and **24 sell API access as a paid add-on**. Read more in [docs/problem.md](docs/problem.md).
 
 ## The solution
 
@@ -93,12 +94,12 @@ Cotlet runs a browser you signed in to, builds and maintains the missing access 
  Your agent ──MCP / REST──▶ Cotlet ┘  same requests as your browser: its IP, its cookies
 ```
 
-1. **Pick your apps** from the [catalog](https://cotlet.dev/integrations), or request one that is missing.
+1. **Sign up free and pick your apps** from the [catalog](https://cotlet.dev/integrations), or request one that is missing.
 2. **Sign in once** to each app yourself, in your Cloud Browser, and press **Enable for agents** (read only or read and write). Password saving is off.
 3. **Add Cotlet to your agent** with one MCP URL. Every app you connect shows up as tools.
 4. **Let the agent do it**, on request or on a schedule. The chore is gone.
 
-When no tool does the job, your agent can drive the Cloud Browser itself over Chrome DevTools (MCP tool `cotlet_browser_connect` or `POST /api/v1/browser/cdp-sessions`), with Playwright, Puppeteer or chrome-devtools-mcp, in the app tab you watch. It is billed per minute.
+When no tool does the job, your agent can drive the Cloud Browser itself: with the MCP browser tools (`cotlet_browser_open`, `cotlet_browser_click`, `cotlet_browser_type` and others), or over Chrome DevTools (MCP tool `cotlet_browser_connect` or `POST /api/v1/browser/cdp-sessions`) with Playwright, Puppeteer or chrome-devtools-mcp. It is billed per minute.
 
 Full walkthrough: [docs/how-it-works.md](docs/how-it-works.md).
 
@@ -159,7 +160,7 @@ bearer_token_env_var = "COTLET_API_KEY"
 
 **Zapier**: action *MCP Client by Zapier* > *Run Tool*, server URL `https://cotlet.dev/mcp/v1`, transport *Streamable HTTP*, OAuth *No*, your key as *Bearer Token*.
 
-In every client each app is one tool, such as `skool`: put the operation in `tool` and its inputs in `arguments`, for example `{"tool": "list_groups", "arguments": {}}`. Full setup: [cotlet.dev/docs/mcp](https://cotlet.dev/docs/mcp).
+Each app has a read tool and a write tool, such as `skool_read` and `skool_write`: put the operation in `operation` and its inputs in `arguments`, for example `{"operation": "list_groups", "arguments": {}}`. Full setup: [cotlet.dev/docs/mcp](https://cotlet.dev/docs/mcp).
 
 </details>
 
@@ -167,7 +168,7 @@ Then just ask:
 
 > *"Approve all pending membership requests in my Skool community and welcome them in a post."*
 
-Your agent calls the `skool` tool with `list_members`, `approve_membership_request` and `create_post`, signed in as you. Setup details: [docs/mcp-server.md](docs/mcp-server.md).
+Your agent calls `skool_read` with `list_members`, then `skool_write` with `approve_membership_request` and `create_post`, signed in as you. Posts and approvals wait for your OK in the console unless you switch that off. Setup details: [docs/mcp-server.md](docs/mcp-server.md).
 
 ### Or call it from a script
 
@@ -180,27 +181,27 @@ Each operation has its own method and path; same key, same inputs, same outputs 
 
 ## Integrations
 
-192 apps in 11 categories. Each one has its own page on cotlet.dev with the official API status, sources, and every tool with its parameters.
+259 apps in 11 categories. Each one has its own page on cotlet.dev with the official API status, sources, and every tool with its parameters.
 
 | Category | Apps | Examples |
 |---|---|---|
-| Creators & communities | 31 | [Substack](https://cotlet.dev/integrations/substack-api-mcp-server), [Skool](https://cotlet.dev/integrations/skool-api-mcp-server), [Meetup](https://cotlet.dev/integrations/meetup-api-mcp-server), [Medium](https://cotlet.dev/integrations/medium-api-mcp-server), [Riverside](https://cotlet.dev/integrations/riverside-api-mcp-server) |
-| Courses & training | 11 | [Udemy](https://cotlet.dev/integrations/udemy-api-mcp-server), [Teachable](https://cotlet.dev/integrations/teachable-api-mcp-server), [ThriveCart](https://cotlet.dev/integrations/thrivecart-api-mcp-server), [Payhip](https://cotlet.dev/integrations/payhip-api-mcp-server), [Uscreen](https://cotlet.dev/integrations/uscreen-api-mcp-server) |
+| Creators & communities | 36 | [Substack](https://cotlet.dev/integrations/substack-api-mcp-server), [Skool](https://cotlet.dev/integrations/skool-api-mcp-server), [Meetup](https://cotlet.dev/integrations/meetup-api-mcp-server), [Medium](https://cotlet.dev/integrations/medium-api-mcp-server), [Riverside](https://cotlet.dev/integrations/riverside-api-mcp-server) |
+| Courses & training | 13 | [Udemy](https://cotlet.dev/integrations/udemy-api-mcp-server), [Teachable](https://cotlet.dev/integrations/teachable-api-mcp-server), [ThriveCart](https://cotlet.dev/integrations/thrivecart-api-mcp-server), [Payhip](https://cotlet.dev/integrations/payhip-api-mcp-server), [Uscreen](https://cotlet.dev/integrations/uscreen-api-mcp-server) |
 | Health & fitness | 5 | [Trainerize](https://cotlet.dev/integrations/trainerize-api-mcp-server), [Everfit](https://cotlet.dev/integrations/everfit-api-mcp-server), [Fitatu](https://cotlet.dev/integrations/fitatu-api-mcp-server), [PushPress](https://cotlet.dev/integrations/pushpress-api-mcp-server), [TrueCoach](https://cotlet.dev/integrations/truecoach-api-mcp-server) |
 | Travel | 13 | [GetYourGuide](https://cotlet.dev/integrations/getyourguide-api-mcp-server), [Wanderlog](https://cotlet.dev/integrations/wanderlog-api-mcp-server), [Hostelworld](https://cotlet.dev/integrations/hostelworld-api-mcp-server), [Klook](https://cotlet.dev/integrations/klook-api-mcp-server), [Omio](https://cotlet.dev/integrations/omio-api-mcp-server) |
-| Real estate | 14 | [Idealista](https://cotlet.dev/integrations/idealista-api-mcp-server), [Crexi](https://cotlet.dev/integrations/crexi-api-mcp-server), [Zoopla](https://cotlet.dev/integrations/zoopla-api-mcp-server), [Mashvisor](https://cotlet.dev/integrations/mashvisor-api-mcp-server), [Rent Manager](https://cotlet.dev/integrations/rent-manager-api-mcp-server) |
-| Local services & SaaS | 40 | [Faire](https://cotlet.dev/integrations/faire-api-mcp-server), [Booksy](https://cotlet.dev/integrations/booksy-api-mcp-server), [Vagaro](https://cotlet.dev/integrations/vagaro-api-mcp-server), [Buildertrend](https://cotlet.dev/integrations/buildertrend-api-mcp-server), [Pirate Ship](https://cotlet.dev/integrations/pirate-ship-api-mcp-server) |
-| Invoicing & freelance CRM | 39 | [Dubsado](https://cotlet.dev/integrations/dubsado-api-mcp-server), [PeoplePerHour](https://cotlet.dev/integrations/peopleperhour-api-mcp-server), [Pixieset](https://cotlet.dev/integrations/pixieset-api-mcp-server), [SuiteDash](https://cotlet.dev/integrations/suitedash-api-mcp-server), [Tradify](https://cotlet.dev/integrations/tradify-api-mcp-server) |
-| Marketing & SEO | 5 | [Google Search Console](https://cotlet.dev/integrations/google-search-console-api-mcp-server), [EmailOctopus](https://cotlet.dev/integrations/emailoctopus-api-mcp-server), [Google Discover](https://cotlet.dev/integrations/google-discover-api-mcp-server), [Sendible](https://cotlet.dev/integrations/sendible-api-mcp-server), [Sprout Social](https://cotlet.dev/integrations/sprout-social-api-mcp-server) |
-| Customer support | 11 | [Zendesk](https://cotlet.dev/integrations/zendesk-api-mcp-server), [Help Scout](https://cotlet.dev/integrations/help-scout-api-mcp-server), [eDesk](https://cotlet.dev/integrations/edesk-api-mcp-server), [Gladly](https://cotlet.dev/integrations/gladly-api-mcp-server), [Gorgias](https://cotlet.dev/integrations/gorgias-api-mcp-server) |
-| HR & recruiting | 7 | [Personio](https://cotlet.dev/integrations/personio-api-mcp-server), [Ashby](https://cotlet.dev/integrations/ashby-api-mcp-server), [BambooHR](https://cotlet.dev/integrations/bamboohr-api-mcp-server), [CharlieHR](https://cotlet.dev/integrations/charliehr-api-mcp-server), [Deputy](https://cotlet.dev/integrations/deputy-api-mcp-server) |
-| Productivity & teams | 16 | [Redmine](https://cotlet.dev/integrations/redmine-api-mcp-server), [Zotero](https://cotlet.dev/integrations/zotero-api-mcp-server), [Nextcloud](https://cotlet.dev/integrations/nextcloud-api-mcp-server), [Otter.ai](https://cotlet.dev/integrations/otter-api-mcp-server), [Bluedot](https://cotlet.dev/integrations/bluedot-api-mcp-server) |
+| Real estate | 16 | [Idealista](https://cotlet.dev/integrations/idealista-api-mcp-server), [Crexi](https://cotlet.dev/integrations/crexi-api-mcp-server), [Zoopla](https://cotlet.dev/integrations/zoopla-api-mcp-server), [Mashvisor](https://cotlet.dev/integrations/mashvisor-api-mcp-server), [Rent Manager](https://cotlet.dev/integrations/rent-manager-api-mcp-server) |
+| Local services & SaaS | 44 | [Faire](https://cotlet.dev/integrations/faire-api-mcp-server), [Booksy](https://cotlet.dev/integrations/booksy-api-mcp-server), [Vagaro](https://cotlet.dev/integrations/vagaro-api-mcp-server), [Buildertrend](https://cotlet.dev/integrations/buildertrend-api-mcp-server), [Pirate Ship](https://cotlet.dev/integrations/pirate-ship-api-mcp-server) |
+| Invoicing & freelance CRM | 44 | [Dubsado](https://cotlet.dev/integrations/dubsado-api-mcp-server), [PeoplePerHour](https://cotlet.dev/integrations/peopleperhour-api-mcp-server), [Pixieset](https://cotlet.dev/integrations/pixieset-api-mcp-server), [SuiteDash](https://cotlet.dev/integrations/suitedash-api-mcp-server), [Tradify](https://cotlet.dev/integrations/tradify-api-mcp-server) |
+| Marketing & SEO | 25 | [Google Search Console](https://cotlet.dev/integrations/google-search-console-api-mcp-server), [EmailOctopus](https://cotlet.dev/integrations/emailoctopus-api-mcp-server), [Google Discover](https://cotlet.dev/integrations/google-discover-api-mcp-server), [Sendible](https://cotlet.dev/integrations/sendible-api-mcp-server), [Sprout Social](https://cotlet.dev/integrations/sprout-social-api-mcp-server) |
+| Customer support | 19 | [Zendesk](https://cotlet.dev/integrations/zendesk-api-mcp-server), [Help Scout](https://cotlet.dev/integrations/help-scout-api-mcp-server), [eDesk](https://cotlet.dev/integrations/edesk-api-mcp-server), [Gladly](https://cotlet.dev/integrations/gladly-api-mcp-server), [Gorgias](https://cotlet.dev/integrations/gorgias-api-mcp-server) |
+| HR & recruiting | 21 | [Personio](https://cotlet.dev/integrations/personio-api-mcp-server), [Ashby](https://cotlet.dev/integrations/ashby-api-mcp-server), [BambooHR](https://cotlet.dev/integrations/bamboohr-api-mcp-server), [CharlieHR](https://cotlet.dev/integrations/charliehr-api-mcp-server), [Deputy](https://cotlet.dev/integrations/deputy-api-mcp-server) |
+| Productivity & teams | 23 | [Redmine](https://cotlet.dev/integrations/redmine-api-mcp-server), [Zotero](https://cotlet.dev/integrations/zotero-api-mcp-server), [Nextcloud](https://cotlet.dev/integrations/nextcloud-api-mcp-server), [Otter.ai](https://cotlet.dev/integrations/otter-api-mcp-server), [Bluedot](https://cotlet.dev/integrations/bluedot-api-mcp-server) |
 
 **Full catalog with every app, its official API status and its tools: [docs/integrations.md](docs/integrations.md).**
 
-Want to try it yourself first? Self-hosted API and MCP servers in Python, on your own Chrome session, for personal use: [Skool](https://github.com/cotletdev/skool-api-mcp-server), [Substack](https://github.com/cotletdev/substack-api-mcp-server), [Pirate Ship](https://github.com/cotletdev/pirate-ship-api-mcp-server), [Partiful](https://github.com/cotletdev/partiful-api-mcp-server), [Milanote](https://github.com/cotletdev/milanote-api-mcp-server), [PeoplePerHour](https://github.com/cotletdev/peopleperhour-api-mcp-server).
+Want to try it yourself first? Self-hosted API and MCP servers in Python, on your own Chrome session, for personal use: [Skool](https://github.com/cotletdev/skool-api-mcp-server), [Substack](https://github.com/cotletdev/substack-api-mcp-server), [Booksy](https://github.com/cotletdev/booksy-api-mcp-server), [BookingKoala](https://github.com/cotletdev/bookingkoala-api-mcp-server), [Contractor Foreman](https://github.com/cotletdev/contractor-foreman-api-mcp-server), [Pirate Ship](https://github.com/cotletdev/pirate-ship-api-mcp-server), [Partiful](https://github.com/cotletdev/partiful-api-mcp-server), [Milanote](https://github.com/cotletdev/milanote-api-mcp-server), [PeoplePerHour](https://github.com/cotletdev/peopleperhour-api-mcp-server).
 
-Missing an app? [Request it on cotlet.dev](https://cotlet.dev/integrations#catalog-search), no account needed. If enough people ask, we add it.
+Missing an app? [Request it on cotlet.dev](https://cotlet.dev/integrations#catalog-search), no account needed. Requests from signed-up users decide what we build next.
 
 ## Security and trust
 
@@ -230,7 +231,7 @@ Pay as you go, no subscription: one-time credit packs, valid 12 months. Every ac
 | 32,000 credits | $149 | 32,000 |
 | 60,000 credits | $249 | 60,000 |
 
-Credits pay for a successful call (20 to 30 credits, 25 for most tools), your Cloud Browser (50 credits a day while it has an app enabled for agents, however many apps that is) and an agent driving the browser itself (5 credits a minute). Failed calls cost nothing, and nothing is charged without a purchase. Details: [docs/pricing.md](docs/pricing.md).
+Credits pay for a successful call (10 credits, about $0.04 to $0.06), your Cloud Browser (50 credits a day while it has an app enabled for agents, however many apps that is) and an agent driving the browser itself (5 credits a minute). Failed calls cost nothing, and nothing is charged without a purchase. Details: [docs/pricing.md](docs/pricing.md).
 
 ## Why not a script from GitHub?
 
@@ -242,11 +243,11 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 |---|---|
 | [docs/what-is-cotlet.md](docs/what-is-cotlet.md) | Definition, positioning, key facts |
 | [docs/problem.md](docs/problem.md) | Why agents stop at the login page and what "no API" really means |
-| [docs/how-it-works.md](docs/how-it-works.md) | The four steps, the Cloud Browser, confirmations, what happens when a site changes |
-| [docs/mcp-server.md](docs/mcp-server.md) | MCP server setup for every client, tool naming, errors |
-| [docs/rest-api.md](docs/rest-api.md) | REST API: auth, calls, pagination, confirmation, error codes |
-| [docs/integrations.md](docs/integrations.md) | All 192 apps with official API status and tools |
-| [docs/use-cases.md](docs/use-cases.md) | 591 jobs people hand to their agent, app by app |
+| [docs/how-it-works.md](docs/how-it-works.md) | The four steps, the Cloud Browser, approvals, what happens when a site changes |
+| [docs/mcp-server.md](docs/mcp-server.md) | MCP server setup for every client, read and write tools, approvals, browser tools, errors |
+| [docs/rest-api.md](docs/rest-api.md) | REST API: auth, calls, pagination, approval, error codes, rate limits |
+| [docs/integrations.md](docs/integrations.md) | All 259 apps with official API status and tools |
+| [docs/use-cases.md](docs/use-cases.md) | 784 jobs people hand to their agent, app by app |
 | [docs/security.md](docs/security.md) | The Cloud Browser, how access is held, what we never do |
 | [docs/pricing.md](docs/pricing.md) | Trial, credit packs, what uses credits |
 | [docs/comparison.md](docs/comparison.md) | Cotlet vs DIY scripts, RPA, browser agents and official APIs |
@@ -272,9 +273,10 @@ Scripts break when the app changes, and you fix them yourself. Cotlet tests ever
 - About: [cotlet.dev/about](https://cotlet.dev/about)
 - Contact: [cotlet.dev/contact](https://cotlet.dev/contact) · [contact@cotlet.dev](mailto:contact@cotlet.dev)
 - GitHub: [github.com/cotletdev](https://github.com/cotletdev)
+- Status: [status.cotlet.dev](https://status.cotlet.dev)
 - X: [@cotletdev](https://x.com/cotletdev)
-- Skool API and MCP server: [github.com/cotletdev/skool-api-mcp-server](https://github.com/cotletdev/skool-api-mcp-server)
-- Substack API and MCP server: [github.com/cotletdev/substack-api-mcp-server](https://github.com/cotletdev/substack-api-mcp-server)
+- LinkedIn: [linkedin.com/company/cotletdev](https://www.linkedin.com/company/cotletdev)
+- Product Hunt: [producthunt.com/products/cotlet](https://www.producthunt.com/products/cotlet)
 
 ## About
 
@@ -284,7 +286,7 @@ Cotlet is independent. Product names in the catalog are trademarks of their owne
 
 <div align="center">
 
-**[Request access at cotlet.dev](https://cotlet.dev/signup)**
+**[Sign up free at cotlet.dev](https://cotlet.dev/signup)**
 
 <sub>Stop clicking through it. Let your agent do it.</sub>
 

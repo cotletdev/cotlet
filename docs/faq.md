@@ -8,7 +8,7 @@
 Hosted integrations for apps that have no API. Your AI agent signs in as you and does the work, over one MCP server or a REST API.
 
 **How do I get access?**
-[Request access](https://cotlet.dev/signup) and pick your apps. Each request is reviewed and you get your API key by email.
+[Sign up free](https://cotlet.dev/signup) and add your apps in the console. Then sign in to your apps in your Cloud Browser, enable them for your agents and create your API key in the console.
 
 **Which agents does it work with?**
 Any MCP client: Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n and more. Scripts use the REST API.
@@ -48,13 +48,13 @@ Press **Disable for agents** next to the app, or sign out of it in your Cloud Br
 ## Pricing and credits
 
 **Is there a free trial?**
-Yes. Every account starts with a free 7-day trial and 2,000 credits, no card needed. You start it in the dashboard once your access is active.
+Yes. Every account starts with a free 7-day trial and 2,000 credits, no card needed. It starts when you sign up.
 
 **Do I pay anything now?**
 No. Nothing is charged unless you buy a credit pack.
 
 **How are credits counted?**
-Credit packs from $29 for 5,000 credits, one-time, no subscription. A successful call uses 20 to 30 credits (25 for most tools), and your Cloud Browser uses 50 credits a day while it has an app enabled for agents, however many apps that is.
+Credit packs from $29 for 5,000 credits, one-time, no subscription. A successful call uses 10 credits (about $0.04 to $0.06), your Cloud Browser uses 50 credits a day while it has an app enabled for agents, however many apps that is, and an agent driving the browser itself uses 5 credits a minute.
 
 **Do failed calls cost credits?**
 No. Only successful calls are charged; a failed call costs nothing.

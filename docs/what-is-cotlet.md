@@ -2,7 +2,7 @@
 
 [← Back to README](../README.md)
 
-**Cotlet** ([cotlet.dev](https://cotlet.dev)) is a catalog of hosted integrations that let an AI agent work in web apps that have no official API, or only a narrow one. Each integration is available as tools in one remote **MCP server** and as a **REST API**. The user signs in to each app once, in a browser; Cotlet keeps only the session, and the agent then works in the user's own account.
+**Cotlet** ([cotlet.dev](https://cotlet.dev)) is a catalog of hosted integrations that let an AI agent work in web apps that have no official API, or only a narrow one. Each integration is available as tools in one remote **MCP server** and as a **REST API**. The user signs in to each app once in their own Cloud Browser, a Chrome that Cotlet runs for them in the EU, and the agent then works in the user's own account.
 
 ## Definition
 
@@ -19,10 +19,10 @@
 | MCP server | `https://cotlet.dev/mcp/v1` (Streamable HTTP) |
 | REST API | `https://cotlet.dev/api/v1/{app}/{endpoint}` |
 | Auth | One API key (`Authorization: Bearer`) for MCP and REST; OAuth in MCP clients that support it |
-| Catalog | 192 apps, 591 documented use cases |
+| Catalog | 259 apps in 11 categories, 784 documented use cases |
 | Clients | Claude Code, Claude Desktop, ChatGPT, Cursor, Codex, GitHub Copilot, Gemini, Windsurf, n8n, any MCP client |
-| Pricing | Free 7-day trial with 2,000 credits; one-time credit packs from $29, no subscription |
-| Access | Request access; each account is reviewed and gets its API key by email |
+| Pricing | Free 7-day trial with 2,000 credits; one-time credit packs from $29, no subscription; 10 credits a successful call |
+| Access | Open sign-up; apps are added and requested one by one in the console |
 | Hosting | European Union (Finland) |
 | Market | Worldwide, English |
 | Operator | Take Group sp. z o.o., Katowice, Poland |
@@ -33,7 +33,7 @@
 ## What Cotlet is
 
 - **A catalog of integrations** for apps that never built an API: community platforms (Skool, Substack, Patreon), course platforms (Udemy, Teachable), travel (GetYourGuide, Klook), real estate (Idealista, Zoopla, DoorLoop), local services (Booksy, Fresha, Vagaro) and invoicing tools (Dubsado, Joist).
-- **One MCP server** for all of them. Every app a user connects shows up as tools, named `{app}_{endpoint}`.
+- **One MCP server** for all of them. Every app a user enables for agents shows up as a read tool and a write tool, such as `skool_read` and `skool_write`, with the app's endpoints as operations.
 - **A REST API** with the same actions, for scripts, cron jobs and automation platforms.
 - **Maintained access.** Cotlet tests every integration every 6 hours, pauses calls when a site changes, fixes it and refunds credits for failed calls.
 
@@ -43,7 +43,7 @@
 - **Not a CAPTCHA or MFA bypass.** The user passes those checks; Cotlet never solves or skips them.
 - **Not a scraper of other people's data.** The agent works only in the user's own account, with the user's own login.
 - **Not an official API.** Cotlet is unofficial and not affiliated with any app in its catalog.
-- **Not a general browser agent.** Each integration exposes defined tools with JSON Schema inputs and outputs, not a free-form browser.
+- **Not a general browser agent.** Each integration exposes defined tools with JSON Schema inputs and outputs. Driving the Cloud Browser directly is there for jobs no tool covers, billed per minute.
 
 ## Positioning
 

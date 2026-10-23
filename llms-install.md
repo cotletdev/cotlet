@@ -28,8 +28,9 @@ Clients with OAuth sign-in can use `https://cotlet.dev/mcp/v1/connect` without a
 ## 3. Check it works
 
 1. Call `cotlet_whoami`: it returns the signed-in account and the apps it may use.
-2. Each app is one tool, such as `skool`. Call it with `{}` to list its operations, with `{"tool": "list_groups"}` to get one operation's input schema, and with `{"tool": "list_groups", "arguments": {}}` to run it.
+2. Each app has a read tool and, when it can change data, a write tool: `skool_read`, `skool_write`. The tool's input schema lists every operation with its inputs. Run one with `{"operation": "list_groups", "arguments": {}}`.
+3. `cotlet_apps` says which apps work now and what the user still has to do, such as sign in to the app in the Cloud Browser or enable it for agents.
 
-If a call returns `access_not_granted`, the user must turn the app on or request it at the `integrations_url` in the response. Actions that reach other people (publish, message, email) return `status: pending` with an `approval_url` and run only after the user approves them.
+If a call returns `access_not_granted`, the user must add the app or request it at the `integrations_url` in the response. Actions that reach other people (publish, message, email) return `status: pending` with a `call_id` and run only after the user approves them in the console; `cotlet_get_call` reports the outcome.
 
 Docs: https://cotlet.dev/docs/mcp

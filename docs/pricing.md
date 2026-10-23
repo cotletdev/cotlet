@@ -21,11 +21,11 @@ Need more, or a DPA? [Talk to us](https://cotlet.dev/contact).
 
 ## What uses credits
 
-- **A successful call:** 20 to 30 credits, 25 for most tools. Each tool shows its rate in the dashboard.
+- **A successful call:** 10 credits, the same for every tool (about $0.04 to $0.06).
 - **Your Cloud Browser:** 50 credits for every started day it has an app enabled for agents, however many apps that is. It is your own Chrome in the cloud, signed in to your apps 24/7.
 - **An agent driving the browser itself** over Chrome DevTools: 5 credits a minute.
 
-Example: one app, 20 calls a day = 20 × 25 + 50 = 550 credits a day, about 3,850 a week.
+Example: one app, 20 calls a day = 20 × 10 + 50 = 250 credits a day, 1,750 a week. The 5,000-credit pack lasts about 20 days.
 
 ## How credits work
 

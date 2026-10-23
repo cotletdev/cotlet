@@ -17,6 +17,7 @@ The mark is a white meat mallet cut out of a black rounded tile. The wordmark is
 | [`assets/logo-white.svg`](../assets/logo-white.svg) | Mark and wordmark for dark backgrounds |
 | [`assets/icon-512.png`](../assets/icon-512.png) | Square mark, 512 × 512, for avatars and app icons |
 | [`assets/og.png`](../assets/og.png) | Social preview, 1200 × 630 |
+| [`assets/homepage.png`](../assets/homepage.png) | The cotlet.dev home page, 1600 × 938 |
 
 <p>
   <img src="../assets/logo.svg" alt="Cotlet logo" width="240">
@@ -28,21 +29,22 @@ The mark is a white meat mallet cut out of a black rounded tile. The wordmark is
 
 | Role | Hex |
 |---|---|
-| Ink (text, logo) | `#141318` |
-| Primary violet | `#6d4aef` |
+| Ink (text, logo) | `#08090a` |
+| Primary violet | `#7c5cff` |
 | Deep violet | `#1b1535` |
-| Lime highlight | `#c8f53c` |
-| Surface | `#f7f6fb` |
+| Teal accent | `#0a766d` |
+| Surface | `#f9f8fb` |
 
 ## Fonts
 
 - Wordmark: Unbounded Bold
-- Interface and copy: Instrument Sans
+- Headings: Newsreader
+- Interface and copy: Inter
 - Code: Geist Mono
 
 ## How to describe Cotlet
 
-- **Short:** Your AI agent, logged in to the apps that never built an API.
+- **Short:** Give your AI agents your signed-in browser.
 - **One line:** Hosted MCP servers and REST APIs for apps with no usable API. Your agent signs in as you and does the work.
 - **Paragraph:** Cotlet is a catalog of hosted integrations for web apps that have no official API, or only a narrow one. Each integration is exposed as tools in one remote MCP server and as a REST API. Each user gets their own Chrome in the cloud, signs in to each app there once and enables it for agents; Cotlet never saves the password, lists every background request, and the agent then works in the user's own account.
 
@@ -50,5 +52,5 @@ The mark is a white meat mallet cut out of a black rounded tile. The wordmark is
 
 - Lead with the outcome ("your agent signs in and does the work"), then MCP, then REST ("Built for agents. Scriptable too.").
 - Plain words, short sentences, English only.
-- Access is by request: say "Request access". Never invent user counts, call counts or customer logos.
+- Sign-up is open: say "Sign up free". Apps are requested one by one in the console. Never invent user counts, call counts or customer logos.
 - Always note that Cotlet is unofficial and not affiliated with the apps it integrates.

@@ -12,7 +12,7 @@ Pick it from the [catalog](https://cotlet.dev/integrations). Its tools are ready
 
 ### 2. Sign in, in your Cloud Browser
 
-[Request access](https://cotlet.dev/signup) and pick your apps. Each request is reviewed and you get an email when your account is ready. Then:
+[Sign up free](https://cotlet.dev/signup) and add your apps in the console. The 7-day trial with 2,000 credits starts at once. Then:
 
 1. **Open your Cloud Browser** in the console (`cotlet.dev/app/browser`). It is your own Chrome that runs on Cotlet's servers in the EU, with a fixed IP shown in the console. Each app gets its own window, sharp as the app's own site, locked to that app's pages.
 2. **Sign in to the app yourself**, on the app's own page, also with Google if you like. You pass any 2FA or CAPTCHA yourself. Password saving and autofill are off in this browser, so Cotlet never saves your password.
@@ -29,7 +29,7 @@ claude mcp add --transport http cotlet https://cotlet.dev/mcp/v1 \
   --header "Authorization: Bearer $COTLET_API_KEY"
 ```
 
-Each connected app shows up as tools, for example `booksy_reschedule_booking` or `skool_approve_membership_request`. Scripts use the same actions over REST. See [mcp-server.md](mcp-server.md) and [rest-api.md](rest-api.md).
+Each app you enable shows up as a read tool and a write tool, for example `skool_read` and `skool_write`. The agent picks an operation, such as `approve_membership_request`, and passes its inputs. Scripts use the same actions over REST. See [mcp-server.md](mcp-server.md) and [rest-api.md](rest-api.md).
 
 ### 4. Automate it and forget it
 
@@ -44,7 +44,7 @@ Your agent does the work on request or on a schedule:
 ## What happens on each call
 
 ```text
-Your agent ──tools/call──▶ Cotlet MCP server ──▶ checks key, plan and consent
+Your agent ──tools/call──▶ Cotlet MCP server ──▶ checks key, scope, credits and approval
                                               ──▶ sends the app's own request from your Cloud Browser's IP, with its cookies
                                               ◀── returns structured JSON
 ```
@@ -56,7 +56,7 @@ Your agent ──tools/call──▶ Cotlet MCP server ──▶ checks key, pla
 
 ## Confirmations
 
-Actions that reach other people (publish, message, email) wait for your OK by default. The call returns `awaiting_confirmation` with a link; you approve, and the agent reads the result. To run such a job on a schedule, switch confirmation off for that tool in your dashboard.
+Actions that reach other people (publish, message, email) wait for your OK by default. The call returns `status: pending` with a `call_id`. You approve or reject it in the console under Activity, Approvals, and the agent reads the outcome with `cotlet_get_call`. Without a decision it lapses after 24 hours. To run such a job on a schedule, set that tool to "Run without approval" in Activity, Approval rules.
 
 ## When an app signs you out
 

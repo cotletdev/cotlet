@@ -4,7 +4,7 @@
 
 259 apps in 11 categories. This file is an index, generated from the live catalog. Each app's page on cotlet.dev has its tools with parameters, the official API status with sources, use cases and pricing. Add `.md` to a page URL for Markdown.
 
-**Self-hosted:** 9 apps also have a repo you can run yourself, in Python on your own Chrome session, for personal use. They are linked in the last column.
+**Self-hosted:** 10 apps also have a repo you can run yourself, in Python on your own Chrome session, for personal use. They are linked in the last column.
 
 ## Local services & SaaS
 
@@ -24,7 +24,7 @@
 | [Contractor Foreman](https://cotlet.dev/integrations/contractor-foreman-api-mcp-server) | Projects, estimates, daily logs and invoices in Contractor Foreman. | [docs](https://cotlet.dev/docs/api/contractor-foreman) | [contractor-foreman-api-mcp-server](https://github.com/cotletdev/contractor-foreman-api-mcp-server) |
 | [DaySmart](https://cotlet.dev/integrations/daysmart-api-mcp-server) | Appointments, clients, pets and sales in DaySmart Salon or Pet. | [docs](https://cotlet.dev/docs/api/daysmart) |  |
 | [Faire](https://cotlet.dev/integrations/faire-api-mcp-server) | Orders, inventory, reorders and messages for wholesale brands. | [docs](https://cotlet.dev/docs/api/faire) |  |
-| [Fresha](https://cotlet.dev/integrations/fresha-api-mcp-server) | Appointments, clients, sales and reviews for salons and spas. | [docs](https://cotlet.dev/docs/api/fresha) |  |
+| [Fresha](https://cotlet.dev/integrations/fresha-api-mcp-server) | Appointments, clients, sales and reviews for salons and spas. | [docs](https://cotlet.dev/docs/api/fresha) | [fresha-api-mcp-server](https://github.com/cotletdev/fresha-api-mcp-server) |
 | [GlossGenius](https://cotlet.dev/integrations/glossgenius-api-mcp-server) | Appointments, clients and sales for salon owners. | [docs](https://cotlet.dev/docs/api/glossgenius) |  |
 | [Housecall Pro](https://cotlet.dev/integrations/housecall-pro-api-mcp-server) | Jobs, estimates, invoices and customers in Housecall Pro. | [docs](https://cotlet.dev/docs/api/housecall-pro) |  |
 | [Houzz Pro](https://cotlet.dev/integrations/houzz-pro-api-mcp-server) | Leads, projects, estimates and invoices in Houzz Pro. | [docs](https://cotlet.dev/docs/api/houzz-pro) |  |
